@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white w-full shadow-sm relative z-50">
+    <nav className="bg-white w-full shadow-sm relative z-50 sticky top-0">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-4">
         {/* 🔸 Logo */}
         <div className="flex items-center gap-2">
@@ -31,9 +31,11 @@ const Navbar = () => {
               <NavLink
                 to={item.path}
                 className={({ isActive }) =>
-                  `cursor-pointer ${isActive
-                    ? "text-[#f39c12]"
-                    : "text-black hover:text-[#f39c12]"}`
+                  `cursor-pointer ${
+                    isActive
+                      ? "text-[#f39c12]"
+                      : "text-black hover:text-[#f39c12]"
+                  }`
                 }
               >
                 {item.name}
@@ -51,10 +53,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* 🔸 Mobile Menu with smooth open/close */}
+      {/* 🔸 Mobile Menu */}
       <div
         className={`md:hidden absolute w-full left-0 bg-white shadow-md overflow-hidden transform transition-all duration-500 ease-in-out ${
-          open ? "max-h-[500px] opacity-100 scale-100" : "max-h-0 opacity-0 scale-95"
+          open
+            ? "max-h-[500px] opacity-100 scale-100"
+            : "max-h-0 opacity-0 scale-95"
         }`}
       >
         <div className="flex flex-col items-center mx-4 my-2">

@@ -2,7 +2,7 @@ import React from "react";
 
 const Description = () => {
   return (
-    <div className="px-6 py-10  lg:px-20">
+    <div className="px-4 py-10  l max-w-6xl mx-auto">
       <p>
         <strong>
           In Adobe Photoshop, the clipping path is a vector graphic that outlines an object, 

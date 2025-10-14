@@ -51,20 +51,22 @@ const CardSection = () => {
 
   return (
     <section className="bg-white py-12 md:py-16">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 md:gap-8 px-4 sm:px-6 lg:px-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 md:gap-8">
         {cards.map((card, index) => (
           <motion.div
             key={index}
-            className={`border-2 ${card.border} rounded-2xl overflow-hidden shadow-sm`}
+            className={`border-2 ${card.border} rounded-2xl overflow-hidden shadow-md flex flex-col`}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            <div className={`text-white text-center py-3 font-bold text-lg md:text-xl ${card.bg}`}>
+            <div
+              className={`text-white text-center py-3 md:py-4 font-bold text-lg sm:text-lg md:text-xl ${card.bg}`}
+            >
               {card.title}
             </div>
-            <div className="p-4 md:p-6 text-center text-gray-800 text-sm sm:text-base">
+            <div className="p-4 md:p-6 text-gray-800 text-sm sm:text-base flex-1 flex flex-col justify-center space-y-2 text-center">
               {card.content.map((text, i) => (
                 <p key={i}>{text}</p>
               ))}

@@ -44,53 +44,55 @@ const FunFactSection = () => {
 
   return (
     <section className="bg-gradient-to-r from-blue-200 to-purple-300 py-16">
-      {/* Header with animation */}
-      <motion.div
-        className="text-center mb-12 px-6 md:px-0"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-      >
-        <p className="text-indigo-700 font-semibold text-lg">Fun Fact</p>
-        <motion.h2
-          className="text-4xl font-bold text-gray-800 leading-snug mt-2"
-          initial={{ opacity: 0, y: 30 }}
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <motion.div
+          className="text-center mb-12 px-6 sm:px-0"
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.6 }}
         >
-          We're Serious About Helping <br /> Small Businesses
-        </motion.h2>
-      </motion.div>
-
-      {/* Stats Cards */}
-      <div className=" mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-20">
-        {stats.map((stat, index) => (
-          <motion.div
-            key={index}
-            className={`bg-white shadow-lg rounded-2xl flex items-center justify-between p-6 border-l-8 ${stat.border}`}
-            initial={{ opacity: 0, y: 50 }}
+          <p className="text-indigo-700 font-semibold text-lg">Fun Fact</p>
+          <motion.h2
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 leading-snug mt-2"
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
-            {/* Icon + Label (Vertical) */}
-            <div className="flex flex-col items-start">
-              <div className={`${stat.bg} p-4 rounded-full mb-4`}>
-                {stat.icon}
-              </div>
-              <p className="text-gray-900 font-bold uppercase text-sm md:text-base">
-                {stat.label}
-              </p>
-            </div>
+            We're Serious About Helping <br /> Small Businesses
+          </motion.h2>
+        </motion.div>
 
-            {/* Number */}
-            <p className={`${stat.textColor} text-3xl md:text-4xl font-bold`}>
-              <CountUp end={stat.number} duration={2} /> +
-            </p>
-          </motion.div>
-        ))}
+        {/* Stats Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-10 md:px-0">
+          {stats.map((stat, index) => (
+            <motion.div
+              key={index}
+              className={`bg-white shadow-lg rounded-2xl flex items-center justify-between p-6 border-l-8 ${stat.border}`}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+            >
+              {/* Icon + Label */}
+              <div className="flex flex-col items-start">
+                <div className={`${stat.bg} p-4 rounded-full mb-4`}>
+                  {stat.icon}
+                </div>
+                <p className="text-gray-900 font-semibold text-sm sm:text-base md:text-base leading-snug">
+                  {stat.label}
+                </p>
+              </div>
+
+              {/* Number */}
+              <p className={`${stat.textColor} text-2xl sm:text-3xl md:text-4xl font-bold`}>
+                <CountUp end={stat.number} duration={2} />+
+              </p>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -6,7 +6,7 @@ import ColorCorrectionDescription from "./ColorCorrectionDescription";
 
 const ColorCorrection = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div>
             <ServiceHero></ServiceHero>
             <ColorCorrectionAfterBefore></ColorCorrectionAfterBefore>
             <ColorCorrectionDescription></ColorCorrectionDescription>

@@ -6,7 +6,7 @@ import GhostMannequinDescription from "./GhostMannequinDescription";
 
 const GhostMannequin = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div>
             <ServiceHero></ServiceHero>
             <GhostMannequinAfterBefore></GhostMannequinAfterBefore>
             <GhostMannequinDescription></GhostMannequinDescription>

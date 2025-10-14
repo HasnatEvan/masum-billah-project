@@ -6,7 +6,7 @@ import ServiceHero from "./ServiceHero";
 
 const ServicesPage = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div>
             <ServiceHero></ServiceHero>
             <Card></Card>
             <LatestNews></LatestNews>

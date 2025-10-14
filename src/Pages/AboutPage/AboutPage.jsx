@@ -6,7 +6,7 @@ import FunFactSection from "./FunFactSection";
 
 const AboutPage = () => {
     return (
-        <div className="max-w-[1600px] mx-auto" >
+        <div >
             <AboutHero></AboutHero>
             <AboutSection></AboutSection>
             <FunFactSection></FunFactSection>

@@ -6,7 +6,7 @@ import ImageCleaningDescription from "./ImageCleaningDescription";
 
 const ImageCleaning = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div >
             <ServiceHero></ServiceHero>
             <ImageCleaningAfterBefore></ImageCleaningAfterBefore>
             <ImageCleaningDescription></ImageCleaningDescription>

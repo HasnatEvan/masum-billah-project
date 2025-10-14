@@ -5,7 +5,7 @@ import PhotoRetouchingDescription from "./PhotoRetouchingDescription";
 
 const PhotoRetouching = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div >
             <ServiceHero></ServiceHero>
             <PhotoRetouchingAfterBefore></PhotoRetouchingAfterBefore>
             <PhotoRetouchingDescription></PhotoRetouchingDescription>

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const FormSection = () => {
     return (
-        <section className="bg-white py-16 px-6 lg:px-20">
+        <section className="bg-white py-16 px-4 max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
                 {/* Left Content */}
                 <motion.div

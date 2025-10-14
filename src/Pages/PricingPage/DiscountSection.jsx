@@ -9,22 +9,19 @@ const DiscountSection = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-      },
+      transition: { duration: 1, ease: "easeOut" },
     },
   };
 
   return (
     <motion.section
-      className="bg-gradient-to-r from-[#c5e2ff] to-[#dbe7ff] py-16 sm:py-20"
+      className="bg-gradient-to-r from-[#c5e2ff] to-[#dbe7ff] py-12 sm:py-16 md:py-20"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-10 px-4 sm:px-6 md:px-20">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12 px-4 sm:px-6 md:px-8 lg:px-0 max-w-6xl mx-auto">
         
         {/* ===== Left Side Text ===== */}
         <motion.div
@@ -34,15 +31,15 @@ const DiscountSection = () => {
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B0B0B] leading-snug sm:leading-tight mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#0B0B0B] leading-snug sm:leading-tight mb-4 sm:mb-6 md:mb-8">
             Special Discount For <br /> Bulk Images!
           </h2>
-          <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-8 sm:mb-10 max-w-xl mx-auto lg:mx-0">
+          <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8 md:mb-10 max-w-xl mx-auto lg:mx-0">
             We provide 100% handmade photo editing services using Photoshop. Get high-quality services delivered within 24 hours or less.
           </p>
 
           <Link to="/contact">
-            <button className="px-6 sm:px-8 py-3 sm:py-3.5 rounded-full border border-[#4a4aff] text-[#4a4aff] font-semibold flex items-center justify-center gap-2 mx-auto lg:mx-0 hover:bg-[#4a4aff] hover:text-white transition-all duration-300">
+            <button className="px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-full border border-[#4a4aff] text-[#4a4aff] font-semibold flex items-center justify-center gap-2 mx-auto lg:mx-0 hover:bg-[#4a4aff] hover:text-white transition-all duration-300">
               Contact Us <span className="text-lg">→</span>
             </button>
           </Link>
@@ -60,10 +57,11 @@ const DiscountSection = () => {
             <img
               src={image}
               alt="Discount"
-              className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-full cursor-pointer hover:scale-105 transition-transform duration-300"
+              className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-full cursor-pointer hover:scale-105 transition-transform duration-300"
             />
           </Link>
         </motion.div>
+
       </div>
     </motion.section>
   );

@@ -15,7 +15,6 @@ const PricingSection = () => {
             color: "from-[#c53ff7] to-[#9d2df2]",
             light: "bg-[#f7e4ff]",
             button: "bg-[#c53ff7]",
-            iconColor: "#c53ff7",
         },
         {
             title: "PLUS PLAN",
@@ -30,7 +29,6 @@ const PricingSection = () => {
             color: "from-[#7b39f8] to-[#4b11f7]",
             light: "bg-[#efe5ff]",
             button: "bg-[#7b39f8]",
-            iconColor: "#7b39f8",
         },
         {
             title: "ELITE PLAN",
@@ -45,62 +43,61 @@ const PricingSection = () => {
             color: "from-[#f13e75] to-[#ec3e5f]",
             light: "bg-[#ffe6ee]",
             button: "bg-[#f13e75]",
-            iconColor: "#f13e75",
         },
     ];
 
     return (
-        <section className="py-16 bg-white text-center">
+        <section className="py-12 sm:py-16 lg:py-20 bg-white text-center max-w-6xl mx-auto px-4 ">
             {/* Header */}
             <div className="mb-12">
-                <h4 className="text-[#4b11f7] font-bold">Pricing Table</h4>
-                <h2 className="text-3xl md:text-4xl font-extrabold mt-2">
+                <h4 className="text-[#4b11f7] font-bold text-sm sm:text-base">Pricing Table</h4>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mt-2">
                     Our Pricing Plans
                 </h2>
             </div>
 
             {/* Pricing Cards */}
-            <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 px-6 md:px-0">
+            <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 md:gap-8">
                 {plans.map((plan, index) => (
                     <div
                         key={index}
-                        className={`w-full md:w-[380px] lg:w-[420px] rounded-xl border-2 shadow-lg overflow-hidden flex flex-col transition-transform transform hover:scale-105 duration-300`}
+                        className={`w-full sm:w-[350px] md:w-[400px] lg:w-[450px] xl:w-[500px] rounded-xl border-2 shadow-lg overflow-hidden flex flex-col transition-transform transform hover:scale-105 duration-300`}
                         style={{
                             borderColor:
                                 index === 0
                                     ? "#c53ff7"
                                     : index === 1
                                         ? "#7b39f8"
-                                        : "#f13e75", // তৃতীয় কার্ডের জন্য
+                                        : "#f13e75",
                         }}
                     >
                         {/* Header */}
                         <div
-                            className={`bg-gradient-to-r ${plan.color} text-white py-5 font-bold text-lg`}
+                            className={`bg-gradient-to-r ${plan.color} text-white py-4 sm:py-5 font-bold text-base sm:text-lg`}
                         >
                             {plan.title}
                         </div>
 
                         {/* Price */}
-                        <div className={`${plan.light} py-8`}>
-                            <h3 className="text-4xl md:text-5xl font-extrabold">{plan.price}</h3>
-                            <p className="text-sm md:text-base mt-2 text-gray-700">{plan.subtitle}</p>
+                        <div className={`${plan.light} py-6 sm:py-8`}>
+                            <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold">{plan.price}</h3>
+                            <p className="text-xs sm:text-sm md:text-base mt-1 sm:mt-2 text-gray-700">{plan.subtitle}</p>
                         </div>
 
                         {/* Features */}
-                        <ul className="flex-1 text-left px-8 py-6 space-y-4">
+                        <ul className="flex-1 text-left px-6 sm:px-8 py-4 sm:py-6 space-y-3 sm:space-y-4">
                             {plan.features.map((feature, i) => (
-                                <li key={i} className="flex items-center gap-3 text-gray-800">
-                                    <FaCheckCircle className="text-[#4b11f7] md:text-lg" />
-                                    <span className="text-sm md:text-base">{feature}</span>
+                                <li key={i} className="flex items-center gap-2 sm:gap-3 text-gray-800">
+                                    <FaCheckCircle className="text-[#4b11f7] text-sm sm:text-base md:text-lg" />
+                                    <span className="text-xs sm:text-sm md:text-base">{feature}</span>
                                 </li>
                             ))}
                         </ul>
 
                         {/* Button */}
-                        <div className="pb-8">
+                        <div className="pb-6 sm:pb-8">
                             <button
-                                className={`${plan.button} text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition duration-300`}
+                                className={`${plan.button} text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-medium hover:opacity-90 transition duration-300`}
                                 style={{
                                     borderColor:
                                         index === 0
@@ -114,7 +111,6 @@ const PricingSection = () => {
                             </button>
                         </div>
                     </div>
-
                 ))}
             </div>
         </section>

@@ -5,7 +5,7 @@ import PhotoRestorationDescription from "./PhotoRestorationDescription";
 
 const PhotoRestoration = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div >
             <ServiceHero></ServiceHero>
             <PhotoRestorationAfterBefore></PhotoRestorationAfterBefore>
             <PhotoRestorationDescription></PhotoRestorationDescription>

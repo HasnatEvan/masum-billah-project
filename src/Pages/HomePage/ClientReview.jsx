@@ -4,13 +4,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import clientLogo from "../../assets/Logo/logo.png";
 
 const ClientReview = () => {
-   const reviews = [
+  const reviews = [
     {
       name: "Jerry Fletcher",
       title: "Ecommerce Manager",
       image: clientLogo,
       review:
-        "Clipping Amazon has provided me excellent Ghost Menique service. Their team is fast, professional, and ensures that every image is perfectly edited for my e-commerce listings. The quality and attention to detail are exceptional, and I will continue to use their services for all my projects.",
+        "Clipping Amazon has provided me excellent Ghost Manique service. Their team is fast, professional, and ensures that every image is perfectly edited for my e-commerce listings. The quality and attention to detail are exceptional, and I will continue to use their services for all my projects.",
       gradient: "from-[#E8FFF7] to-[#FFFFFF]",
     },
     {
@@ -98,73 +98,75 @@ const ClientReview = () => {
 
   return (
     <section className="bg-[#f9f9ff] py-12 sm:py-16 md:py-20 overflow-hidden">
-      {/* Title */}
-      <div className="text-center mb-8 sm:mb-10 md:mb-12 px-6 md:px-0">
-        <h4 className="text-[#304ffe] font-semibold uppercase tracking-wide mb-2 text-sm sm:text-base">
-          Clients Feedback
-        </h4>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#333]">
-          Explore Clients Review
-        </h2>
-      </div>
+      <div className="max-w-6xl mx-auto ">
+        {/* Title */}
+        <div className="text-center mb-8 sm:mb-10 md:mb-12 px-6 md:px-0">
+          <h4 className="text-[#304ffe] font-semibold uppercase tracking-wide mb-2 text-sm sm:text-base">
+            Clients Feedback
+          </h4>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#333]">
+            Explore Clients Review
+          </h2>
+        </div>
 
-      {/* Slider */}
-      <div className=" mx-auto flex flex-col sm:flex-row gap-8 px-6 md:px-20 overflow-hidden relative">
-        <AnimatePresence initial={false}>
-          {currentReviews.map((item) => (
-            <motion.div
-              key={item.name}
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -50 }}
-              transition={{ duration: 0.8, ease: "easeInOut" }}
-              className="flex-shrink-0 w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-0.75rem)] bg-white rounded-2xl shadow-md flex flex-col justify-between overflow-hidden"
-            >
-              <div className="p-4 sm:p-6 text-left">
-                <div className="flex text-[#FFC107] mb-2 sm:mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <FaStar key={i} className="text-sm sm:text-base" />
-                  ))}
-                </div>
-                <p className="text-gray-700 text-xs sm:text-sm md:text-[15px] leading-relaxed">
-                  {item.review}
-                </p>
-              </div>
-
-              <div
-                className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 bg-gradient-to-r ${item.gradient}`}
+        {/* Slider */}
+        <div className="mx-auto flex flex-col sm:flex-row gap-6 sm:gap-4 md:gap-6 px-4 sm:px-6 md:px-0 overflow-hidden relative">
+          <AnimatePresence initial={false}>
+            {currentReviews.map((item) => (
+              <motion.div
+                key={item.name}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ duration: 0.8, ease: "easeInOut" }}
+                className="flex-shrink-0 w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.75rem)] bg-white rounded-2xl shadow-md flex flex-col justify-between overflow-hidden"
               >
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-white shadow-sm"
-                />
-                <div>
-                  <h5 className="font-bold text-[13px] sm:text-[15px] text-[#000]">
-                    {item.name}
-                  </h5>
-                  <p className="text-gray-500 text-[11px] sm:text-[13px]">{item.title}</p>
+                <div className="p-4 sm:p-6 text-left">
+                  <div className="flex text-[#FFC107] mb-2 sm:mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <FaStar key={i} className="text-sm sm:text-base" />
+                    ))}
+                  </div>
+                  <p className="text-gray-700 text-xs sm:text-sm md:text-[15px] leading-relaxed">
+                    {item.review}
+                  </p>
                 </div>
-              </div>
-            </motion.div>
-          ))}
-        </AnimatePresence>
-      </div>
 
-      {/* Pagination Dots */}
-      <div className="flex justify-center mt-4 sm:mt-6 md:mt-8 gap-2 px-6 md:px-0">
-        {Array.from({ length: totalPages }, (_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrentPage(i)}
-            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
-              currentPage === i
-                ? "bg-blue-600 scale-110"
-                : "bg-gray-400 hover:bg-gray-500"
-            }`}
-            aria-label={`Go to page ${i + 1}`}
-          />
-        ))}
+                <div
+                  className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 bg-gradient-to-r ${item.gradient}`}
+                >
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-white shadow-sm"
+                  />
+                  <div>
+                    <h5 className="font-bold text-[13px] sm:text-[15px] text-[#000]">
+                      {item.name}
+                    </h5>
+                    <p className="text-gray-500 text-[11px] sm:text-[13px]">{item.title}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </div>
+
+        {/* Pagination Dots */}
+        <div className="flex justify-center mt-4 sm:mt-6 md:mt-8 gap-2 px-6 md:px-0">
+          {Array.from({ length: totalPages }, (_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrentPage(i)}
+              className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
+                currentPage === i
+                  ? "bg-blue-600 scale-110"
+                  : "bg-gray-400 hover:bg-gray-500"
+              }`}
+              aria-label={`Go to page ${i + 1}`}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

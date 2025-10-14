@@ -6,7 +6,7 @@ import GoogleMap from "./GoogleMap";
 
 const ContactPage = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div>
             <ContactHero></ContactHero>
             <ContactFrom></ContactFrom>
             <GoogleMap></GoogleMap>

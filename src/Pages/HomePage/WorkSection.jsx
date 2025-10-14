@@ -13,32 +13,32 @@ const WorkSection = () => {
   ];
 
   return (
-    <section className="py-5 bg-white">
+    <section className="py-10 lg:py-20 bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
       {/* Section Header */}
       <div className="text-center mb-12">
-        <h4 className="text-[#4b11f7] font-bold">How it works</h4>
-        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-500 mt-2">
+        <h4 className="text-[#4b11f7] font-bold text-sm sm:text-base">How it works</h4>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-700 mt-2">
           How Clipping Amazon works
         </h2>
       </div>
 
       {/* Main Layout */}
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 px-6 md:px-16 lg:px-24">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
         {/* Left Steps */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full lg:w-2/3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full lg:w-2/3">
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col items-center sm:items-start gap-4 text-center sm:text-left">
               {/* Icon */}
-              <div className={`${step.color} text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl shadow-md`}>
+              <div className={`${step.color} text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl shadow-md flex-shrink-0`}>
                 {step.icon}
               </div>
 
               {/* Step Content */}
               <div>
-                <h3 className="font-bold text-[#111] text-sm md:text-base mb-1">
+                <h3 className="font-bold text-gray-900 text-sm md:text-base mb-1">
                   {step.id}. {step.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-xs sm:text-sm md:text-sm leading-relaxed">
                   {step.desc}
                 </p>
               </div>
@@ -57,7 +57,7 @@ const WorkSection = () => {
           <img
             src={image}
             alt="Work Process Illustration"
-            className="w-[300px] sm:w-[400px] md:w-[480px] lg:w-[500px] object-contain"
+            className="w-64 sm:w-80 md:w-96 lg:w-[500px] object-contain"
           />
         </motion.div>
       </div>

@@ -34,32 +34,34 @@ const services = [
 
 const Card = () => {
   return (
-    <section className="bg-[#f9fbff] py-16">
-      <div className="px-6 lg:px-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {services.map((service, index) => (
-          <motion.div
-            key={index}
-            className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 flex flex-col items-center"
-            initial={{ opacity: 0, y: 50 }}          // নিচ থেকে শুরু
-            whileInView={{ opacity: 1, y: 0 }}      // scroll করার সময় উঠবে
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: index * 0.1 }} // staggered effect
-          >
-            <div className="w-40 h-40 flex justify-center items-center mb-4">
-              <img src={service.img} alt={service.title} className="w-full h-full object-contain" />
-            </div>
+    <section className="bg-[#f9fbff] py-12 sm:py-16 lg:py-20">
+      <div className="px-4 sm:px-6 lg:px-0 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+          {services.map((service, index) => (
+            <motion.div
+              key={index}
+              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-4 sm:p-6 md:p-8 flex flex-col items-center"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+            >
+              <div className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 flex justify-center items-center mb-4">
+                <img src={service.img} alt={service.title} className="w-full h-full object-contain" />
+              </div>
 
-            <div className="flex flex-col items-start text-left w-full">
-              <h3 className="text-lg font-bold text-gray-800 mb-2">{service.title}</h3>
-              <p className="text-gray-500 text-sm mb-4">{service.desc}</p>
-              <Link to={service.link}>
-                <button className="text-blue-600 font-medium flex items-center gap-2 hover:gap-3 transition-all duration-300">
-                  More Details <FaArrowRight />
-                </button>
-              </Link>
-            </div>
-          </motion.div>
-        ))}
+              <div className="flex flex-col items-start text-left w-full">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-2">{service.title}</h3>
+                <p className="text-gray-500 text-xs sm:text-sm md:text-base mb-4">{service.desc}</p>
+                <Link to={service.link}>
+                  <button className="text-blue-600 font-medium flex items-center gap-2 hover:gap-3 transition-all duration-300 text-sm sm:text-base md:text-lg">
+                    More Details <FaArrowRight />
+                  </button>
+                </Link>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

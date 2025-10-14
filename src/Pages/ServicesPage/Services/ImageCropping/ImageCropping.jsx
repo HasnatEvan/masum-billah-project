@@ -6,7 +6,7 @@ import ImageCroppingDescription from "./ImageCroppingDescription";
 
 const ImageCropping = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div >
             <ServiceHero></ServiceHero>
             <ImageCroppingAfterBefore></ImageCroppingAfterBefore>
             <ImageCroppingDescription></ImageCroppingDescription>

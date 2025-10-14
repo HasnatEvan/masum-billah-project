@@ -5,7 +5,7 @@ import FromSection from "./FromSection";
 
 const FreeTrialPage = () => {
     return (
-        <div  className="max-w-[1600px] mx-auto">
+        <div>
             <FreeTrialHero></FreeTrialHero>
             <FromSection></FromSection>
             <ClientReview></ClientReview>

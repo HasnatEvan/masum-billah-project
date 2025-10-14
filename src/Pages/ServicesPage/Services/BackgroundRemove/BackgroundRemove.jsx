@@ -6,7 +6,7 @@ import ServiceHero from './../../ServiceHero';
 
 const BackgroundRemove = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div >
             <ServiceHero></ServiceHero>
             <BackgroundRemoveAfterBefore></BackgroundRemoveAfterBefore>
             <BackgroundRemoveDescipyion></BackgroundRemoveDescipyion>

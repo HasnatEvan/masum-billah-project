@@ -6,7 +6,7 @@ import ImageReflectionDescription from "./ImageReflectionDescription";
 
 const ImageReflection = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div >
             <ServiceHero></ServiceHero>
             <ImageReflectionAfterBefore></ImageReflectionAfterBefore>
             <ImageReflectionDescription></ImageReflectionDescription>

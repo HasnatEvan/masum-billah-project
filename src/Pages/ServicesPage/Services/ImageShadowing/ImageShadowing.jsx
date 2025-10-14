@@ -6,7 +6,7 @@ import ImageShadowingDescription from "./ImageShadowingDescription";
 
 const ImageShadowing = () => {
     return (
-        <div className="max-w[1600px] mx-auto" >
+        <div >
             <ServiceHero></ServiceHero>
             <ImageShadowingAfterBefore></ImageShadowingAfterBefore>
             <ImageShadowingDescription></ImageShadowingDescription>

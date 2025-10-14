@@ -5,7 +5,7 @@ import PricingTable from "./PricingTable";
 
 const PricingPage = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div>
             <PricingHero></PricingHero>
             <PricingTable></PricingTable>
             <DiscountSection></DiscountSection>

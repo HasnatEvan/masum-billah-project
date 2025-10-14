@@ -1,11 +1,13 @@
 import ClientReview from "../../../HomePage/ClientReview";
 import ClippingAfterBefore from "./ClippingAfterBefore";
 import Desciption from "./Desciption";
+import ServiceHero from './../../ServiceHero';
 
 
 const Clipping = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div>
+            <ServiceHero></ServiceHero>
             <ClippingAfterBefore></ClippingAfterBefore>
             <Desciption></Desciption>
             <ClientReview></ClientReview>

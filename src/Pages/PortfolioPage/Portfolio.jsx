@@ -5,7 +5,7 @@ import PortfolioHero from "./PortfolioHero";
 
 const Portfolio = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div>
             <PortfolioHero></PortfolioHero>
             <PortfolioAfterBefore></PortfolioAfterBefore>
             <ClientReview></ClientReview>

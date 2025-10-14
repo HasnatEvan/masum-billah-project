@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const ContactForm = () => {
   return (
     <section className="bg-white py-20 px-6 sm:px-10 md:px-24 overflow-hidden">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
         {/* Left Section */}
         <motion.div
           initial={{ x: -100, opacity: 0 }}

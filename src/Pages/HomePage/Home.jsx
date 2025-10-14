@@ -11,7 +11,7 @@ import YoutubeSectiion from "./YoutubeSectiion";
 
 const Home = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div className="">
             <HeroSection></HeroSection>
             <AboutScetion></AboutScetion>
             <OurServicesSection></OurServicesSection>
@@ -22,8 +22,10 @@ const Home = () => {
             <PricingSection />
             <ClientReview></ClientReview>
             <LatestNews></LatestNews>
+
         </div>
     );
 };
 
 export default Home;
+

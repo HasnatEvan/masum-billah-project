@@ -23,7 +23,6 @@ const LatestNews = () => {
 
   const visibleBlogs = blogs.slice(startIndex, startIndex + itemsPerPage);
 
-  // Animation variants
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -31,12 +30,13 @@ const LatestNews = () => {
 
   return (
     <motion.section
-      className="bg-[#F4FAFF] py-20 px-6 md:px-12 lg:px-20"
+      className="bg-[#F4FAFF] py-16 sm:py-20 px-4 sm:px-6 lg:px-20"
       initial="hidden"
       animate="visible"
       variants={sectionVariants}
     >
-      <div className="flex flex-col lg:flex-row items-start gap-10">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10">
+        
         {/* Left Header */}
         <div className="lg:w-1/2">
           <div className="mb-6">
@@ -47,10 +47,10 @@ const LatestNews = () => {
               </p>
               <span className="text-[#FF9F00] text-xl font-bold">||</span>
             </div>
-            <h2 className="text-4xl md:text-[42px] font-extrabold text-[#222] mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#222] mb-4">
               Our Latest Blog Posts
             </h2>
-            <p className="text-[#5B5B5B] text-lg leading-relaxed">
+            <p className="text-[#5B5B5B] text-base sm:text-lg leading-relaxed">
               Explore insightful articles, tips, and updates on photo editing, eCommerce trends, and design solutions to help grow your business and stay ahead in the competitive market.
             </p>
           </div>
@@ -60,16 +60,16 @@ const LatestNews = () => {
             <button
               onClick={handlePrev}
               disabled={startIndex === 0}
-              className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#E3F3FF] flex items-center justify-center hover:bg-[#d3ecff] transition disabled:opacity-50"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#E3F3FF] flex items-center justify-center hover:bg-[#d3ecff] transition disabled:opacity-50"
             >
-              <FaArrowLeft className="text-[#3ABEF9] text-xl md:text-2xl" />
+              <FaArrowLeft className="text-[#3ABEF9] text-lg sm:text-xl" />
             </button>
             <button
               onClick={handleNext}
               disabled={startIndex >= blogs.length - itemsPerPage}
-              className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#E3F3FF] flex items-center justify-center hover:bg-[#d3ecff] transition disabled:opacity-50"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#E3F3FF] flex items-center justify-center hover:bg-[#d3ecff] transition disabled:opacity-50"
             >
-              <FaArrowRight className="text-[#3ABEF9] text-xl md:text-2xl" />
+              <FaArrowRight className="text-[#3ABEF9] text-lg sm:text-xl" />
             </button>
           </div>
         </div>
@@ -79,18 +79,17 @@ const LatestNews = () => {
           {visibleBlogs.map((blog) => (
             <div
               key={blog.id}
-              className="bg-white w-full rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.05)] 
-                         hover:shadow-[0_6px_20px_rgba(0,0,0,0.08)] transition-all duration-300 overflow-hidden p-3"
+              className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col"
             >
-              <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[180px] overflow-hidden rounded-xl">
+              <div className="w-full h-[300px] sm:h-[350px] md:h-[300px] lg:h-[180px] overflow-hidden">
                 <img
                   src={blog.img}
                   alt={blog.title}
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <div className="pt-4">
-                <h3 className="font-semibold text-lg sm:text-xl text-[#1E1E1E] leading-snug">
+              <div className="p-4">
+                <h3 className="font-semibold text-base">
                   {blog.title}
                 </h3>
               </div>

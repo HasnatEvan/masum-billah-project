@@ -90,52 +90,54 @@ const plans = [
 
 const PricingTable = () => {
     return (
-        <section className="py-16 bg-white text-center">
+        <section className="py-12 sm:py-16 lg:py-20 bg-white text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-0">
             {/* Header */}
-            <div className="mb-12 px-4 md:px-0">
-                <h4 className="text-[#4b11f7] font-bold text-lg md:text-xl">Pricing Table</h4>
-                <h2 className="text-3xl md:text-4xl font-extrabold mt-2">
+            <div className="mb-10 sm:mb-12 md:mb-16 px-2 md:px-0">
+                <h4 className="text-[#4b11f7] font-bold text-sm sm:text-base md:text-lg">
+                    Pricing Table
+                </h4>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mt-2">
                     Our Detailed Pricing Plans
                 </h2>
-                <p className="text-gray-700 mt-2 text-sm md:text-base max-w-2xl mx-auto">
+                <p className="text-gray-700 mt-2 text-xs sm:text-sm md:text-base max-w-2xl mx-auto">
                     Depending on the complexity of your images. Send us your RAW Images as a Free Trial so that we can send you the exact pricing.
                 </p>
             </div>
 
             {/* Pricing Cards */}
-            <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 px-6 md:px-0">
+            <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 sm:gap-8 md:gap-10 lg:gap-12">
                 {plans.map((plan, index) => (
                     <div
                         key={index}
-                        className={`w-full md:w-[380px] lg:w-[420px] rounded-xl border-2 ${plan.borderColor} shadow-lg overflow-hidden flex flex-col transition-transform transform hover:scale-105 duration-300`}
+                        className={`w-full md:w-[300px] lg:w-[360px] xl:w-[380px] rounded-xl border-2 ${plan.borderColor} shadow-lg overflow-hidden flex flex-col transition-transform transform hover:scale-105 duration-300`}
                     >
                         {/* Header */}
                         <div
-                            className={`bg-gradient-to-r ${plan.color} text-white py-5 font-bold text-lg`}
+                            className={`bg-gradient-to-r ${plan.color} text-white py-4 sm:py-5 md:py-6 font-bold text-base sm:text-lg md:text-xl`}
                         >
                             {plan.title}
                         </div>
 
                         {/* Price */}
-                        <div className={`${plan.light} py-8`}>
-                            <h3 className="text-4xl md:text-5xl font-extrabold">{plan.price}</h3>
-                            <p className="text-sm md:text-base mt-2 text-gray-700">{plan.subtitle}</p>
+                        <div className={`${plan.light} py-6 sm:py-8 md:py-10`}>
+                            <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold">{plan.price}</h3>
+                            <p className="text-xs sm:text-sm md:text-base mt-1 sm:mt-2 text-gray-700">{plan.subtitle}</p>
                         </div>
 
                         {/* Features */}
-                        <ul className="flex-1 text-left px-8 py-6 space-y-4">
+                        <ul className="flex-1 text-left px-4 sm:px-6 md:px-8 py-4 sm:py-6 space-y-2 sm:space-y-3 md:space-y-4">
                             {plan.features.map((feature, i) => (
-                                <li key={i} className="flex items-center gap-3 text-gray-800">
-                                    <FaCheckCircle className=" md:text-lg" />
-                                    <span className="text-sm md:text-base">{feature}</span>
+                                <li key={i} className="flex items-start gap-2 sm:gap-3 text-gray-800">
+                                    <FaCheckCircle className="text-sm sm:text-base md:text-lg mt-1 sm:mt-0" />
+                                    <span className="text-xs sm:text-sm md:text-base">{feature}</span>
                                 </li>
                             ))}
                         </ul>
 
                         {/* Button */}
-                        <div className="pb-8">
+                        <div className="pb-6 sm:pb-8 md:pb-10">
                             <button
-                                className={`${plan.buttonColor} text-white px-8 py-3 rounded-full font-medium transition duration-300`}
+                                className={`${plan.buttonColor} text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-full font-medium transition duration-300`}
                             >
                                 Details Pricing
                             </button>

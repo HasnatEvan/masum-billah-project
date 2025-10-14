@@ -6,7 +6,7 @@ import RasterVectorDescription from "./RasterVectorDescription";
 
 const RasterVector = () => {
     return (
-        <div className="max-w-[1600px] mx-auto">
+        <div>
             <ServiceHero></ServiceHero>
             <RasterVectorAfterBefore></RasterVectorAfterBefore>
             <RasterVectorDescription></RasterVectorDescription>

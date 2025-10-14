@@ -15,6 +15,12 @@ import PhotoRetouching from "../Pages/ServicesPage/Services/PhotoRetouching/Phot
 import ImageMasking from "../Pages/ServicesPage/Services/ImageMasking/ImageMasking";
 import ColorCorrection from "../Pages/ServicesPage/Services/ColorCorrection/ColorCorrection";
 import ImageReflection from "../Pages/ServicesPage/Services/ImageReflection/ImageReflection";
+import ImageShadowing from "../Pages/ServicesPage/Services/ImageShadowing/ImageShadowing";
+import ImageCleaning from "../Pages/ServicesPage/Services/ImageCleaning/ImageCleaning";
+import ImageCropping from "../Pages/ServicesPage/Services/ImageCropping/ImageCropping";
+import PhotoRestoration from "../Pages/ServicesPage/Services/PhotoRestoration/PhotoRestoration";
+import RasterVector from "../Pages/ServicesPage/Services/RasterVector/RasterVector";
+import Portfolio from "../Pages/PortfolioPage/Portfolio";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -23,7 +29,12 @@ export const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
-            }, {
+            }, 
+            {
+                path:'/portfolio',
+                element:<Portfolio></Portfolio>
+            },
+            {
                 path: '/contact',
                 element: <ContactPage></ContactPage>
             },
@@ -72,6 +83,26 @@ export const router = createBrowserRouter([
             {
                 path:'/services/image-reflection',
                 element:<ImageReflection></ImageReflection>
+            },
+            {
+                path:'/services/image-shadowing',
+                element:<ImageShadowing></ImageShadowing>
+            },
+            {
+                path:'/services/image-cleaning',
+                element:<ImageCleaning></ImageCleaning>
+            },
+            {
+                path:'/services/image-cropping',
+                element:<ImageCropping></ImageCropping>
+            },
+            {
+                path:'/services/photo-restoration',
+                element:<PhotoRestoration></PhotoRestoration>
+            },
+            {
+                path:'/services/raster-to-vector',
+                element:<RasterVector></RasterVector>
             },
         ]
     },

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import image from '../../assets/Contact/ContectHero.png';
 import { FaAngleRight } from "react-icons/fa";
 
@@ -20,7 +21,8 @@ const ContactHero = () => {
           Contact Us
         </h1>
         <p className="text-sm sm:text-base md:text-lg flex flex-wrap items-center justify-center gap-2 font-semibold">
-          Home <FaAngleRight className="text-[#4F00C7]" /> 
+          <Link to="/" className="text-gray-500 hover:underline">Home</Link> 
+          <FaAngleRight className="text-[#4F00C7]" /> 
           <span className="text-[#438FF9]">Contact</span>
         </p>
       </div>

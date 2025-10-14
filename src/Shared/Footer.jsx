@@ -1,31 +1,9 @@
-import { useEffect, useRef, useState } from "react";
 import { FiMail, FiPhone } from "react-icons/fi";
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram, FaPinterestP } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import logo from "../../src/assets/Logo/logo.png";
 
 const Footer = () => {
-  const [visible, setVisible] = useState(false);
-  const rightColumnsRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (rightColumnsRef.current) observer.observe(rightColumnsRef.current);
-    return () => {
-      if (rightColumnsRef.current) observer.unobserve(rightColumnsRef.current);
-    };
-  }, []);
-
   const usefulLinks = [
     { name: "Home", path: "/" },
     { name: "Portfolio", path: "/portfolio" },
@@ -92,12 +70,8 @@ const Footer = () => {
         </div>
 
         {/* ---------- Right Columns ---------- */}
-        <div ref={rightColumnsRef} className="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-10">
-          <div
-            className={`transition-all duration-700 ease-out transform ${
-              visible ? "translate-x-0 opacity-100" : "translate-x-20 opacity-0"
-            }`}
-          >
+        <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-10">
+          <div>
             <h3 className="font-semibold text-xl text-[#6c2bd9] mb-5">Useful Links</h3>
             <ul className="space-y-2 text-gray-700">
               {usefulLinks.map((link, i) => (
@@ -110,11 +84,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div
-            className={`transition-all duration-900 delay-100 ease-out transform ${
-              visible ? "translate-x-0 opacity-100" : "translate-x-20 opacity-0"
-            }`}
-          >
+          <div>
             <h3 className="font-semibold text-xl text-[#6c2bd9] mb-5">Services</h3>
             <ul className="space-y-2 text-gray-700">
               {services.map((service, i) => (
@@ -125,11 +95,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div
-            className={`transition-all duration-1100 delay-200 ease-out transform ${
-              visible ? "translate-x-0 opacity-100" : "translate-x-20 opacity-0"
-            }`}
-          >
+          <div>
             <h3 className="font-semibold text-xl text-[#6c2bd9] mb-5">Extra Services</h3>
             <ul className="space-y-2 text-gray-700">
               {extraServices.map((service, i) => (

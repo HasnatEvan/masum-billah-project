@@ -48,17 +48,21 @@ const BeforAfterSection = () => {
         };
     }, []);
 
-    const startDrag = () => {
+    const startDrag = (e) => {
+        e.preventDefault();
         draggingRef.current = true;
         setIsDragging(true);
         document.body.style.userSelect = "none";
     };
 
     const onClickBar = (e) => {
+        e.preventDefault();
         const rect = containerRef.current.getBoundingClientRect();
-        const x = e.clientX - rect.left;
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const x = clientX - rect.left;
         const p = (x / rect.width) * 100;
         setPercent(Math.max(0, Math.min(100, p)));
+        startDrag(e);
     };
 
     const onKey = (e) => {
@@ -80,7 +84,7 @@ const BeforAfterSection = () => {
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: false }} // 🔹 animate every time
+                    viewport={{ once: false }}
                     className="w-full lg:w-1/2"
                 >
                     <div className="relative">
@@ -99,6 +103,7 @@ const BeforAfterSection = () => {
                                 ref={containerRef}
                                 className="relative w-full mt-10 sm:mt-12 h-[320px] sm:h-[420px] md:h-[480px] lg:h-[500px] xl:h-[540px] select-none touch-none"
                                 onMouseDown={onClickBar}
+                                onTouchStart={onClickBar}
                             >
                                 <img
                                     src={beforeImage}
@@ -118,8 +123,7 @@ const BeforAfterSection = () => {
                                         draggable={false}
                                     />
                                     <div
-                                        className={`absolute inset-0 transition-opacity duration-300 ${isDragging ? "opacity-40 bg-black" : "opacity-0"
-                                            }`}
+                                        className={`absolute inset-0 transition-opacity duration-300 ${isDragging ? "opacity-40 bg-black" : "opacity-0"}`}
                                     ></div>
                                 </div>
 
@@ -142,6 +146,7 @@ const BeforAfterSection = () => {
                                 <button
                                     ref={handleRef}
                                     onMouseDown={startDrag}
+                                    onTouchStart={startDrag}
                                     onKeyDown={onKey}
                                     aria-label="Adjust before/after"
                                     style={{ left: `${percent}%`, transform: "translate(-50%, -50%)" }}
@@ -161,7 +166,7 @@ const BeforAfterSection = () => {
                     initial={{ x: 100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: false }} // 🔹 animate every time
+                    viewport={{ once: false }}
                     className="w-full lg:w-1/2 text-center lg:text-left"
                 >
                     <p className="text-sm text-purple-600 font-semibold mb-3">Before & After</p>
@@ -175,7 +180,7 @@ const BeforAfterSection = () => {
                         time. Place your order today and enjoy significant savings on bulk orders.
                     </p>
 
-                    <Link to={'/services'}> {/* replace "/services" with your target path */}
+                    <Link to={'/services'}>
                         <button className="inline-flex items-center gap-2 sm:gap-3 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full border-2 border-purple-600 text-purple-700 font-medium hover:bg-purple-600 hover:text-white transition text-sm sm:text-base">
                             View All Services <FaArrowRight />
                         </button>

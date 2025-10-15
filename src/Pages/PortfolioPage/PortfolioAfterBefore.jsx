@@ -58,6 +58,22 @@ import ImageReflectionImage4 from "../../../src/assets/Portfolio/Image Reflectio
 import ImageReflectionImage5 from "../../../src/assets/Portfolio/Image Reflection/image (5).png";
 import ImageReflectionImage6 from "../../../src/assets/Portfolio/Image Reflection/image (6).png";
 
+
+import ImageShadowingImage1 from "../../../src/assets/Portfolio/Image Shadowing/image (1).png";
+import ImageShadowingImage2 from "../../../src/assets/Portfolio/Image Shadowing/image (2).png";
+import ImageShadowingImage3 from "../../../src/assets/Portfolio/Image Shadowing/image (3).png";
+import ImageShadowingImage4 from "../../../src/assets/Portfolio/Image Shadowing/image (4).png";
+import ImageShadowingImage5 from "../../../src/assets/Portfolio/Image Shadowing/image (5).png";
+import ImageShadowingImage6 from "../../../src/assets/Portfolio/Image Shadowing/image (6).png";
+
+import ImageCleaningImage1 from "../../../src/assets/Portfolio/Image Cleaning/image (1).png";
+import ImageCleaningImage2 from "../../../src/assets/Portfolio/Image Cleaning/image (2).png";
+import ImageCleaningImage3 from "../../../src/assets/Portfolio/Image Cleaning/image (3).png";
+import ImageCleaningImage4 from "../../../src/assets/Portfolio/Image Cleaning/image (4).png";
+import ImageCleaningImage5 from "../../../src/assets/Portfolio/Image Cleaning/image (5).png";
+import ImageCleaningImage6 from "../../../src/assets/Portfolio/Image Cleaning/image (6).png";
+
+
 // (আপনি চাইলে অন্য সব service-এর images একইভাবে import করতে পারেন)
 
 const PortfolioAfterBefore = () => {
@@ -126,6 +142,24 @@ const PortfolioAfterBefore = () => {
         [ImageReflectionImage5, ImageReflectionImage6],
       ],
     },
+  {
+  name: "Image Shadowing Service",
+  images: [
+    [ImageShadowingImage1, ImageShadowingImage2],
+    [ImageShadowingImage3, ImageShadowingImage4],
+    [ImageShadowingImage5, ImageShadowingImage6],
+  ],
+},
+{
+  name: "Image Cleaning Service",
+  images: [
+    [ImageCleaningImage1, ImageCleaningImage2],
+    [ImageCleaningImage3, ImageCleaningImage4],
+    [ImageCleaningImage5, ImageCleaningImage6],
+  ],
+},
+
+
   ];
   return (
     <section className="bg-[#F3F6FF] py-16 px-4 sm:px-6 lg:px-16 xl:px-24">

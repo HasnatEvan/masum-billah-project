@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import image1 from "../../assets/Hero/image (1).jpg";
 import image2 from "../../assets/Hero/image (2).jpg";
 import image3 from "../../assets/Hero/image (3).jpg";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const settings = {
@@ -45,9 +46,11 @@ const HeroSection = () => {
                   <li>• Ecommerce Photo Retouch</li>
                   <li>• Photo Restoration</li>
                 </ul>
+              <Link to={'/free-trial'}>
                 <button className="mt-2 sm:mt-3 md:mt-4 bg-[#FF9F00] hover:bg-[#e68a00] text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all text-xs sm:text-sm md:text-base">
                   FREE TRIAL
                 </button>
+              </Link>
               </div>
             </div>
           </div>

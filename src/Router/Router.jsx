@@ -21,6 +21,11 @@ import ImageCropping from "../Pages/ServicesPage/Services/ImageCropping/ImageCro
 import PhotoRestoration from "../Pages/ServicesPage/Services/PhotoRestoration/PhotoRestoration";
 import RasterVector from "../Pages/ServicesPage/Services/RasterVector/RasterVector";
 import Portfolio from "../Pages/PortfolioPage/Portfolio";
+import Blog from "../Pages/Blog/Blog";
+import ReadMore1 from "../Pages/Blog/ReadMore/ReadMore1";
+import ReadMore2 from "../Pages/Blog/ReadMore2/ReadMore2";
+import ReadMore3 from "../Pages/Blog/ReadMore3/ReadMore3";
+import ReadMore6 from "../Pages/Blog/ReadMore6/ReadMore6";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -104,6 +109,26 @@ export const router = createBrowserRouter([
                 path:'/services/raster-to-vector',
                 element:<RasterVector></RasterVector>
             },
+            {
+                path:'/blog',
+                element:<Blog></Blog>
+            },
+            {
+                path:'/employee-interest-in-the-successful-achievement-6',
+                element:<ReadMore1></ReadMore1>
+            },
+            {
+                path:'/employee-interest-in-the-successful-achievement-5',
+                element:<ReadMore2></ReadMore2>
+            },
+            {
+                path:'/employee-interest-in-the-successful-achievement-4',
+                element:<ReadMore3></ReadMore3>
+            },
+            {
+                path:'/get-ready-for-our-upcoming-awesome-plan-for-designer-developer',
+                element:<ReadMore6></ReadMore6>
+            }
         ]
     },
 ]);

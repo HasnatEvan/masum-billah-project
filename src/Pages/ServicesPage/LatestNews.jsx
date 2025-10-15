@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom"; // import Link
 import image1 from "../../assets/Service/image (1).png";
 import image2 from "../../assets/Service/image (2).png";
 import image3 from "../../assets/Service/image (3).png";
 import image4 from "../../assets/Service/image (4).png";
 
+// Add link property for each blog
 const blogs = [
-  { id: 1, img: image1, title: "Get ready for our recent plan for designer and" },
-  { id: 2, img: image2, title: "Survival Strategies To Ensure Business Domination" },
-  { id: 3, img: image3, title: "Top Design Trends That Will Dominate This Year" },
-  { id: 4, img: image4, title: "How to Improve Your Product Presentation Skills" },
+  { id: 1, img: image1, title: "Get ready for our recent plan for designer and", link: "/employee-interest-in-the-successful-achievement-6" },
+  { id: 2, img: image2, title: "Survival Strategies To Ensure Business Domination", link: "employee-interest-in-the-successful-achievement-5" },
+  { id: 3, img: image3, title: "Top Design Trends That Will Dominate This Year", link: "employee-interest-in-the-successful-achievement-4" },
+  { id: 4, img: image4, title: "How to Improve Your Product Presentation Skills", link: "/get-ready-for-our-upcoming-awesome-plan-for-designer-developer" },
 ];
 
 const LatestNews = () => {
@@ -77,8 +79,9 @@ const LatestNews = () => {
         {/* Right Blog Cards */}
         <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
           {visibleBlogs.map((blog) => (
-            <div
+            <Link
               key={blog.id}
+              to={blog.link} // make card clickable
               className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col"
             >
               <div className="w-full h-[300px] sm:h-[350px] md:h-[300px] lg:h-[180px] overflow-hidden">
@@ -93,7 +96,7 @@ const LatestNews = () => {
                   {blog.title}
                 </h3>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { FaCheckCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const PricingSection = () => {
     const plans = [
@@ -96,6 +97,7 @@ const PricingSection = () => {
 
                         {/* Button */}
                         <div className="pb-6 sm:pb-8">
+                         <Link to={'/pricing'}>
                             <button
                                 className={`${plan.button} text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-medium hover:opacity-90 transition duration-300`}
                                 style={{
@@ -109,6 +111,7 @@ const PricingSection = () => {
                             >
                                 Details Pricing
                             </button>
+                         </Link>
                         </div>
                     </div>
                 ))}

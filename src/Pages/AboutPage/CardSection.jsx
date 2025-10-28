@@ -7,11 +7,11 @@ const CardSection = () => {
       border: "border-purple-500",
       bg: "bg-purple-600",
       content: [
-        "All kinds of photo editing and retouching services",
+        "Comprehensive Photo Editing & Retouching Services",
         "E-commerce Site Management Firms",
         "Product and Fashion Photographers",
-        "Graphic Design Agencies and Firms",
-        "Advertising Agencies (both Web and Print)",
+        "Graphics Design Agencies and Studios",
+        "Advertising Agencies (Web & Print)",
         "Multimedia Advertising Agencies",
         "News Publication and Magazine Firms",
         "Web Designers and Developers",
@@ -22,7 +22,12 @@ const CardSection = () => {
       border: "border-pink-500",
       bg: "bg-pink-500",
       content: [
-        "Clipping Amazon (CA), commits global Class service in design development. Our principal activity is Photoshop PROFESSIONAL PHOTO RETOUCHING AND GHOST MANNEQUIN SERVICE, Clipping Path, Image Masking, Photo Retouching, Photo Restoration, Color Correction, Logo Design, Raster 2 Vector works image editing and other innovative design solutions.",
+        "At Graphics Amazon (GA), we are committed to providing world-class design and image editing services.",
+        "Our core expertise includes:",
+        "Professional Photo Retouching and Ghost Mannequin Service",
+        "Clipping Path, Image Masking, Photo Restoration",
+        "Color Correction, Logo Design, Raster-to-Vector Conversion",
+        "Comprehensive Image Editing and other innovative design solutions",
       ],
     },
     {
@@ -30,10 +35,10 @@ const CardSection = () => {
       border: "border-sky-500",
       bg: "bg-sky-500",
       content: [
-        "Clipping – 1600 images/day",
-        "Masking – 1000 images/day",
-        "Retouch – 1000 images/day",
-        "Neck Joint/GHOST MANNEQUIN – 1500 images/day",
+        "Clipping - 1000 images/day",
+        "Masking - 700 images/day",
+        "Retouch - 700 images/day",
+        "Neck Joint/GHOST MANNEQUIN - 1000 images/day",
       ],
     },
     {
@@ -41,10 +46,10 @@ const CardSection = () => {
       border: "border-emerald-500",
       bg: "bg-emerald-500",
       content: [
-        "60 Junior Graphic Designers",
-        "50 Senior Graphic Designers (Supervisors)",
-        "15 Quality Assurance Professionals",
-        "3 Production Management",
+        "40 Junior Graphics Designers",
+        "30 Senior Graphics Designers (Supervisors)",
+        "12 Quality Assurance Professionals",
+        "2 Production Management",
       ],
     },
   ];

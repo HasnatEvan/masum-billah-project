@@ -16,8 +16,8 @@ const NumberSection = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold leading-snug">
-            You have any projects in your mind? <br className="hidden sm:block" />
-            Call us or send <span className="text-white font-bold">WhatsApp Message</span>
+            Do you have any projects in mind? <br className="hidden sm:block" />
+            Call us or send us a <span className="text-white font-bold">WhatsApp message</span>
           </h2>
         </motion.div>
 

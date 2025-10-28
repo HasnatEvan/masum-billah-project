@@ -2,10 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slider";
 
-import image1 from "../../../../assets/SeviceImage/GhostMannequin/image (1).png";
-import image2 from "../../../../assets/SeviceImage/GhostMannequin/image (2).png";
-import image3 from "../../../../assets/SeviceImage/GhostMannequin/image (3).png";
-import image4 from "../../../../assets/SeviceImage/GhostMannequin/image (4).png";
+// Import 4 images (Before & After)
+import image1 from "../../../../../src/assets/Portfolio/Ghost Mannequin/image (1).jpg";
+import image2 from "../../../../../src/assets/Portfolio/Ghost Mannequin/image (2).jpg";
+import image3 from "../../../../../src/assets/Portfolio/Ghost Mannequin/image (3).jpg";
+import image4 from "../../../../../src/assets/Portfolio/Ghost Mannequin/image (4).jpg";
 
 const GhostMannequinAfterBefore = () => {
   const renderSlider = (before, after) => (
@@ -33,14 +34,6 @@ const GhostMannequinAfterBefore = () => {
           position={50}
           style={{ width: "100%", height: "100%" }}
         />
-
-        {/* Labels */}
-        <div className="absolute top-1/2 left-4 -translate-y-1/2 bg-purple-700 text-white px-2 py-1 rounded-md text-xs sm:text-sm">
-          After
-        </div>
-        <div className="absolute top-1/2 right-4 -translate-y-1/2 bg-purple-700 text-white px-2 py-1 rounded-md text-xs sm:text-sm">
-          Before
-        </div>
       </div>
     </motion.div>
   );

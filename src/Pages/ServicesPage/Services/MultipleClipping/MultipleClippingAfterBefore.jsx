@@ -2,10 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slider";
 
-import before1 from "../../../../assets/SeviceImage/MultipleClipping/imge1before.png";
-import after1 from "../../../../assets/SeviceImage/MultipleClipping/imge1after.png";
-import before2 from "../../../../assets/SeviceImage/MultipleClipping/image2brfore.png";
-import after2 from "../../../../assets/SeviceImage/MultipleClipping/image2after.png";
+// Import 2 sets of before & after images
+import before1 from "../../../../../src/assets/Portfolio/Multiple Clipping/image (1).jpg";
+import after1 from "../../../../../src/assets/Portfolio/Multiple Clipping/image (2).jpg";
+
+import before2 from "../../../../../src/assets/Portfolio/Multiple Clipping/image (3).jpg";
+import after2 from "../../../../../src/assets/Portfolio/Multiple Clipping/image (4).jpg";
 
 const MultipleClippingAfterBefore = () => {
   const renderSlider = (before, after) => (
@@ -33,14 +35,6 @@ const MultipleClippingAfterBefore = () => {
           position={50}
           style={{ width: "100%", height: "100%" }}
         />
-
-        {/* Labels */}
-        <div className="absolute top-1/2 left-4 -translate-y-1/2 bg-purple-700 text-white px-2 py-1 rounded-md text-xs sm:text-sm">
-          After
-        </div>
-        <div className="absolute top-1/2 right-4 -translate-y-1/2 bg-purple-700 text-white px-2 py-1 rounded-md text-xs sm:text-sm">
-          Before
-        </div>
       </div>
     </motion.div>
   );

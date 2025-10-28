@@ -26,6 +26,7 @@ import ReadMore1 from "../Pages/Blog/ReadMore/ReadMore1";
 import ReadMore2 from "../Pages/Blog/ReadMore2/ReadMore2";
 import ReadMore3 from "../Pages/Blog/ReadMore3/ReadMore3";
 import ReadMore6 from "../Pages/Blog/ReadMore6/ReadMore6";
+import CarImage from "../Pages/ServicesPage/Services/CarImage/CarImage";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -108,6 +109,10 @@ export const router = createBrowserRouter([
             {
                 path:'/services/raster-to-vector',
                 element:<RasterVector></RasterVector>
+            },
+            {
+                path:'/services/car-image-editing',
+                element:<CarImage></CarImage>
             },
             {
                 path:'/blog',

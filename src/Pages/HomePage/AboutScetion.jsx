@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import image1 from "../../assets/Images/image (1).png";
-import image2 from "../../assets/Images/image (2).png";
-import mobileImage from "../../assets/Images/mobileImage.png";
+import image1 from "../../assets/Images/abt1.png";
 import { Link } from "react-router-dom";
 
 const AboutSection = () => {
@@ -40,21 +38,8 @@ const AboutSection = () => {
           className="flex flex-col sm:flex-row items-center gap-6 w-full lg:w-1/2 relative"
           variants={childVariants}
         >
-          {/* Desktop Images */}
+          {/* Desktop Image */}
           <div className="hidden sm:flex flex-col sm:flex-row items-center gap-6 w-full lg:w-auto">
-            {/* Image 2 */}
-            <motion.div
-              className="relative z-20 -translate-y-4 sm:-translate-y-8 md:-translate-y-12 lg:-translate-y-16"
-              variants={childVariants}
-            >
-              <img
-                src={image2}
-                alt="photo editing workspace"
-                className="rounded-2xl shadow-lg w-[180px] sm:w-[220px] md:w-[260px] lg:w-[300px] xl:w-[340px] 2xl:w-[380px]"
-              />
-            </motion.div>
-
-            {/* Image 1 */}
             <motion.div
               className="relative z-10 translate-y-2 sm:translate-y-6 md:translate-y-10 lg:translate-y-14"
               variants={childVariants}
@@ -62,18 +47,18 @@ const AboutSection = () => {
               <img
                 src={image1}
                 alt="photo editing model"
-                className="rounded-2xl shadow-lg w-[180px] sm:w-[220px] md:w-[260px] lg:w-[300px] xl:w-[340px] 2xl:w-[380px]"
+                className="rounded-2xl w-[220px] sm:w-[280px] md:w-[340px] lg:w-[400px] xl:w-[460px] 2xl:w-[520px]"
               />
             </motion.div>
           </div>
 
           {/* Mobile Image */}
           <div className="flex sm:hidden justify-center w-full">
-            <motion.div variants={childVariants}>
+            <motion.div className="relative z-10" variants={childVariants}>
               <img
-                src={mobileImage}
-                alt="mobile photo editing"
-                className="w-60 sm:w-72 md:w-80 lg:w-96"
+                src={image1}
+                alt="photo editing model"
+                className="rounded-2xl w-[240px] sm:w-[320px]"
               />
             </motion.div>
           </div>
@@ -89,18 +74,17 @@ const AboutSection = () => {
           </h4>
 
           <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#4F1ACB] leading-snug">
-            We’re your trusted partner in virtual photo editing & design studio
+            We're your trusted <br />
+            partner in virtual photo <br />
+            editing & design ‍studio
           </h2>
 
           <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
-            Photo editing services for e-commerce businesses and photo studios,
-            from product photographers to Amazon sellers to global brands.
+            We provide professional photo editing services for e-commerce businesses and photo studios—from product photographers and Amazon sellers to global brands.
           </p>
 
           <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
-            Because a quick product shoot can easily turn into a day or more of
-            editing and formatting your images. Let us look after the edits, so
-            you can get back to the work that needs you.
+            A simple product shoot can often turn into hours—or even days—of editing and formatting. That’s where we come in. Let us handle the edits, so you can focus on growing your business.
           </p>
 
           <Link to={"/about"}>

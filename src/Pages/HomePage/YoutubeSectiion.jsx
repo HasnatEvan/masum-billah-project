@@ -31,13 +31,13 @@ const YoutubeSection = () => {
               <div className="bg-gradient-to-r from-[#FFD37D] to-[#FF9900] w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white text-lg sm:text-xl">
                 <FaStar />
               </div>
-              <p className="text-[11px] sm:text-[13px] font-semibold text-[#1e1e1e] leading-tight text-left uppercase">
+              <p className="text-[11px] sm:text-[13px] font-semibold text-[#1e1e1e] leading-tight uppercase">
                 OUR TRUSTED <br /> ACTIVE CLIENTS
               </p>
             </div>
 
             <h3 className="text-[#FFA633] text-[24px] sm:text-[28px] md:text-[32px] font-extrabold">
-              <CountUp end={250} duration={3} />+
+              <CountUp end={100} duration={3} />+
             </h3>
           </div>
 
@@ -49,13 +49,13 @@ const YoutubeSection = () => {
               <div className="bg-gradient-to-r from-[#6EC6FF] to-[#0072FF] w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white text-lg sm:text-xl">
                 <FaGem />
               </div>
-              <p className="text-[11px] sm:text-[13px] font-semibold text-[#1e1e1e] leading-tight text-left uppercase">
+              <p className="text-[11px] sm:text-[13px] font-semibold text-[#1e1e1e] leading-tight uppercase">
                 OUR EXPERIENCED <br /> MEMBERS
               </p>
             </div>
 
             <h3 className="text-[#0072FF] text-[24px] sm:text-[28px] md:text-[32px] font-extrabold">
-              <CountUp end={20} duration={3} />+
+              <CountUp end={15} duration={3} />+
             </h3>
           </div>
 
@@ -67,13 +67,13 @@ const YoutubeSection = () => {
               <div className="bg-gradient-to-r from-[#7BFFB5] to-[#00C96A] w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white text-lg sm:text-xl">
                 <FaPuzzlePiece />
               </div>
-              <p className="text-[11px] sm:text-[13px] font-semibold text-[#1e1e1e] leading-tight text-left uppercase">
+              <p className="text-[11px] sm:text-[13px] font-semibold text-[#1e1e1e] leading-tight uppercase">
                 YEARS PROVIDING <br /> SERVICES
               </p>
             </div>
 
             <h3 className="text-[#00C96A] text-[24px] sm:text-[28px] md:text-[32px] font-extrabold">
-              <CountUp end={12} duration={3} />+
+              <CountUp end={10} duration={3} />+
             </h3>
           </div>
         </div>

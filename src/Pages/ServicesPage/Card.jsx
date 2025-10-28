@@ -2,34 +2,34 @@ import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 
-import card1 from '../../assets/Service/CardImage (1).png';
-import card2 from '../../assets/Service/CardImage (2).png';
-import card3 from '../../assets/Service/CardImage (3).png';
-import card4 from '../../assets/Service/CardImage (4).png';
-import card5 from '../../assets/Service/CardImage (5).png';
-import card6 from '../../assets/Service/CardImage (6).png';
-import card7 from '../../assets/Service/CardImage (7).png';
-import card8 from '../../assets/Service/CardImage (8).png';
-import card9 from '../../assets/Service/CardImage (9).png';
-import card10 from '../../assets/Service/CardImage (10).png';
-import card11 from '../../assets/Service/CardImage (11).png';
-import card12 from '../../assets/Service/CardImage (12).png';
-import card13 from '../../assets/Service/CardImage (13).png';
+import card1 from '../../assets/Service/clipping path service.jpg';
+import card2 from '../../assets/Service/multiple-clipping-path-services.jpg';
+import card3 from '../../assets/Service/ghost-mannequin-services.jpg';
+import card4 from '../../assets/Service/background-remove-services.jpg';
+import card5 from '../../assets/Service/photo retouching service.jpg';
+import card6 from '../../assets/Service/image-masking service.jpg';
+import card7 from '../../assets/Service/color correction service.jpg';
+import card8 from '../../assets/Service/image reflection service.jpg';
+import card9 from '../../assets/Service/image shadowing services.jpg';
+import card10 from '../../assets/Service/image cropping service.jpg';
+import card11 from '../../assets/Service/photo restoration service.jpg';
+import card12 from '../../assets/Service/raster-to-vector.jpg';
+import card13 from '../../assets/Service/car-image-editing.jpg'
 
 const services = [
-  { img: card1, title: "Clipping Path", desc: "Precisely isolate objects from backgrounds for clean, professional product images.", link: "/services/clipping" },
-  { img: card2, title: "Multiple Clipping Path", desc: "Handle intricate designs with precision, creating multiple paths for complex editing needs.", link: "/services/multiple-clipping" },
-  { img: card3, title: "Ghost Mannequin", desc: "Remove mannequins to create a seamless, professional 3D look for apparel images.", link: "/services/ghost-mannequin" },
-  { img: card4, title: "Background Remove", desc: "Eliminate unwanted background & highlighting your product with clean or transparent background.", link: "/services/background-remove" },
-  { img: card5, title: "Photo Retouching", desc: "Enhance images by removing imperfections, adjusting colors & polishing with professional touch", link: "/services/photo-retouching" },
-  { img: card6, title: "Image Masking", desc: "Handle detailed subjects like hair and fur with precision, delivering flawless editing results.", link: "/services/image-masking" },
-  { img: card7, title: "Color Correction", desc: "Adjust & enhance color for consistency, vibrancy & improved visual appeal of images.", link: "/services/color-correction" },
+  { img: card1, title: "Clipping Path", desc: "Precisely separate objects from backgrounds to create clean, professional product images.", link: "/services/clipping" },
+  { img: card2, title: "Multiple Clipping Path", desc: "Expertly manage complex designs by creating multiple paths with precision for advanced editing requirements.", link: "/services/multiple-clipping" },
+  { img: card3, title: "Ghost Mannequin", desc: "Remove mannequins seamlessly to create a clean, professional 3D look for apparel images.", link: "/services/ghost-mannequin" },
+  { img: card4, title: "Background Remove", desc: "Remove unwanted background & highlight your product with a clean or transparent background.", link: "/services/background-remove" },
+  { img: card5, title: "Photo Retouching", desc: "Enhance images by removing flaws, adjusting colors, and polishing with a professional touch.", link: "/services/photo-retouching" },
+  { img: card6, title: "Image Masking", desc: "Precisely handle intricate details such as hair and fur to deliver flawless editing results.", link: "/services/image-masking" },
+  { img: card7, title: "Color Correction", desc: "Adjust and balance colors for consistency, add vibrancy, and enhance the overall visual appeal.", link: "/services/color-correction" },
   { img: card8, title: "Image Reflection", desc: "Add realistic reflections to create a polished, high-quality look for your product images.", link: "/services/image-reflection" },
-  { img: card9, title: "Image Shadowing", desc: "Create natural shadows to add depth & dimension improving the overall look of products.", link: "/services/image-shadowing" },
-  { img: card10, title: "Image Cleaning", desc: "Remove unwanted spots, dust, distractions for clean professional-quality images.", link: "/services/image-cleaning" },
-  { img: card11, title: "Image Cropping", desc: "Perfectly crop and resize images to meet your specific needs and industry standards.", link: "/services/image-cropping" },
-  { img: card12, title: "Photo Restoration", desc: "Revive old or damaged photos by restoring details, colors and quality to their original glory.", link: "/services/photo-restoration" },
-  { img: card13, title: "Raster to Vector", desc: "Convert raster images to clean, scalable vector files for professional use.", link: "/services/raster-to-vector" }
+  { img: card9, title: "Image Shadowing", desc: "Create natural shadows with precision, adding depth and dimension to your product images.", link: "/services/image-shadowing" },
+  { img: card10, title: "Image Cropping", desc: "Perfectly crop and resize images to match your specific needs and industry standards.", link: "/services/image-cropping" },
+  { img: card11, title: "Photo Restoration", desc: "Restore old or damaged photos, reviving original details, colors, and quality.", link: "/services/photo-restoration" },
+  { img: card12, title: "Raster to Vector", desc: "Convert raster files into vector graphics, ensuring clean, scalable, and professional-quality results.", link: "/services/raster-to-vector" },
+  { img: card13, title: "Car Image Editing", desc: "Enhance car photos by removing scratches, dust, or reflections for a flawless and polished look.", link: "/services/car-image-editing" }
 ];
 
 const Card = () => {
@@ -46,9 +46,10 @@ const Card = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <div className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 flex justify-center items-center mb-4">
-                <img src={service.img} alt={service.title} className="w-full h-full object-contain" />
-              </div>
+             <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 flex justify-center items-center mb-4">
+  <img src={service.img} alt={service.title} className="w-full h-full object-contain" />
+</div>
+
 
               <div className="flex flex-col items-start text-left w-full">
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-2">{service.title}</h3>

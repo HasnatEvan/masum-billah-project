@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import image from '../../../src/assets/Price/discountImage.png';
+import image from '../../../src/assets/Price/price.png';
 
 const DiscountSection = () => {
   // Parent animation

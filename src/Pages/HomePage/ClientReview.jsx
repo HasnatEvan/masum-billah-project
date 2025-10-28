@@ -1,81 +1,64 @@
 import { useState, useEffect } from "react";
 import { FaStar } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import clientLogo from "../../assets/Logo/logo.png";
+
+// Client Images
+import clientImage1 from "../../assets/Review/Clara Susan.jpg";
+import clientImage2 from "../../assets/Review/Sarah Joseph.jpg";
+import clientImage3 from "../../assets/Review/Devid Brown.jpg";
+import clientImage4 from "../../assets/Review/Daniel Wilson.jpg";
+import clientImage5 from "../../assets/Review/Andaras Kovacs.jpg";
+import clientImage6 from "../../assets/Review/Jeff Collins.jpg";
 
 const ClientReview = () => {
   const reviews = [
     {
-      name: "Jerry Fletcher",
-      title: "Ecommerce Manager",
-      image: clientLogo,
+      name: "Jeff Collins",
+      title: "Photo Studio Owner",
+      image: clientImage6,
       review:
-        "Clipping Amazon has provided me excellent Ghost Manique service. Their team is fast, professional, and ensures that every image is perfectly edited for my e-commerce listings. The quality and attention to detail are exceptional, and I will continue to use their services for all my projects.",
+        "Exceptional service with perfectly executed clipping paths. The quick turnaround saved me valuable time, and the quality exceeded expectations. I’ll definitely use this service again and highly recommend it to my colleagues. Truly impressed with the results.",
       gradient: "from-[#E8FFF7] to-[#FFFFFF]",
     },
     {
-      name: "Christina Maldonado",
-      title: "Manager Real Estate Photography",
-      image: clientLogo,
+      name: "Andaras Kovacs",
+      title: "Photography Agency",
+      image: clientImage5,
       review:
-        "Professional and efficient team. They pay attention to details and ensure every photo is polished and ready for publication. Their workflow is smooth, communication is clear, and I always receive edits well before the deadline. Highly recommended for real estate photography.",
+        "The team is professional and efficient, and their consistent, high-quality, detail-oriented work has greatly improved the overall look and feel of my online store. I couldn't be more pleased with their reliable, timely, friendly, and solution-focused service.",
       gradient: "from-[#FFF5EE] to-[#FFFFFF]",
     },
     {
-      name: "Andy Grinaker",
-      title: "CEO, E-commerce business",
-      image: clientLogo,
+      name: "Daniel Wilson",
+      title: "E-commerce Specialist",
+      image: clientImage4,
       review:
-        "Quick turnaround and exceptional virtual tour editing. The team understands exactly what I need and delivers results that exceed expectations. Their expertise in e-commerce imagery and virtual tours has significantly improved my business presentation and customer engagement.",
-      gradient: "from-[#E8FFF7] to-[#FFFFFF]",
+        "Graphics Amazon has significantly enhanced the visual quality of our brand. Their image editing and clipping path services are truly top-notch, demonstrating impressive precision and professionalism. We’re consistently delighted with the flawless results they deliver.",
+      gradient: "from-[#E8F0FF] to-[#FFFFFF]",
     },
     {
-      name: "Samantha Lee",
-      title: "Fashion Photographer",
-      image: clientLogo,
+      name: "Devid Brown",
+      title: "Business Owner",
+      image: clientImage3,
       review:
-        "A review is an evaluation of a publication, product, service, or company. The Clipping Amazon team goes above and beyond, providing meticulous attention to detail, ensuring colors, lighting, and background edits are flawless. Their service allows me to focus on shooting while they handle post-production efficiently.",
+        "Graphics Amazon is always kind and professional — definitely worth considering. After years of retouching, background removal, ghost mannequin work, and color correction, I found this team. They've helped me shift focus to other areas of my photography business.",
       gradient: "from-[#FFF0F5] to-[#FFFFFF]",
     },
     {
-      name: "Michael Johnson",
-      title: "Marketing Head",
-      image: clientLogo,
+      name: "Sarah Joseph",
+      title: "Owner Photo Studio",
+      image: clientImage2,
       review:
-        "Excellent service, always prompt and professional. They understand the marketing requirements and deliver images and edits that are perfect for campaigns. The team is reliable, communicative, and consistently produces high-quality results that align with our brand standards.",
-      gradient: "from-[#E0F7FA] to-[#FFFFFF]",
-    },
-    {
-      name: "Emily Davis",
-      title: "Product Manager",
-      image: clientLogo,
-      review:
-        "Reliable and skilled editors. They transformed our product images into high-quality visuals that increased customer engagement and sales. Each project is handled carefully, and their turnaround times are fast without compromising on quality. I recommend them to anyone looking for professional image editing.",
+        "Truly professional and respectful in every interaction. Clear, timely communication made the process smooth and easy. Delivered expert-level service with genuine care and courtesy. I give my highest recommendation without hesitation.",
       gradient: "from-[#FFF5E1] to-[#FFFFFF]",
     },
     {
-      name: "Robert Wilson",
-      title: "Startup Founder",
-      image: clientLogo,
+      name: "Clara Susan",
+      title: "Photographer",
+      image: clientImage1,
       review:
-        "Outstanding service and very detail-oriented. The team is excellent at understanding requirements, providing edits exactly as requested, and even offering suggestions to improve the overall quality. Their professionalism and dedication have made them an essential partner for our startup.",
+        "Professional and detail-oriented team. Their editing services allowed me to focus on capturing images while they handled post-production efficiently. Highly satisfied with the results.",
       gradient: "from-[#F0FFF0] to-[#FFFFFF]",
-    },
-    {
-      name: "Olivia Brown",
-      title: "Content Creator",
-      image: clientLogo,
-      review:
-        "Creative edits, fast delivery, and excellent communication. Their team understands the needs of content creators and ensures that every image meets high standards of quality. Their service helps me maintain a consistent and professional online presence.",
-      gradient: "from-[#FFF0F0] to-[#FFFFFF]",
-    },
-    {
-      name: "David Miller",
-      title: "E-commerce Consultant",
-      image: clientLogo,
-      review:
-        "High-quality image editing with attention to every detail. They consistently deliver work that enhances the product visuals and presentation, helping businesses like mine succeed online. Their expertise, responsiveness, and dedication make them highly reliable partners for e-commerce projects.",
-      gradient: "from-[#E8F0FF] to-[#FFFFFF]",
     },
   ];
 

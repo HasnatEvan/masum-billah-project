@@ -2,10 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slider";
 
-import image1 from "../../../../assets/SeviceImage/BackgroundRemove/image (1).png";
-import image2 from "../../../../assets/SeviceImage/BackgroundRemove/image (2).png";
-import image3 from "../../../../assets/SeviceImage/BackgroundRemove/image (3).png";
-import image4 from "../../../../assets/SeviceImage/BackgroundRemove/image (4).png";
+// Import 4 images (Before & After)
+import image1 from "../../../../../src/assets/Portfolio/Background Remove/image (1).jpg";
+import image2 from "../../../../../src/assets/Portfolio/Background Remove/image (2).jpg";
+import image3 from "../../../../../src/assets/Portfolio/Background Remove/image (3).jpg";
+import image4 from "../../../../../src/assets/Portfolio/Background Remove/image (4).jpg";
 
 const BackgroundRemoveAfterBefore = () => {
   const renderSlider = (before, after) => (
@@ -33,14 +34,6 @@ const BackgroundRemoveAfterBefore = () => {
           position={50}
           style={{ width: "100%", height: "100%" }}
         />
-
-        {/* Labels */}
-        <div className="absolute top-1/2 left-4 -translate-y-1/2 bg-purple-700 text-white px-2 py-1 rounded-md text-xs sm:text-sm">
-          After
-        </div>
-        <div className="absolute top-1/2 right-4 -translate-y-1/2 bg-purple-700 text-white px-2 py-1 rounded-md text-xs sm:text-sm">
-          Before
-        </div>
       </div>
     </motion.div>
   );

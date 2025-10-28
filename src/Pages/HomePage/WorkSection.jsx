@@ -4,12 +4,48 @@ import image from "../../assets/Images/workImage.png";
 
 const WorkSection = () => {
   const steps = [
-    { id: "01", title: "PLACE WORK ORDER", desc: "Upload images, add instructions, and submit easily for fast, reliable editing services.", icon: <FaUser />, color: "bg-[#f94079]" },
-    { id: "02", title: "QUICK RESPONSE", desc: "Receive timely updates and answers to your queries with our dedicated support team.", icon: <FaHourglassHalf />, color: "bg-[#3dc6ff]" },
-    { id: "03", title: "IMAGE FILES", desc: "Transfer your files effortlessly via ZIP upload or any file-sharing platform of your choice.", icon: <FaImage />, color: "bg-[#b84df9]" },
-    { id: "04", title: "DOWNLOAD IMAGE", desc: "Access completed project files securely via trusted file transfer platforms for seamless delivery.", icon: <FaDownload />, color: "bg-[#ffb432]" },
-    { id: "05", title: "MADE PAYMENT", desc: "Complete your payment securely and efficiently to initiate project work and ensure timely delivery.", icon: <FaCreditCard />, color: "bg-[#2dd19e]" },
-    { id: "06", title: "GIVE US REVIEW", desc: "Share your feedback and experience to help us improve and provide better services.", icon: <FaHeart />, color: "bg-[#a43df8]" },
+    {
+      id: "01",
+      title: "Place Work Order",
+      desc: "Easily upload your images, add specific instructions, and submit for fast and reliable editing services.",
+      icon: <FaUser />,
+      color: "bg-[#f94079]",
+    },
+    {
+      id: "02",
+      title: "Quick Response",
+      desc: "Get timely updates and prompt answers to your queries through our dedicated support team.",
+      icon: <FaHourglassHalf />,
+      color: "bg-[#3dc6ff]",
+    },
+    {
+      id: "03",
+      title: "Image Files",
+      desc: "Transfer your files effortlessly via ZIP upload or any file-sharing platform of your choice.",
+      icon: <FaImage />,
+      color: "bg-[#b84df9]",
+    },
+    {
+      id: "04",
+      title: "Download Image",
+      desc: "Securely access your completed project files through trusted file transfer platforms for smooth delivery.",
+      icon: <FaDownload />,
+      color: "bg-[#ffb432]",
+    },
+    {
+      id: "05",
+      title: "Make Payment",
+      desc: "Complete your payment securely and conveniently to confirm your order and ensure on-time delivery.",
+      icon: <FaCreditCard />,
+      color: "bg-[#2dd19e]",
+    },
+    {
+      id: "06",
+      title: "Give Us Review",
+      desc: "Share your valuable feedback and experience to help us improve and deliver even better service.",
+      icon: <FaHeart />,
+      color: "bg-[#a43df8]",
+    },
   ];
 
   return (
@@ -18,7 +54,7 @@ const WorkSection = () => {
       <div className="text-center mb-12">
         <h4 className="text-[#4b11f7] font-bold text-sm sm:text-base">How it works</h4>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-700 mt-2">
-          How Clipping Amazon works
+          How Graphics Amazon Works
         </h2>
       </div>
 

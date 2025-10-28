@@ -7,7 +7,7 @@ const FunFactSection = () => {
     {
       icon: <Award className="text-orange-500 w-10 h-10" />,
       bg: "bg-orange-100",
-      number: 250,
+      number: 100,
       label: (
         <>
           Our Trusted <br /> Active Clients
@@ -19,7 +19,7 @@ const FunFactSection = () => {
     {
       icon: <Gem className="text-blue-500 w-10 h-10" />,
       bg: "bg-blue-100",
-      number: 20,
+      number: 15,
       label: (
         <>
           Our Experienced <br /> Members
@@ -31,7 +31,7 @@ const FunFactSection = () => {
     {
       icon: <Puzzle className="text-green-500 w-10 h-10" />,
       bg: "bg-green-100",
-      number: 12,
+      number: 10,
       label: (
         <>
           Years Providing <br /> Services
@@ -61,7 +61,7 @@ const FunFactSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            We're Serious About Helping <br /> Small Businesses
+            We’re Serious About Supporting <br /> Small Businesses.
           </motion.h2>
         </motion.div>
 

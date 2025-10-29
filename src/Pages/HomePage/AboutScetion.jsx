@@ -74,8 +74,8 @@ const AboutSection = () => {
           </h4>
 
           <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#4F1ACB] leading-snug">
-            We're your trusted <br />
-            partner in virtual photo <br />
+            We're your trusted 
+            partner in virtual photo 
             editing & design ‍studio
           </h2>
 

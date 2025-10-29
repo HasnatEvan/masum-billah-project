@@ -1,28 +1,24 @@
 import { FaStar, FaGem, FaPuzzlePiece } from "react-icons/fa";
 import CountUp from "react-countup";
+import image from "../../../src/assets/YouTube/camera2.png";
 
 const YoutubeSection = () => {
   return (
     <section className="bg-gray-100 py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-10">
       <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-8 max-w-6xl mx-auto">
-
-        {/* 🎥 Left - YouTube Video */}
+        {/* 📸 Left - Image */}
         <div className="w-full lg:w-[58%]">
           <div className="border-[6px] sm:border-[8px] border-[#f5a300] rounded-2xl overflow-hidden shadow-md">
-            <iframe
-              className="w-full h-[200px] sm:h-[280px] md:h-[360px] lg:h-[420px] rounded-xl"
-              src="https://www.youtube.com/embed/YCjAGpgMz1Y"
-              title="Remove Background Service: Remove Background for E-commerce Business"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <img
+              src={image}
+              alt="YouTube Section"
+              className="w-full h-[200px] sm:h-[280px] md:h-[360px] lg:h-[420px] object-cover rounded-xl"
+            />
           </div>
         </div>
 
         {/* 📊 Right - Stats Cards */}
         <div className="w-full lg:w-[38%] flex flex-col gap-4 sm:gap-5">
-
           {/* 1️⃣ Trusted Clients */}
           <div className="relative flex items-center justify-between bg-white rounded-2xl px-4 sm:px-5 py-4 sm:py-5 shadow-md overflow-hidden">
             <div className="absolute left-0 top-0 h-full w-1.5 sm:w-2 bg-gradient-to-b from-[#FFD37D] to-[#FF9900] rounded-l-2xl"></div>

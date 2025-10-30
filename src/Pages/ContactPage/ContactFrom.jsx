@@ -51,10 +51,10 @@ const ContactForm = () => {
 
     try {
       await emailjs.send(
-        "service_jkufnsc",
-        "template_p2cq53t",
+        "service_af2enb6",
+        "template_c12hu1z",
         templateParams,
-        "N2Gfn49dYvrjnYCRs"
+        "YRedqVNiURYrAPWpb"
       );
       toast.success(" Message sent successfully!");
       e.target.reset();

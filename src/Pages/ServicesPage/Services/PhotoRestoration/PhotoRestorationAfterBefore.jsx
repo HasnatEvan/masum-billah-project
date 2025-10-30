@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slider";
 
 // Import all 4 images
-import image1 from '../../../../../src/assets/Portfolio/Photo Restoration/image (1).jpg';
-import image2 from '../../../../../src/assets/Portfolio/Photo Restoration/image (2).jpg';
-import image3 from '../../../../../src/assets/Portfolio/Photo Restoration/image (3).jpg';
-import image4 from '../../../../../src/assets/Portfolio/Photo Restoration/image (4).jpg';
+import image1 from '../../../../../src/assets/Service/SevicePage/SeviceDeatils/Photo Restoration/image (1).jpg';
+import image2 from '../../../../../src/assets/Service/SevicePage/SeviceDeatils/Photo Restoration/image (2).jpg';
+import image3 from '../../../../../src/assets/Service/SevicePage/SeviceDeatils/Photo Restoration/image (3).jpg';
+import image4 from '../../../../../src/assets/Service/SevicePage/SeviceDeatils/Photo Restoration/image (4).jpg';
+
 
 const PhotoRestorationAfterBefore = () => {
   const renderSlider = (before, after) => (

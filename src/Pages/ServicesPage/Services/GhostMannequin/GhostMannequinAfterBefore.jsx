@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slider";
 
 // Import 4 images (Before & After)
-import image1 from "../../../../../src/assets/Portfolio/Ghost Mannequin/image (1).jpg";
-import image2 from "../../../../../src/assets/Portfolio/Ghost Mannequin/image (2).jpg";
-import image3 from "../../../../../src/assets/Portfolio/Ghost Mannequin/image (3).jpg";
-import image4 from "../../../../../src/assets/Portfolio/Ghost Mannequin/image (4).jpg";
+import image1 from "../../../../../src/assets/Service/SevicePage/SeviceDeatils/Ghost Mannequin/image (1).jpg";
+import image2 from "../../../../../src/assets/Service/SevicePage/SeviceDeatils/Ghost Mannequin/image (2).jpg";
+import image3 from "../../../../../src/assets/Service/SevicePage/SeviceDeatils/Ghost Mannequin/image (3).jpg";
+import image4 from "../../../../../src/assets/Service/SevicePage/SeviceDeatils/Ghost Mannequin/image (4).jpg";
+
 
 const GhostMannequinAfterBefore = () => {
   const renderSlider = (before, after) => (
@@ -27,7 +28,7 @@ const GhostMannequinAfterBefore = () => {
       </div>
 
       {/* React Compare Slider */}
-      <div className="mt-10 sm:mt-12 h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px] relative rounded-2xl overflow-hidden">
+      <div className="mt-10 sm:mt-12 h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px] relative overflow-hidden">
         <ReactCompareSlider
           itemOne={<ReactCompareSliderImage src={after} alt="After" style={{ objectFit: "contain" }} />}
           itemTwo={<ReactCompareSliderImage src={before} alt="Before" style={{ objectFit: "contain" }} />}

@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slider";
 
 // Import 2 sets of before & after images
-import before1 from "../../../../../src/assets/Portfolio/Multiple Clipping/image (1).jpg";
-import after1 from "../../../../../src/assets/Portfolio/Multiple Clipping/image (2).jpg";
+import before1 from "../../../../../src/assets/Service/SevicePage/SeviceDeatils/Multiple clipping path/image (1).jpg";
+import after1 from "../../../../../src/assets/Service/SevicePage/SeviceDeatils/Multiple clipping path/image (2).jpg";
+import before2 from "../../../../../src/assets/Service/SevicePage/SeviceDeatils/Multiple clipping path/image (3).jpg";
+import after2 from "../../../../../src/assets/Service/SevicePage/SeviceDeatils/Multiple clipping path/image (4).jpg";
 
-import before2 from "../../../../../src/assets/Portfolio/Multiple Clipping/image (3).jpg";
-import after2 from "../../../../../src/assets/Portfolio/Multiple Clipping/image (4).jpg";
+
 
 const MultipleClippingAfterBefore = () => {
   const renderSlider = (before, after) => (
@@ -28,7 +29,7 @@ const MultipleClippingAfterBefore = () => {
       </div>
 
       {/* React Compare Slider */}
-      <div className="mt-10 sm:mt-12 h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px] relative rounded-2xl overflow-hidden">
+      <div className="mt-10 sm:mt-12 h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px] relative  overflow-hidden">
         <ReactCompareSlider
           itemOne={<ReactCompareSliderImage src={after} alt="After" style={{ objectFit: "contain" }} />}
           itemTwo={<ReactCompareSliderImage src={before} alt="Before" style={{ objectFit: "contain" }} />}

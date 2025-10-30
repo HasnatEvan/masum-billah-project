@@ -3,10 +3,12 @@ import { motion } from "framer-motion";
 import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slider";
 
 // Import all 4 images
-import image1 from '../../../../../src/assets/Portfolio/Image Shadowing/image (1).jpg';
-import image2 from '../../../../../src/assets/Portfolio/Image Shadowing/image (2).jpg';
-import image3 from '../../../../../src/assets/Portfolio/Image Shadowing/image (3).jpg';
-import image4 from '../../../../../src/assets/Portfolio/Image Shadowing/image (4).jpg';
+import image1 from '../../../../../src/assets/Service/SevicePage/SeviceDeatils/Image Shadowing/image (1).jpg';
+import image2 from '../../../../../src/assets/Service/SevicePage/SeviceDeatils/Image Shadowing/image (2).jpg';
+import image3 from '../../../../../src/assets/Service/SevicePage/SeviceDeatils/Image Shadowing/image (3).jpg';
+import image4 from '../../../../../src/assets/Service/SevicePage/SeviceDeatils/Image Shadowing/image (4).jpg';
+
+
 
 const ImageShadowingAfterBefore = () => {
   const renderSlider = (before, after) => (
@@ -27,7 +29,7 @@ const ImageShadowingAfterBefore = () => {
       </div>
 
       {/* React Compare Slider */}
-      <div className="mt-10 sm:mt-12 h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px] relative rounded-2xl overflow-hidden">
+      <div className="mt-10 sm:mt-12 h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px] relative  overflow-hidden">
         <ReactCompareSlider
           itemOne={<ReactCompareSliderImage src={after} alt="After" style={{ objectFit: "contain" }} />}
           itemTwo={<ReactCompareSliderImage src={before} alt="Before" style={{ objectFit: "contain" }} />}

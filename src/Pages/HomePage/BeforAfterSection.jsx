@@ -11,7 +11,7 @@ const BeforAfterSection = () => {
     <section className="bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         
-        {/* Left Text Content */}
+        {/* Left Text Content with animation */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -38,14 +38,8 @@ const BeforAfterSection = () => {
           </Link>
         </motion.div>
 
-        {/* Right Image Compare Section */}
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="flex flex-col items-center justify-center"
-        >
+        {/* Right Image Compare Section (Static, no animation) */}
+        <div className="flex flex-col items-center justify-center">
           <div className="relative w-[300px] sm:w-[400px] lg:w-[500px] rounded-2xl bg-white shadow-xl overflow-hidden">
             
             {/* Top Dots */}
@@ -77,7 +71,7 @@ const BeforAfterSection = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

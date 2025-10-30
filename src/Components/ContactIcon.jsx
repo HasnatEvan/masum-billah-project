@@ -47,7 +47,7 @@ const ContactIcon = () => {
                 {/* Header */}
                 <div className="bg-[#075E54] text-white flex justify-between items-center p-3">
                   <div>
-                    <h3 className="font-semibold text-base sm:text-sm">clippingamazon.com</h3>
+                    <h3 className="font-semibold text-base sm:text-sm">graphicsamazon.com</h3>
                     <p className="text-xs sm:text-[10px] text-gray-200">Typically replies within minutes</p>
                   </div>
                   <button

@@ -2,19 +2,20 @@ import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 
-import card1 from '../../assets/Service/clipping path service.jpg';
-import card2 from '../../assets/Service/multiple-clipping-path-services.jpg';
-import card3 from '../../assets/Service/ghost-mannequin-services.jpg';
-import card4 from '../../assets/Service/background-remove-services.jpg';
-import card5 from '../../assets/Service/photo retouching service.jpg';
-import card6 from '../../assets/Service/image-masking service.jpg';
-import card7 from '../../assets/Service/color correction service.jpg';
-import card8 from '../../assets/Service/image reflection service.jpg';
-import card9 from '../../assets/Service/image shadowing services.jpg';
-import card10 from '../../assets/Service/image cropping service.jpg';
-import card11 from '../../assets/Service/photo restoration service.jpg';
-import card12 from '../../assets/Service/raster-to-vector.jpg';
-import card13 from '../../assets/Service/car-image-editing.jpg'
+import card1 from '../../assets/Service/SevicePage/clipping-path.jpg';
+import card2 from '../../assets/Service/SevicePage/Multiple Clipping Path.jpg';
+import card3 from '../../assets/Service/SevicePage/Ghost mannequin.jpg';
+import card4 from '../../assets/Service/SevicePage/Background Remove.jpg';
+import card5 from '../../assets/Service/SevicePage/Retouching Services.jpg';
+import card6 from '../../assets/Service/SevicePage/masking.jpg';
+import card7 from '../../assets/Service/SevicePage/Color Correction.jpg';
+import card8 from '../../assets/Service/SevicePage/Image Reflection.jpg';
+import card9 from '../../assets/Service/SevicePage/Image Shadowing.jpg';
+import card10 from '../../assets/Service/SevicePage/Image Cropping.jpg';
+import card11 from '../../assets/Service/SevicePage/Image restoration.jpg';
+import card12 from '../../assets/Service/SevicePage/Raster to vector.jpg';
+import card13 from '../../assets/Service/SevicePage/Car Image Editing.jpg';
+
 
 const services = [
   { img: card1, title: "Clipping Path", desc: "Precisely separate objects from backgrounds to create clean, professional product images.", link: "/services/clipping" },

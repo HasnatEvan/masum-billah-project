@@ -1,15 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slider";
+import {
+  ReactCompareSlider,
+  ReactCompareSliderImage,
+} from "react-compare-slider";
 
-// Import 4 images (Before & After)
-import ClippingPathBefore1 from "../../../../../src/assets/Portfolio/Clipping Path/image (1).jpg";
-import ClippingPathAfter1 from "../../../../../src/assets/Portfolio/Clipping Path/image (2).jpg";
-
-import ClippingPathBefore2 from "../../../../../src/assets/Portfolio/Clipping Path/image (3).jpg";
-import ClippingPathAfter2 from "../../../../../src/assets/Portfolio/Clipping Path/image (4).jpg";
+// ৪টা Before & After ইমেজ ইমপোর্ট
+import ClippingPathBefore1 from "../../../../../src/assets/Service/SevicePage/SeviceDeatils/Clipping path/Image (1).jpg";
+import ClippingPathAfter1 from "../../../../../src/assets/Service/SevicePage/SeviceDeatils/Clipping path/Image (2).jpg";
+import ClippingPathBefore2 from "../../../../../src/assets/Service/SevicePage/SeviceDeatils/Clipping path/Image (3).jpg";
+import ClippingPathAfter2 from "../../../../../src/assets/Service/SevicePage/SeviceDeatils/Clipping path/Image (4).jpg";
 
 const ClippingAfterBefore = () => {
+  // স্লাইডার ফাংশন
   const renderSlider = (before, after) => (
     <motion.div
       initial={{ y: 50, opacity: 0 }}
@@ -28,10 +31,22 @@ const ClippingAfterBefore = () => {
       </div>
 
       {/* React Compare Slider */}
-      <div className="mt-10 sm:mt-12 h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px] relative rounded-2xl overflow-hidden">
+      <div className="mt-10 sm:mt-12 h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px] relative  overflow-hidden">
         <ReactCompareSlider
-          itemOne={<ReactCompareSliderImage src={after} alt="After" style={{ objectFit: "contain" }} />}
-          itemTwo={<ReactCompareSliderImage src={before} alt="Before" style={{ objectFit: "contain" }} />}
+          itemOne={
+            <ReactCompareSliderImage
+              src={after}
+              alt="After"
+              style={{ objectFit: "contain" }}
+            />
+          }
+          itemTwo={
+            <ReactCompareSliderImage
+              src={before}
+              alt="Before"
+              style={{ objectFit: "contain" }}
+            />
+          }
           position={50}
           style={{ width: "100%", height: "100%" }}
         />

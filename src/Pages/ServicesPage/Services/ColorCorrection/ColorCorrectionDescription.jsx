@@ -2,70 +2,71 @@ import React from "react";
 
 const ColorCorrectionDescription = () => {
   return (
-    <div className="px-4 sm:px-6 md:px-10 lg:px-0 py-8 md:py-12 max-w-6xl mx-auto ">
+    <div className="px-4 sm:px-6 md:px-10 lg:px-0 py-8 md:py-12 max-w-6xl mx-auto">
       
       <p className="mb-4 text-base md:text-lg leading-relaxed">
         <strong>
-          Color correction is the process of adjusting black & white layers, exposure, contrast, 
-          and white balance to achieve the desired effect. This basic photo editing task 
-          greatly improves image quality and appeal. Clipping Amazon offers high-quality 
-          color correction at affordable prices.
+          Color correction is the process of adjusting black and white layers, exposure, contrast layers, 
+          and white balance to give your image the desired effect. It improves image quality and appeal. 
+          Graphics Amazon provides affordable and high-quality color correction services.
         </strong>
       </p>
 
       <h2 className="mt-6 text-2xl md:text-3xl font-semibold mb-4">What is Color Correction?</h2>
       <p className="mb-4 text-base md:text-lg leading-relaxed">
-        Color correction solves color imbalances, adjusts moods and tones, and brings images to life. 
-        It transforms photos from good to exceptional, making them visually engaging.
+        Color correction solves color imbalances, adjusts moods and tones, and brings photos to life. 
+        It elevates images from good to exceptional, making them visually engaging.
       </p>
 
-      <h2 className="mt-6 text-2xl md:text-3xl font-semibold mb-4">Types Of Photo Color Correction</h2>
+      <h2 className="mt-6 text-2xl md:text-3xl font-semibold mb-4">Color Correction of Natural Photography</h2>
       <p className="mb-4 text-base md:text-lg leading-relaxed">
-        Different types of photos require specific color correction approaches:
+        Improves naturally captured images by correcting white balance, tones, and overall quality. 
+        It allows you to add realistic or creative moods, enhancing visual appeal.
       </p>
 
-      <h3 className="mt-4 text-xl md:text-2xl font-semibold mb-2">Natural Photography</h3>
+      <h2 className="mt-6 text-2xl md:text-3xl font-semibold mb-4">Fashion Photography Color Combination</h2>
       <p className="mb-4 text-base md:text-lg leading-relaxed">
-        Corrects white balance and tones for naturally captured images, giving them perfect 
-        mood and feel. Tools like gray cards or color checkers may help, but post-processing 
-        ensures realistic or creative color results.
+        Fashion images require precise color correction to enhance tone, mood, and product appeal. 
+        Expert retouchers ensure every image highlights the beauty of products and models.
       </p>
 
-      <h3 className="mt-4 text-xl md:text-2xl font-semibold mb-2">Fashion Photography</h3>
+      <h2 className="mt-6 text-2xl md:text-3xl font-semibold mb-4">Color Correction Service for Model Photography</h2>
       <p className="mb-4 text-base md:text-lg leading-relaxed">
-        Fashion images need precise color correction to create the right tone, mood, and appeal. 
-        Expert retouchers ensure every image highlights the beauty of the products and models.
+        Enhances the model’s appearance and showcases products effectively in advertisements, 
+        creating visually appealing images that increase product acceptability.
       </p>
 
-      <h3 className="mt-4 text-xl md:text-2xl font-semibold mb-2">Model Photography</h3>
+      <h2 className="mt-6 text-2xl md:text-3xl font-semibold mb-4">Color Correction for eCommerce Products</h2>
       <p className="mb-4 text-base md:text-lg leading-relaxed">
-        Color correction enhances the model’s appearance and highlights products in advertisements, 
-        creating a professional and visually appealing final image.
+        Adjust product colors to match reality without costly reshoots. It saves time and enhances 
+        product appeal for online stores.
       </p>
 
-      <h3 className="mt-4 text-xl md:text-2xl font-semibold mb-2">eCommerce Products</h3>
+      <h2 className="mt-6 text-2xl md:text-3xl font-semibold mb-4">Color Correction for Wedding Photos</h2>
       <p className="mb-4 text-base md:text-lg leading-relaxed">
-        Adjust product colors to match reality without costly re-shoots. Enhances appeal and makes 
-        products eye-catching for online stores.
+        Ensure special moments are vibrant and memorable. Color correction adds glamour and preserves 
+        the beauty of your wedding memories.
       </p>
 
-      <h3 className="mt-4 text-xl md:text-2xl font-semibold mb-2">Wedding Photos</h3>
+      <h2 className="mt-6 text-2xl md:text-3xl font-semibold mb-4">Does Color Correction Attract More Than a Natural Image?</h2>
       <p className="mb-4 text-base md:text-lg leading-relaxed">
-        Ensure special moments are vibrant and memorable. Color correction adds glamour and 
-        preserves the beauty of your memories.
+        Yes! Professional color correction fixes lighting issues, improves skin tones, and makes images 
+        look perfect and eye-catching.
       </p>
 
-      <h2 className="mt-6 text-2xl md:text-3xl font-semibold mb-4">Does Color Correction Attract More Than Natural Images?</h2>
-      <p className="mb-4 text-base md:text-lg leading-relaxed">
-        Yes! Professional color correction enhances images more than raw captures. It fixes 
-        lighting issues, improves skin tones, and ensures the photo looks perfect and eye-catching.
-      </p>
+      <h2 className="mt-6 text-2xl md:text-3xl font-semibold mb-4">Why Choose Graphics Amazon?</h2>
+      <ul className="list-disc pl-5 text-base md:text-lg leading-relaxed space-y-2">
+        <li><strong>Skilled & Dedicated Designers:</strong> Experienced team passionate about perfecting images.</li>
+        <li><strong>On-Time Delivery:</strong> Projects delivered promptly.</li>
+        <li><strong>Secure File Sharing:</strong> FTP, WeTransfer, Google Drive, Dropbox supported.</li>
+        <li><strong>Client-Focused Approach:</strong> Top-notch quality with personalized support.</li>
+        <li><strong>Free Trial Opportunity:</strong> 3 free edits to evaluate our work before hiring.</li>
+        <li><strong>Affordable & Accessible:</strong> Cost-effective services for all clients.</li>
+      </ul>
 
-      <p className="mb-4 text-base md:text-lg leading-relaxed">
-        After years of experience, Clipping Amazon guarantees high-quality results. Our skilled 
-        designers deliver on time while maintaining image quality. We exchange files via 
-        FTP, WeTransfer, Google Drive, or Dropbox. We even offer 3 free trial edits so clients 
-        can evaluate our work before hiring.
+      <p className="mt-4 text-base md:text-lg leading-relaxed">
+        After completing numerous projects, Graphics Amazon remains committed to delivering high-quality results, 
+        exceeding client expectations, and adding value to your business.
       </p>
 
     </div>

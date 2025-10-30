@@ -67,33 +67,40 @@ const OurServicesSection = () => {
         </div>
 
         {/* Cards */}
-        <div
-          ref={scrollRef}
-          className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 scrollbar-hide"
-        >
-          {services.map((service, i) => (
-            <a
-              key={i}
-              href={service.link}
-              className={`snap-start flex-shrink-0 w-full sm:w-[240px] md:w-[280px] lg:w-[320px] bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300`}
-            >
-              <div className={`h-48 flex items-center justify-center ${service.bg}`}>
-                <img src={service.img} alt={service.title} className="h-36 object-contain" />
-              </div>
-              <div className="p-6 text-center">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 leading-snug">
-                  {service.title}
-                </h3>
-                <p className="text-gray-500 text-sm">
-                  Starting at <span className="text-[#FF9800] font-semibold">{service.price}</span> per image
-                </p>
-                <button className="mt-5 w-10 h-10 rounded-full bg-[#5A8BFF] flex items-center justify-center text-white mx-auto hover:bg-[#4A7BE0] transition">
-                  <FaArrowRight />
-                </button>
-              </div>
-            </a>
-          ))}
-        </div>
+       <div
+  ref={scrollRef}
+  className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 scrollbar-hide"
+>
+  {services.map((service, i) => (
+    <a
+      key={i}
+      href={service.link}
+      className="snap-start flex-shrink-0 w-full sm:w-[240px] md:w-[280px] lg:w-[320px] rounded-md shadow-md overflow-hidden hover:shadow-xl transition-all duration-300"
+    >
+      {/* শুধু ইমেজ */}
+      <div className="w-full h-48">
+        <img
+          src={service.img}
+          alt={service.title}
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="p-4 text-center">
+        <h3 className="text-lg font-semibold text-gray-900 mb-1 leading-snug">
+          {service.title}
+        </h3>
+        <p className="text-gray-500 text-sm">
+          Starting at <span className="text-[#FF9800] font-semibold">{service.price}</span> per image
+        </p>
+        <button className="mt-3 w-10 h-10 rounded-full bg-[#5A8BFF] flex items-center justify-center text-white mx-auto hover:bg-[#4A7BE0] transition">
+          <FaArrowRight />
+        </button>
+      </div>
+    </a>
+  ))}
+</div>
+
       </div>
     </section>
   );

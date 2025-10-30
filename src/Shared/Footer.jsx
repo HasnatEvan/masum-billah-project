@@ -39,7 +39,7 @@ const Footer = () => {
         <div>
           <img src={logo} alt="logo" className="h-20 mb-4 w-auto" />
           <p className="text-sm md:text-[15px] leading-relaxed text-gray-600 mb-4">
-            Clipping Amazon is a professional image editing agency providing high-quality, cost-effective photo editing solutions for your business, agency, or studio.
+            Graphics Amazon is a professional image editing agency providing high-quality, cost-effective photo editing solutions for your business, agency, or studio.
           </p>
 
           {/* Contact Info */}
@@ -101,7 +101,7 @@ const Footer = () => {
       {/* ---------- Bottom ---------- */}
       <div className="max-w-7xl mx-auto mt-10 border-t border-gray-400 pt-4 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm gap-4 md:gap-0">
         <p className="text-center md:text-left">
-          © Clipping Amazon 2025 All Rights Reserved
+          ©  Graphics Amazon 2025 All Rights Reserved
         </p>
 
         {/* Developer Name Section */}

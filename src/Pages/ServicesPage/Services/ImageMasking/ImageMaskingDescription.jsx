@@ -2,7 +2,7 @@ import React from "react";
 
 const ImageMaskingDescription = () => {
   return (
-    <div className="px-4 sm:px-6 md:px-10 lg:px-0 py-8 md:py-12 max-w-6xl mx-auto ">
+    <div className="px-4 sm:px-6 md:px-10 lg:px-0 py-8 md:py-12 max-w-6xl mx-auto">
       
       <p className="mb-4 text-base md:text-lg leading-relaxed">
         <strong>
@@ -83,12 +83,6 @@ const ImageMaskingDescription = () => {
       <p className="mb-4 text-base md:text-lg leading-relaxed">
         Apply masking for exposure, contrast, and color adjustments. Ideal for skies, edges, 
         or specific gradients.
-      </p>
-
-      <p className="mb-4 text-base md:text-lg leading-relaxed">
-        Proper masking helps e-commerce and online businesses present products accurately. 
-        It improves visual clarity, highlights details, and increases customer confidence, 
-        leading to higher sales.
       </p>
 
     </div>

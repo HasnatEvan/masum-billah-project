@@ -1,7 +1,7 @@
 import { FaFacebookF, FaTwitter, FaGooglePlusG, FaLinkedinIn } from "react-icons/fa";
-import LatestPostImage1 from "../../../../src/assets/Blog/image (1).png";
-import LatestPostImage2 from "../../../../src/assets/Blog/image (2).png";
-import LatestPostImage3 from "../../../../src/assets/Blog/image (3).png";
+import LatestPostImage1 from "../../../../src/assets/Service/blog/blogimage (1).jpg";
+import LatestPostImage2 from "../../../../src/assets/Service/blog/blogimage (2).jpg";
+import LatestPostImage3 from "../../../../src/assets/Service/blog/blogimage (3).jpg";
 
 const Section2 = () => {
     return (

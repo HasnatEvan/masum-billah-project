@@ -10,7 +10,7 @@ const BeforAfterSection = () => {
   return (
     <section className="bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-        
+
         {/* Left Text Content with animation */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -41,7 +41,7 @@ const BeforAfterSection = () => {
         {/* Right Image Compare Section (Static, no animation) */}
         <div className="flex flex-col items-center justify-center">
           <div className="relative w-[300px] sm:w-[400px] lg:w-[500px] rounded-2xl bg-white shadow-xl overflow-hidden">
-            
+
             {/* Top Dots */}
             <div className="absolute top-0 left-0 right-0 h-10 sm:h-12 flex items-center px-4 bg-gradient-to-b from-white/90 to-white/70 border-b border-white/50 z-20">
               <div className="flex items-center gap-2">
@@ -61,14 +61,16 @@ const BeforAfterSection = () => {
               />
 
               {/* Before Label */}
-              <div className="absolute top-1/2 right-4 -translate-y-1/2 bg-purple-700 text-white px-2 py-1 rounded-md text-xs sm:text-sm">
+              {/* After Label */}
+              <div className="absolute top-1/2 right-4 -translate-y-1/2 bg-[#0046FF] text-white px-2 py-1 rounded-md text-xs sm:text-sm">
+                After
+              </div>
+
+              {/* Before Label */}
+              <div className="absolute top-1/2 left-4 -translate-y-1/2 bg-[#0046FF] text-white px-2 py-1 rounded-md text-xs sm:text-sm">
                 Before
               </div>
 
-              {/* After Label */}
-              <div className="absolute top-1/2 left-4 -translate-y-1/2 bg-purple-700 text-white px-2 py-1 rounded-md text-xs sm:text-sm">
-                After
-              </div>
             </div>
           </div>
         </div>

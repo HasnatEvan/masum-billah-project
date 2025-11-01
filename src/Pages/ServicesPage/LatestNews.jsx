@@ -2,9 +2,9 @@ import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom"; // import Link
-import image1 from "../../assets/Service/image (1).png";
-import image2 from "../../assets/Service/image (2).png";
-import image3 from "../../assets/Service/image (3).png";
+import image1 from "../../../src/assets/Service/blog/blogimage (1).jpg";
+import image2 from "../../assets/Service/blog/blogimage (2).jpg";
+import image3 from "../../assets/Service/blog/blogimage (3).jpg";
 import image4 from "../../assets/Service/image (4).png";
 
 // Add link property for each blog

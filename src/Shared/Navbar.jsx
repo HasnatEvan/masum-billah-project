@@ -33,7 +33,7 @@ const Navbar = () => {
     <nav
       className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/70 shadow-md backdrop-blur-md"
+          ? "bg-white/80 shadow-md backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
@@ -43,7 +43,8 @@ const Navbar = () => {
           className="flex items-center gap-2 cursor-pointer"
           onClick={() => navigate("/")}
         >
-          <img src={logo} alt="logo" className="h-12 sm:h-14 md:h-16 w-auto" />
+         <img src={logo} alt="logo" className="h-10 sm:h-12 md:h-14 w-auto" />
+
         </div>
 
         {/* Menu for medium+ screens */}
@@ -54,8 +55,8 @@ const Navbar = () => {
                 to={item.path}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-[#f39c12] border-b-2 border-[#f39c12] pb-1 transition-all duration-300"
-                    : "text-black hover:text-[#f39c12] transition-colors duration-300"
+                    ? "text-[#0046FF] border-b-2 border-[#0046FF] pb-1 transition-all duration-300"
+                    : "text-black hover:text-[#0046FF] transition-colors duration-300"
                 }
               >
                 {item.name}
@@ -66,7 +67,7 @@ const Navbar = () => {
 
         {/* Hamburger for mobile */}
         <div
-          className="md:hidden text-2xl cursor-pointer z-50"
+          className="md:hidden text-2xl cursor-pointer z-50 text-[#0046FF]"
           onClick={() => setOpen(!open)}
         >
           {open ? <FiX /> : <FiMenu />}
@@ -75,7 +76,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute w-full left-0 bg-white/90 shadow-md backdrop-blur-md overflow-hidden transform transition-all duration-500 ease-in-out ${
+        className={`md:hidden absolute w-full left-0 bg-white/95 shadow-md backdrop-blur-md overflow-hidden transform transition-all duration-500 ease-in-out ${
           open ? "max-h-[500px] opacity-100 scale-100" : "max-h-0 opacity-0 scale-95"
         }`}
       >
@@ -88,8 +89,8 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `w-full text-center py-3 px-4 border border-gray-300 rounded-md my-1 transition-colors duration-300 ${
                   isActive
-                    ? "text-[#f39c12] border-[#f39c12] bg-gray-100"
-                    : "text-black hover:border-[#f39c12] hover:text-[#f39c12] hover:bg-gray-100"
+                    ? "text-[#0046FF] border-[#0046FF] bg-blue-50"
+                    : "text-black hover:border-[#0046FF] hover:text-[#0046FF] hover:bg-blue-50"
                 }`
               }
             >

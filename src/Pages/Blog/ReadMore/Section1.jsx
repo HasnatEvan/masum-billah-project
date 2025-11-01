@@ -1,4 +1,4 @@
-import image1 from "../../../../src/assets/Blog/image (1).png";
+import image1 from "../../../../src/assets/Service/blog/blogimage (1).jpg";
 import image2 from "../../../../src/assets/Blog/photo (1).png";
 import image3 from "../../../../src/assets/Blog/photo (2).png";
 import Section2 from "./Section2";

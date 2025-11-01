@@ -1,9 +1,9 @@
-import LatestPostImage1 from "../../../src/assets/Blog/image (1).png";
-import LatestPostImage2 from "../../../src/assets/Blog/image (2).png";
-import LatestPostImage3 from "../../../src/assets/Blog/image (3).png";
+import LatestPostImage1 from "../../../src/assets/Service/blog/blogimage (1).jpg";
+import LatestPostImage2 from "../../../src/assets/Service/blog/blogimage (2).jpg";
+import LatestPostImage3 from "../../../src/assets/Service/blog/blogimage (3).jpg";
 
-import Cardimage1 from "../../../src/assets/Blog/image (3).png";
-import Cardimage2 from "../../../src/assets/Blog/image (2).png";
+import Cardimage1 from "../../../src/assets/Service/blog/blogimage (3).jpg";
+import Cardimage2 from "../../../src/assets/Service/blog/blogimage (2).jpg";
 import { Link } from "react-router-dom";
 
 const BlogSection2 = () => {

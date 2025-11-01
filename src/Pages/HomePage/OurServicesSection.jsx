@@ -67,7 +67,7 @@ const OurServicesSection = () => {
         </div>
 
         {/* Cards */}
-       <div
+<div
   ref={scrollRef}
   className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 scrollbar-hide"
 >
@@ -75,10 +75,10 @@ const OurServicesSection = () => {
     <a
       key={i}
       href={service.link}
-      className="snap-start flex-shrink-0 w-full sm:w-[240px] md:w-[280px] lg:w-[320px] rounded-md shadow-md overflow-hidden hover:shadow-xl transition-all duration-300"
+      className="snap-center flex-shrink-0 w-[80%] sm:w-[240px] md:w-[280px] lg:w-[320px] rounded-md shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 mx-auto"
     >
       {/* শুধু ইমেজ */}
-      <div className="w-full h-48">
+      <div className="w-full h-56 sm:h-60 md:h-64 lg:h-72">
         <img
           src={service.img}
           alt={service.title}
@@ -100,6 +100,8 @@ const OurServicesSection = () => {
     </a>
   ))}
 </div>
+
+
 
       </div>
     </section>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import image1 from "../../../src/assets/Blog/image (1).png";
-import image2 from "../../../src/assets/Blog/image (4).png";
+import image1 from "../../../src/assets/Service/blog/blogimage (1).jpg";
+import image2 from "../../../src/assets/Service/blog/blogimage (3).jpg";
 
 
 const BlogSection3 = () => {

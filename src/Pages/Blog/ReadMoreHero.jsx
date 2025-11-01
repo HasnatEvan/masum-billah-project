@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
-import image from "../../assets/Contact/ContectHero.png";
+import image from "../../assets/Contact/top-banner.jpg";
 
 const ReadMoreHero = () => {
   return (

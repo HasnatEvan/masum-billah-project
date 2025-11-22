@@ -1,6 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import LazyImage from "../../Components/LazyImage";   // ✅ Lazy Image Import
 
 import card1 from '../../assets/Service/SevicePage/clipping-path.jpg';
 import card2 from '../../assets/Service/SevicePage/Multiple Clipping Path.jpg';
@@ -15,7 +16,6 @@ import card10 from '../../assets/Service/SevicePage/Image Cropping.jpg';
 import card11 from '../../assets/Service/SevicePage/Image restoration.jpg';
 import card12 from '../../assets/Service/SevicePage/Raster to vector.jpg';
 import card13 from '../../assets/Service/SevicePage/Car Image Editing.jpg';
-
 
 const services = [
   { img: card1, title: "Clipping Path", desc: "Precisely separate objects from backgrounds to create clean, professional product images.", link: "/services/clipping" },
@@ -38,6 +38,7 @@ const Card = () => {
     <section className="bg-[#f9fbff] py-12 sm:py-16 lg:py-20">
       <div className="px-4 sm:px-6 lg:px-0 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -47,22 +48,44 @@ const Card = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-             <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 flex justify-center items-center mb-4">
-  <img src={service.img} alt={service.title} className="w-full h-full object-contain" />
-</div>
 
+              {/* 🔥 FAST LOADING IMAGE */}
+              <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 flex justify-center items-center mb-4">
+                <LazyImage
+                  src={service.img}
+                  alt={service.title}
+                  width="240"
+                  height="240"
+                  className="w-full h-full object-contain"
+                />
+              </div>
 
               <div className="flex flex-col items-start text-left w-full">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-2">{service.title}</h3>
-                <p className="text-gray-500 text-xs sm:text-sm md:text-base mb-4">{service.desc}</p>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-2">
+                  {service.title}
+                </h3>
+
+                <p className="text-gray-500 text-xs sm:text-sm md:text-base mb-4">
+                  {service.desc}
+                </p>
+
                 <Link to={service.link}>
-                  <button className="text-blue-600 font-medium flex items-center gap-2 hover:gap-3 transition-all duration-300 text-sm sm:text-base md:text-lg">
+                  <button className="
+  text-blue-600 
+  hover:text-blue-900 
+  font-medium flex items-center gap-2 
+  hover:gap-3 transition-all duration-300 
+  text-sm sm:text-base md:text-lg
+">
                     More Details <FaArrowRight />
                   </button>
+
                 </Link>
               </div>
+
             </motion.div>
           ))}
+
         </div>
       </div>
     </section>

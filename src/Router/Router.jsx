@@ -119,15 +119,15 @@ export const router = createBrowserRouter([
                 element:<Blog></Blog>
             },
             {
-                path:'/employee-interest-in-the-successful-achievement-6',
+                path:'/why-clipping-path-services-are-essential',
                 element:<ReadMore1></ReadMore1>
             },
             {
-                path:'/employee-interest-in-the-successful-achievement-5',
+                path:'/how-image-masking-transforms-your-photos',
                 element:<ReadMore2></ReadMore2>
             },
             {
-                path:'/employee-interest-in-the-successful-achievement-4',
+                path:'/how-professional-photo-retouching-boosts-ecommerce-success',
                 element:<ReadMore3></ReadMore3>
             },
             {

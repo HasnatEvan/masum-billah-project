@@ -1,5 +1,6 @@
 import { FaUser, FaHourglassHalf, FaImage, FaDownload, FaCreditCard, FaHeart } from "react-icons/fa";
 import { motion } from "framer-motion";
+import LazyImage from "../../Components/LazyImage"; // ⭐ fast loading
 import image from "../../assets/Images/workImage.png";
 
 const WorkSection = () => {
@@ -48,7 +49,6 @@ const WorkSection = () => {
     },
   ];
 
-  // Animation variant for left steps
   const stepVariants = {
     hidden: { y: 50, opacity: 0 },
     visible: (i) => ({
@@ -60,6 +60,7 @@ const WorkSection = () => {
 
   return (
     <section className="py-10 lg:py-20 bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
+
       {/* Section Header */}
       <div className="text-center mb-12">
         <h4 className="text-[#4b11f7] font-bold text-sm sm:text-base">How it works</h4>
@@ -68,9 +69,10 @@ const WorkSection = () => {
         </h2>
       </div>
 
-      {/* Main Layout */}
+      {/* Layout */}
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
-        {/* Left Steps with animation */}
+
+        {/* Steps */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full lg:w-2/3">
           {steps.map((step, index) => (
             <motion.div
@@ -82,12 +84,10 @@ const WorkSection = () => {
               variants={stepVariants}
               className="flex flex-col items-center sm:items-start gap-4 text-center sm:text-left"
             >
-              {/* Icon */}
               <div className={`${step.color} text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl shadow-md flex-shrink-0`}>
                 {step.icon}
               </div>
 
-              {/* Step Content */}
               <div>
                 <h3 className="font-bold text-gray-900 text-sm md:text-base mb-1">
                   {step.id}. {step.title}
@@ -100,11 +100,16 @@ const WorkSection = () => {
           ))}
         </div>
 
-        {/* Right Image without animation */}
+        {/* RIGHT IMAGE — FAST LOADING */}
         <div className="w-full lg:w-1/3 flex justify-center">
-          <img
+          <LazyImage
             src={image}
             alt="Work Process Illustration"
+            width="500"
+            height="500"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
             className="w-64 sm:w-80 md:w-96 lg:w-[500px] object-contain"
           />
         </div>

@@ -51,10 +51,10 @@ const FormSection = () => {
 
         try {
             await emailjs.send(
-                "service_af2enb6",
-                "template_fg572dd",
+                "service_78jc6ep",
+                "template_6jma35g",
                 templateParams,
-                "YRedqVNiURYrAPWpb"
+                "6mCl6dHVCwoTQmCc3"
             );
             toast.success("Message sent successfully!");
             e.target.reset();

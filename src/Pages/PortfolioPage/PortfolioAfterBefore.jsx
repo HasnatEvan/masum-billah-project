@@ -1,7 +1,8 @@
 import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slider";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
-// ====== Import all your images ======
+// ====== Import all images (unchanged) ======
 import ClippingPathImage1 from "../../../src/assets/Portfolio/Clipping Path/image (1).jpg";
 import ClippingPathImage2 from "../../../src/assets/Portfolio/Clipping Path/image (2).jpg";
 import ClippingPathImage3 from "../../../src/assets/Portfolio/Clipping Path/image (3).jpg";
@@ -98,12 +99,10 @@ import RasterToVector4 from "../../../src/assets/Portfolio/Raster to Vector/imag
 import RasterToVector5 from "../../../src/assets/Portfolio/Raster to Vector/image (5).jpg";
 import RasterToVector6 from "../../../src/assets/Portfolio/Raster to Vector/image (6).jpg";
 
-
-
-// (আপনি চাইলে অন্য সব service-এর images একইভাবে import করতে পারেন)
+// … (তোমার existing imports same থাকবে)
 
 const PortfolioAfterBefore = () => {
-  const services = [
+ const services = [
     {
       name: "Clipping Path Service",
       images: [
@@ -212,15 +211,30 @@ const PortfolioAfterBefore = () => {
 
   ];
 
+  // ⭐ PRELOAD NEXT IMAGE for smoother experience
+  useEffect(() => {
+    services.forEach((service) => {
+      service.images.forEach(([before, after]) => {
+        const img1 = new Image();
+        img1.src = before;
+
+        const img2 = new Image();
+        img2.src = after;
+      });
+    });
+  }, []);
+
   return (
     <section className="bg-[#F3F6FF] py-16 px-4 sm:px-6 lg:px-16 xl:px-24">
       <div className="max-w-6xl mx-auto space-y-16">
+
         {services.map((service, idx) => (
           <div key={idx}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center lg:text-left">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-left lg:text-left">
               {service.name}
             </h2>
 
+            {/* Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {service.images.map(([before, after], i) => (
                 <motion.div
@@ -231,8 +245,9 @@ const PortfolioAfterBefore = () => {
                   viewport={{ once: true }}
                   className="relative bg-white rounded-2xl shadow-lg overflow-hidden"
                 >
-                  {/* ✅ Top window dots */}
-                  <div className="absolute top-0 left-0 right-0 h-10 flex items-center px-4 bg-gradient-to-b from-white/90 to-white/70 border-b border-white/50 z-20">
+                  {/* Top Window Dots */}
+                  <div className="absolute top-0 left-0 right-0 h-10 flex items-center px-4 
+                                bg-gradient-to-b from-white/95 to-white/70 border-b border-white/50 z-20">
                     <div className="flex items-center gap-2">
                       <span className="w-2.5 h-2.5 rounded-full bg-red-400"></span>
                       <span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
@@ -240,20 +255,60 @@ const PortfolioAfterBefore = () => {
                     </div>
                   </div>
 
-                  {/* ✅ Image Compare Slider */}
-                  <div className="mt-10">
-                    <ReactCompareSlider
-                      itemOne={<ReactCompareSliderImage src={before} alt="Before" />}
-                      itemTwo={<ReactCompareSliderImage src={after} alt="After" />}
-                      position={50}
-                      style={{ width: "100%", height: "260px" }}
-                    />
-                  </div>
+                  {/* 🔥 FAST LOAD COMPARE SLIDER */}
+                 <div className="mt-10">
+  <ReactCompareSlider
+    itemOne={
+      <ReactCompareSliderImage
+        src={before}
+        alt="Before"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        referrerPolicy="no-referrer"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "contain",   // ⭐ FULL IMAGE দেখা যাবে
+        }}
+      />
+    }
+    itemTwo={
+      <ReactCompareSliderImage
+        src={after}
+        alt="After"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="low"
+        referrerPolicy="no-referrer"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "contain",   // ⭐ FULL IMAGE দেখা যাবে
+        }}
+      />
+    }
+    position={50}
+    style={{
+      width: "100%",
+      height: "auto",
+    }}
+    className="w-full 
+               h-[220px]     /* ⭐ Mobile */
+               sm:h-[260px]  /* ⭐ Small */
+               md:h-[320px]  /* ⭐ Tablet */
+               lg:h-[360px]  /* ⭐ Laptop */
+               xl:h-[420px]  /* ⭐ Large Desktop */"
+  />
+</div>
+
                 </motion.div>
               ))}
             </div>
+
           </div>
         ))}
+
       </div>
     </section>
   );

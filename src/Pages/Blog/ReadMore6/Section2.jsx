@@ -1,4 +1,6 @@
 import { FaFacebookF, FaTwitter, FaGooglePlusG, FaLinkedinIn } from "react-icons/fa";
+import LazyImage from "../../../Components/LazyImage";
+
 import LatestPostImage1 from "../../../../src/assets/Service/blog/blogimage (1).jpg";
 import LatestPostImage2 from "../../../../src/assets/Service/blog/blogimage (2).jpg";
 import LatestPostImage3 from "../../../../src/assets/Service/blog/blogimage (3).jpg";
@@ -7,8 +9,10 @@ const Section2 = () => {
     return (
         <section className="bg-white py-16 ">
             <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
+                
                 {/* Left Content */}
                 <div className="lg:col-span-2">
+
                     {/* Quote Box */}
                     <div className="bg-[#EEF4FF] p-6 rounded-lg mb-6">
                         <p className="text-black font-semibold text-lg leading-snug mb-3">
@@ -76,30 +80,35 @@ const Section2 = () => {
 
                 {/* Right Sidebar */}
                 <div className="space-y-6">
+
                     {/* Latest Posts */}
                     <div className="bg-white shadow-md rounded-xl p-6">
                         <h3 className="text-xl font-semibold mb-5 border-l-4 border-blue-600 pl-3">
                             Latest Posts
                         </h3>
+
                         <div className="space-y-5">
                             {[LatestPostImage1, LatestPostImage2, LatestPostImage3].map((img, i) => (
                                 <div key={i} className="flex gap-5 items-center">
-                                    <img
+
+                                    {/* Lazy Loaded Image */}
+                                    <LazyImage
                                         src={img}
                                         alt={`Post ${i + 1}`}
                                         className="w-24 h-20 rounded-xl object-cover"
                                     />
+
                                     <div>
                                         <p className="text-sm text-gray-400 mb-1">February 9, 2022</p>
                                         <p className="text-base font-semibold text-gray-800 hover:text-[#3B0EA6] cursor-pointer leading-snug">
                                             Survival Strategies To Ensure Business...
                                         </p>
                                     </div>
+
                                 </div>
                             ))}
                         </div>
                     </div>
-
 
                     {/* Tags */}
                     <div className="bg-white shadow-md rounded-xl p-6">

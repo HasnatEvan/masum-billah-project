@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaStar } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import LazyImage from "../../Components/LazyImage"; // ⭐ Lazy load added
 
 // Client Images
 import clientImage1 from "../../assets/Review/Clara Susan.jpg";
@@ -66,13 +67,28 @@ const ClientReview = () => {
   const cardsPerPage = 3;
   const totalPages = Math.ceil(reviews.length / cardsPerPage);
 
-  // Auto-slide
+  // ⭐ Auto-slide
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentPage((prev) => (prev + 1) % totalPages);
     }, 5000);
     return () => clearInterval(interval);
   }, [totalPages]);
+
+  // ⭐ Preload next slide images
+  useEffect(() => {
+    const nextPage = (currentPage + 1) % totalPages;
+
+    const nextImages = reviews.slice(
+      nextPage * cardsPerPage,
+      nextPage * cardsPerPage + cardsPerPage
+    );
+
+    nextImages.forEach((item) => {
+      const preload = new Image();
+      preload.src = item.image;
+    });
+  }, [currentPage, reviews]);
 
   const currentReviews = reviews.slice(
     currentPage * cardsPerPage,
@@ -81,9 +97,10 @@ const ClientReview = () => {
 
   return (
     <section className="bg-[#f9f9ff] py-12 sm:py-16 md:py-20 overflow-hidden">
-      <div className="max-w-6xl mx-auto ">
+      <div className="max-w-6xl mx-auto">
+        
         {/* Title */}
-        <div className="text-center mb-8 sm:mb-10 md:mb-12 px-6 md:px-0">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12 px-6">
           <h4 className="text-[#304ffe] font-semibold uppercase tracking-wide mb-2 text-sm sm:text-base">
             Clients Feedback
           </h4>
@@ -93,7 +110,7 @@ const ClientReview = () => {
         </div>
 
         {/* Slider */}
-        <div className="mx-auto flex flex-col sm:flex-row gap-6 sm:gap-4 md:gap-6 px-4 sm:px-6 md:px-0 overflow-hidden relative">
+        <div className="mx-auto flex flex-col sm:flex-row gap-6 px-4 sm:px-6 md:px-0 overflow-hidden relative">
           <AnimatePresence initial={false}>
             {currentReviews.map((item) => (
               <motion.div
@@ -118,16 +135,25 @@ const ClientReview = () => {
                 <div
                   className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 bg-gradient-to-r ${item.gradient}`}
                 >
-                  <img
+                  {/* ⭐ FAST LOADING IMAGE */}
+                  <LazyImage
                     src={item.image}
                     alt={item.name}
+                    width="48"
+                    height="48"
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="low"
                     className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-white shadow-sm"
                   />
+
                   <div>
                     <h5 className="font-bold text-[13px] sm:text-[15px] text-[#000]">
                       {item.name}
                     </h5>
-                    <p className="text-gray-500 text-[11px] sm:text-[13px]">{item.title}</p>
+                    <p className="text-gray-500 text-[11px] sm:text-[13px]">
+                      {item.title}
+                    </p>
                   </div>
                 </div>
               </motion.div>
@@ -135,18 +161,17 @@ const ClientReview = () => {
           </AnimatePresence>
         </div>
 
-        {/* Pagination Dots */}
-        <div className="flex justify-center mt-4 sm:mt-6 md:mt-8 gap-2 px-6 md:px-0">
+        {/* Pagination */}
+        <div className="flex justify-center mt-4 sm:mt-6 md:mt-8 gap-2 px-6">
           {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i}
               onClick={() => setCurrentPage(i)}
-              className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
+              className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all ${
                 currentPage === i
                   ? "bg-blue-600 scale-110"
                   : "bg-gray-400 hover:bg-gray-500"
               }`}
-              aria-label={`Go to page ${i + 1}`}
             />
           ))}
         </div>

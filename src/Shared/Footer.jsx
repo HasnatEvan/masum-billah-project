@@ -23,26 +23,31 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: "Clipping Path Service", link: "/services/clipping" },
-    { name: "Multiple Clipping Service", link: "/services/multiple-clipping" },
+    { name: "Clipping Path Service", link: "/services/clipping-path" },
+    { name: "Multiple Clipping Path", link: "/services/multiple-clipping-path" },
     { name: "Ghost Mannequin Service", link: "/services/ghost-mannequin" },
-    { name: "Photo Retouching Service", link: "/services/photo-retouching" },
-    { name: "Image Masking Service", link: "/services/image-masking" },
-    { name: "Color Correction Service", link: "/services/color-correction" },
-    { name: "Image Reflection Service", link: "/services/image-reflection" },
-    { name: "Image Shadowing Service", link: "/services/image-shadowing" },
-    { name: "Image Cropping Service", link: "/services/image-cropping" },
-    { name: "Photo Restoration Service", link: "/services/photo-restoration" },
+    { name: "Neck Joint Service", link: "/services/neck-joint" }, // Fix applied
+    { name: "Background Remove", link: "/services/background-remove" },
+    { name: "Photo Retouching", link: "/services/photo-retouching" },
+    { name: "Image Masking", link: "/services/image-masking" },
+    { name: "Color Correction", link: "/services/color-correction" },
+    { name: "Image Reflection", link: "/services/image-reflection" },
+    { name: "Image Shadowing", link: "/services/image-shadowing" },
+    { name: "Image Cropping", link: "/services/image-cropping" },
+    { name: "Photo Restoration", link: "/services/photo-restoration" },
+    { name: "Car Image Editing", link: "/services/car-image-editing" },
     { name: "Raster to Vector Service", link: "/services/raster-to-vector" },
-    { name: "Car Image Editing Service", link: "/services/car-image-editing" },
-    { name: "Background Remove Service", link: "/services/background-remove" },
   ];
 
   return (
-    <footer className="w-full bg-white text-black pt-16 pb-6 px-5 sm:px-8 md:px-12 lg:px-20 border-t border-gray-200">
+    <footer className="w-full bg-white text-black pt-5 pb-6 px-5 sm:px-8 md:px-12 lg:px-20 border-t border-gray-200">
       
       {/* ---------- Top Grid ---------- */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+      <div className="
+        max-w-7xl mx-auto 
+        grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
+        gap-10 md:gap-14 lg:gap-20
+      ">
         
         {/* ---------- Left Section ---------- */}
         <div>
@@ -54,64 +59,66 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="flex items-center gap-2 mb-2 text-gray-600">
-            <FiMail className="text-[#6c2bd9]" />
+            <FiMail className="text-blue-600" />
             <span className="text-sm md:text-[15px]">infocamazon2018@gmail.com</span>
           </div>
 
           <div className="flex items-center gap-2 mb-4 text-gray-600">
-            <FiPhone className="text-[#6c2bd9]" />
+            <FiPhone className="text-blue-600" />
             <span className="text-sm md:text-[15px]">+8801788110628</span>
           </div>
 
-          {/* ---------- Social Icons (ONLY YOUR 4 LINKS) ---------- */}
+          {/* Social Icons */}
           <div className="flex gap-3 text-white text-lg flex-wrap">
-            
-            {/* Twitter */}
             <a
               href="https://x.com/graphicsamazon"
               target="_blank"
-              className="bg-[#6c2bd9] p-2 rounded-full hover:scale-110 transition-transform duration-300"
+              className="bg-blue-600 p-2 rounded-full hover:scale-110 transition-transform duration-300"
             >
               <FaTwitter />
             </a>
 
-            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/company/108690991/admin/dashboard/"
               target="_blank"
-              className="bg-[#6c2bd9] p-2 rounded-full hover:scale-110 transition-transform duration-300"
+              className="bg-blue-600 p-2 rounded-full hover:scale-110 transition-transform duration-300"
             >
               <FaLinkedin />
             </a>
 
-            {/* Facebook */}
             <a
               href="https://www.facebook.com/graphicsamazonbd"
               target="_blank"
-              className="bg-[#6c2bd9] p-2 rounded-full hover:scale-110 transition-transform duration-300"
+              className="bg-blue-600 p-2 rounded-full hover:scale-110 transition-transform duration-300"
             >
               <FaFacebookF />
             </a>
 
-            {/* Instagram */}
             <a
               href="https://www.instagram.com/graphicsamazon/"
               target="_blank"
-              className="bg-[#6c2bd9] p-2 rounded-full hover:scale-110 transition-transform duration-300"
+              className="bg-blue-600 p-2 rounded-full hover:scale-110 transition-transform duration-300"
             >
               <FaInstagram />
             </a>
-
           </div>
         </div>
 
         {/* ---------- Useful Links ---------- */}
-        <div className="text-left">
-          <h3 className="font-semibold text-xl text-[#6c2bd9] mb-5">Useful Links</h3>
+        <div className="text-left md:pl-10">
+          <h3 className="font-semibold text-xl text-blue-600 mb-5">Useful Links</h3>
           <ul className="space-y-2 text-gray-700">
             {usefulLinks.map((link, i) => (
               <li key={i}>
-                <NavLink to={link.path} className="hover:text-[#6c2bd9] transition-colors duration-300">
+                <NavLink
+                  to={link.path}
+                  className={({ isActive }) =>
+                    `transition-colors duration-300 
+                    ${isActive 
+                      ? "text-blue-600 font-semibold underline" 
+                      : "text-gray-700 hover:text-blue-600"}`
+                  }
+                >
                   {link.name}
                 </NavLink>
               </li>
@@ -119,13 +126,21 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* ---------- Services ---------- */}
+        {/* ---------- Our Services ---------- */}
         <div className="text-left">
-          <h3 className="font-semibold text-xl text-[#6c2bd9] mb-5">Our Services</h3>
+          <h3 className="font-semibold text-xl text-blue-600 mb-5">Our Services</h3>
           <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-gray-700">
             {services.map((service, i) => (
               <li key={i}>
-                <NavLink to={service.link} className="hover:text-[#6c2bd9] cursor-pointer transition-colors duration-300">
+                <NavLink
+                  to={service.link}
+                  className={({ isActive }) =>
+                    `transition-colors duration-300 
+                    ${isActive 
+                      ? "text-blue-600 font-semibold underline" 
+                      : "text-gray-700 hover:text-blue-600"}`
+                  }
+                >
                   {service.name}
                 </NavLink>
               </li>
@@ -144,15 +159,15 @@ const Footer = () => {
           <a
             href="https://www.facebook.com/profile.php?id=61575431671174"
             target="_blank"
-            className="text-[#6c2bd9] font-semibold hover:underline"
+            className="text-blue-600 font-semibold hover:underline"
           >
             Hasnat Evan
           </a>
         </p>
 
         <div className="flex gap-4 flex-wrap justify-center">
-          <a href="#" className="hover:text-[#6c2bd9]">Terms & Conditions</a>
-          <a href="#" className="hover:text-[#6c2bd9]">Privacy Policy</a>
+          <a href="#" className="hover:text-blue-600">Terms & Conditions</a>
+          <a href="#" className="hover:text-blue-600">Privacy Policy</a>
         </div>
       </div>
 

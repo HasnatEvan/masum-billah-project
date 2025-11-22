@@ -1,18 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom"; // import Link
+import { Link } from "react-router-dom";
+
+import LazyImage from "../../Components/LazyImage"; // ⭐ fast-loading
+
 import image1 from "../../../src/assets/Service/blog/blogimage (1).jpg";
 import image2 from "../../assets/Service/blog/blogimage (2).jpg";
 import image3 from "../../assets/Service/blog/blogimage (3).jpg";
 import image4 from "../../assets/Service/image (4).png";
 
-// Add link property for each blog
 const blogs = [
-  { id: 1, img: image1, title: "Get ready for our recent plan for designer and", link: "/employee-interest-in-the-successful-achievement-6" },
-  { id: 2, img: image2, title: "Survival Strategies To Ensure Business Domination", link: "employee-interest-in-the-successful-achievement-5" },
-  { id: 3, img: image3, title: "Top Design Trends That Will Dominate This Year", link: "employee-interest-in-the-successful-achievement-4" },
-  { id: 4, img: image4, title: "How to Improve Your Product Presentation Skills", link: "/get-ready-for-our-upcoming-awesome-plan-for-designer-developer" },
+  { id: 1, img: image1, title: "Get ready for our recent plan for designer and", link: "/why-clipping-path-services-are-essential" },
+  { id: 2, img: image2, title: "Survival Strategies To Ensure Business Domination", link: "/how-image-masking-transforms-your-photos" },
+  { id: 3, img: image3, title: "Top Design Trends That Will Dominate This Year", link: "/how-professional-photo-retouching-boosts-ecommerce-success" },
+  { id: 4, img: image4, title: "How to Improve Your Product Presentation Skills", link: "/how-professional-photo-retouching-boosts-ecommerce-success" },
 ];
 
 const LatestNews = () => {
@@ -24,6 +26,15 @@ const LatestNews = () => {
     setStartIndex((prev) => Math.min(prev + itemsPerPage, blogs.length - itemsPerPage));
 
   const visibleBlogs = blogs.slice(startIndex, startIndex + itemsPerPage);
+
+  // ⭐ Preload next image for instant slide switching
+  useEffect(() => {
+    const nextPageStart = startIndex + itemsPerPage;
+    if (nextPageStart < blogs.length) {
+      const preloadImg = new Image();
+      preloadImg.src = blogs[nextPageStart].img;
+    }
+  }, [startIndex]);
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -38,22 +49,23 @@ const LatestNews = () => {
       variants={sectionVariants}
     >
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10">
-        
-        {/* Left Header */}
+
+        {/* LEFT Section */}
         <div className="lg:w-1/2">
           <div className="mb-6">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-[#FF9F00] text-xl font-bold">||</span>
-              <p className="text-[#FF9F00] text-lg font-bold uppercase tracking-wider">
-                Latest News
-              </p>
+              <p className="text-[#FF9F00] text-lg font-bold uppercase tracking-wider">Latest News</p>
               <span className="text-[#FF9F00] text-xl font-bold">||</span>
             </div>
+
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#222] mb-4">
               Our Latest Blog Posts
             </h2>
+
             <p className="text-[#5B5B5B] text-base sm:text-lg leading-relaxed">
-              Explore insightful articles, tips, and updates on photo editing, eCommerce trends, and design solutions to help grow your business and stay ahead in the competitive market.
+              Explore insightful articles, tips, and updates on photo editing, eCommerce trends, 
+              and design solutions to help grow your business and stay ahead in the competitive market.
             </p>
           </div>
 
@@ -66,6 +78,7 @@ const LatestNews = () => {
             >
               <FaArrowLeft className="text-[#3ABEF9] text-lg sm:text-xl" />
             </button>
+
             <button
               onClick={handleNext}
               disabled={startIndex >= blogs.length - itemsPerPage}
@@ -76,29 +89,36 @@ const LatestNews = () => {
           </div>
         </div>
 
-        {/* Right Blog Cards */}
+        {/* RIGHT Blog Cards */}
         <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
           {visibleBlogs.map((blog) => (
             <Link
               key={blog.id}
-              to={blog.link} // make card clickable
+              to={blog.link}
               className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col"
             >
-              <div className="w-full h-[300px] sm:h-[350px] md:h-[300px] lg:h-[180px] overflow-hidden">
-                <img
-                  src={blog.img}
-                  alt={blog.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+
+              {/* ⭐ FAST LOADING IMAGE */}
+              <LazyImage
+                src={blog.img}
+                alt={blog.title}
+                width="100%"
+                height="100%"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
+                className="w-full h-[300px] sm:h-[350px] md:h-[300px] lg:h-[180px] 
+                object-cover hover:scale-105 transition-transform duration-300"
+              />
+
               <div className="p-4">
-                <h3 className="font-semibold text-base">
-                  {blog.title}
-                </h3>
+                <h3 className="font-semibold text-sm sm:text-base">{blog.title}</h3>
               </div>
+
             </Link>
           ))}
         </div>
+
       </div>
     </motion.section>
   );

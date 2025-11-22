@@ -1,9 +1,9 @@
 import { Helmet } from "react-helmet";
-import AboutSection from "../HomePage/AboutScetion";
 import ClientReview from "../HomePage/ClientReview";
 import AboutHero from "./AboutHero";
 import CardSection from "./CardSection";
 import FunFactSection from "./FunFactSection";
+import AboutUs from "./AboutUs";
 
 const AboutPage = () => {
     return (
@@ -23,7 +23,7 @@ const AboutPage = () => {
 
             {/* ✅ Page Sections */}
             <AboutHero />
-            <AboutSection />
+            <AboutUs />
             <FunFactSection />
             <CardSection />
             <ClientReview />

@@ -1,70 +1,144 @@
-import React from "react";
+import React from 'react';
 
 const PhotoRestorationDescription = () => {
   return (
-    <div className="px-4 sm:px-6 md:px-10 lg:px-0 py-8 md:py-12 max-w-6xl mx-auto">
+    <div className="px-4 sm:px-6 md:px-10 lg:px-0 py-8 md:py-12 max-w-6xl mx-auto leading-relaxed text-[#333]">
 
-      <p className="mb-4 text-base md:text-lg leading-relaxed">
-        <strong>
-          Photo restoration is the process of recovering damaged images, whether due to natural causes or human error. Digital tools and editing techniques eliminate visible signs of aging and damage, restoring photos to their original, vibrant state.
-        </strong>
-      </p>
-
-      <p className="mb-4 text-base md:text-lg leading-relaxed">
-        Before digital photography, printed photos naturally degraded over time, developing stains, scratches, tears, fading, and other forms of damage. Graphics Amazon restores these photos to their former glory, ensuring your memories are preserved.
-      </p>
-
-      <h2 className="mt-6 text-2xl md:text-3xl font-semibold mb-4">
-        Types of Photo Restoration Services
+      <h2 className="text-3xl font-semibold mb-4">
+        Photo Restoration Services at Graphics Amazon
       </h2>
-      <p className="mb-4 text-base md:text-lg leading-relaxed">
-        Graphics Amazon specializes in two main categories: Black & White Photo Restoration and Color Photo Restoration.
+
+      <p className="mb-4">
+        The term Photo Restoration is self-explanatory  it refers to the process of recovering damaged 
+        images, whether due to natural causes or human error. Digital Image Restoration uses advanced 
+        digital tools and editing techniques to eliminate visible signs of aging and damage from your 
+        photos. This service helps restore your photographs to their original condition, creating a 
+        more vibrant and appealing effect.
       </p>
 
-      <h3 className="mt-4 text-xl md:text-2xl font-semibold mb-2">
-        Black & White Photo Restoration
-      </h3>
-      <p className="mb-4 text-base md:text-lg leading-relaxed">
-        Restores old black & white photos by removing dust, scratches, stains, and damaged edges while preserving memories realistically.
+      <p className="mb-4">
+        Before the era of digital photography, photos existed solely as printed images. Over time, 
+        these photos naturally degrade, developing stains, scratches, tears, fading, and other forms 
+        of damage. Thanks to modern technology, Graphics Amazon can restore these photos to their 
+        former glory, ensuring your memories are preserved.
       </p>
 
-      <h3 className="mt-4 text-xl md:text-2xl font-semibold mb-2">
-        Color Photo Restoration
-      </h3>
-      <p className="mb-4 text-base md:text-lg leading-relaxed">
-        Restores original colors in faded or damaged photos, making them vibrant and realistic.
-      </p>
-
-      <h2 className="mt-6 text-2xl md:text-3xl font-semibold mb-4">
-        Specialized Restoration for Specific Damage
+      <h2 className="text-2xl font-semibold mb-3">
+        Types of Photo Restoration Services We Offer:
       </h2>
-      <ul className="list-disc list-inside mb-4 text-base md:text-lg leading-relaxed">
-        <li>Photo Colorization – Converts black & white photos into natural-colored images.</li>
-        <li>Vintage Photo Restoration – Restores early prints to their original form.</li>
-        <li>Water Damage Repair – Fixes photos damaged by water or moisture.</li>
-        <li>Mold and Mildew Damage Repair – Repairs photos affected by mold, adjusting color, contrast, and balance.</li>
-        <li>Recreation of Missing Parts – Recreates missing sections manually to restore photo completeness.</li>
-        <li>Antique Photo Restoration – Handles highly aged and extensively damaged images.</li>
-        <li>Torn Photo Restoration – Repairs torn or ripped photos seamlessly.</li>
-        <li>Scratches and Blemish Removal – Removes scratches, dust, and blemishes for a clean look.</li>
-        <li>Old Photo Sharpening – Enhances clarity of blurry or noisy photos.</li>
-        <li>Polaroid Photo Restoration – Revives damaged instant Polaroid photos.</li>
+
+      <p className="mb-4">
+        At Graphics Amazon, we specialize in two main categories of photo restoration: Black and White 
+        Photo Restoration and Photo Color Restoration, though we offer several other restoration 
+        services based on the type of damage.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-2">Black and White Photo Restoration</h3>
+      <p className="mb-4">
+        Black and white photographs hold nostalgic value and are irreplaceable memories. As these 
+        images age, they often accumulate dust, scratches, and other damages. Our expert restoration 
+        team carefully removes imperfections such as dust and tears, recreating missing sections to 
+        return the image to its original state. We restore the photo while maintaining its authenticity.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-2">Photo Color Restoration</h3>
+      <p className="mb-4">
+        Color adds depth and life to an image. When photos lose their color due to age or environmental 
+        factors, Graphics Amazon can restore them to their vibrant original form. This process requires 
+        professional expertise to avoid any unrealistic or distorted results. Our team ensures your 
+        photos regain their natural beauty and true color, bringing them back to life.
+      </p>
+
+      <h2 className="text-2xl font-semibold mb-3">
+        Specialized Photo Restoration Services for Specific Damages:
+      </h2>
+
+      <h3 className="text-xl font-semibold mb-2">Photo Colorization</h3>
+      <p className="mb-4">
+        With Photo Colorization, we add natural color to old black and white photos, making them 
+        visually striking and lively. This service transforms vintage images, enhancing their appeal 
+        for modern-day audiences.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-2">Vintage Photo Restoration</h3>
+      <p className="mb-4">
+        Vintage photos, often the earliest prints of a photographer's work, may suffer from wear and 
+        tear over time. We restore these precious images, ensuring they return to their original 
+        beauty, preserving historical value.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-2">Water Damage Repair</h3>
+      <p className="mb-4">
+        Water damage can wreak havoc on photos, causing fading and distortion. Our skilled designers 
+        can repair water-damaged photos, bringing them back to life with professional restoration 
+        techniques.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-2">Mold and Mildew Damage Repair</h3>
+      <p className="mb-4">
+        Mold and mildew can cause irreversible damage to old photos. Our team restores these images, 
+        carefully fixing the color, contrast, and other essential details to revive their original form.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-2">Recreation of Missing Parts</h3>
+      <p className="mb-4">
+        Sometimes, old black and white images have missing portions. We expertly recreate missing 
+        parts by filling in the gaps, ensuring the restored image looks as close to the original 
+        as possible.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-2">Antique Photo Restoration</h3>
+      <p className="mb-4">
+        Antique photos, often subjected to significant aging, require expert care to bring back their 
+        original appearance. Our team of professionals applies the latest restoration techniques to 
+        ensure these timeless images are fully restored.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-2">Torn Photo Restoration</h3>
+      <p className="mb-4">
+        Torn images require precise editing to restore them. We carefully reconstruct torn areas using 
+        professional restoration tools, seamlessly fixing the damage.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-2">Scratches and Blemish Removal</h3>
+      <p className="mb-4">
+        Old photos often accumulate scratches, blemishes, or dirt. We remove these imperfections and 
+        restore the photo's clarity, maintaining its original charm.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-2">Old Photo Sharpening</h3>
+      <p className="mb-4">
+        Black and white photos can sometimes be blurry or noisy. Our team sharpens these images to 
+        enhance their quality, providing you with a clearer, more defined version of your cherished 
+        memories.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-2">Polaroid Photo Restoration</h3>
+      <p className="mb-4">
+        Polaroid photos, while capturing instant memories, are prone to fading and damage. Our 
+        restoration services help revive your Polaroid photos, preserving the memories they hold.
+      </p>
+
+      <h2 className="text-2xl font-semibold mb-3">
+        Why Choose Graphics Amazon for Your Photo Restoration Needs?
+      </h2>
+
+      <ul className="list-disc list-inside space-y-1 mb-6">
+        <li>Comprehensive Restoration Services: From colorization to damage repair, we offer a full range.</li>
+        <li>High-Quality Results: Expert team with state-of-the-art tools.</li>
+        <li>Affordable Pricing: Cost-effective without losing quality.</li>
+        <li>Fast Turnaround: Timely delivery of restored photos.</li>
+        <li>Free Trial: No credit card required—pay only if satisfied.</li>
+        <li>Client Satisfaction: 100% guaranteed satisfaction.</li>
       </ul>
 
-      <h2 className="mt-6 text-2xl md:text-3xl font-semibold mb-4">
-        Why Choose Graphics Amazon?
-      </h2>
-      <ul className="list-disc list-inside mb-4 text-base md:text-lg leading-relaxed">
-        <li>Comprehensive Restoration Services: From colorization to damage repair, a full range of restoration options.</li>
-        <li>High-Quality Results: Expert team using state-of-the-art tools and techniques.</li>
-        <li>Affordable Pricing: Cost-effective solutions without compromising quality.</li>
-        <li>Fast Turnaround: Efficient processing for timely delivery.</li>
-        <li>Free Trial: Test our services before committing, no credit card required.</li>
-        <li>Client Satisfaction: Dedicated to ensuring 100% satisfaction with restored images.</li>
-      </ul>
+      <h2 className="text-2xl font-semibold mb-3">Preserve Your Memories with Graphics Amazon</h2>
 
-      <p className="mb-4 text-base md:text-lg leading-relaxed">
-        With Graphics Amazon, your cherished memories are in safe hands. We provide professional photo restoration that preserves the authenticity and beauty of every photograph. Contact us today and bring your photos back to life!
+      <p>
+        If you’re looking for reliable photo restoration services, look no further than Graphics Amazon. 
+        Our professional team is here to help restore your photos, ensuring your memories last a 
+        lifetime. Contact us today for high-quality photo restoration that brings your cherished 
+        moments back to life.
       </p>
 
     </div>

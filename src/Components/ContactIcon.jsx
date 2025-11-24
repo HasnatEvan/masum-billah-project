@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 const ContactIcon = () => {
   const [open, setOpen] = useState(false);
 
-  const handleWhatsapp = () => {
-    window.open("https://wa.me/966543692111", "_blank");
-  };
+const handleWhatsapp = () => {
+  window.open("https://wa.me/8801317355318", "_blank");
+};
 
   const handleEmail = () => {
     window.location.href = "mailto:info@graphicsamazon.com";

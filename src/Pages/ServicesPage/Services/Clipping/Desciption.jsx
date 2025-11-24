@@ -23,8 +23,8 @@ const Description = () => {
         professionalism, and precision. Whether for background removal or
         creating natural drop shadows, our clipping paths add depth and
         dimension to your visuals. Our services are widely used in catalogs,
-        posters, magazines, brochures, and various marketing materials, ensuring
-        your images stand out in any context.
+        posters, magazines, brochures, and various marketing materials,
+        ensuring your images stand out in any context.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-3">
@@ -66,12 +66,13 @@ const Description = () => {
       <h2 className="text-2xl font-semibold mt-8 mb-3">
         In What Types of Photos, It Is Used?
       </h2>
+
       <ul className="list-disc list-inside mb-6 space-y-1">
         <li>Jewelry or ornament photos</li>
         <li>Table, chairs or other furniture images</li>
         <li>Fashion product images</li>
-        <li>Motorcycles, bicycles, and car photos</li>
-        <li>Liquids like water, juice, or soft drinks</li>
+        <li>Motor Cycles, Bicycles, Cars photo</li>
+        <li>Liquids things like water, juice or soft drinks images</li>
         <li>Portraits with detailed hair editing</li>
         <li>Images with intricate edges or multiple colors</li>
         <li>Furry dolls or textured clothing</li>
@@ -83,6 +84,7 @@ const Description = () => {
       <h2 className="text-2xl font-semibold mt-8 mb-3">
         Clipping Path Services for Products – Highlights
       </h2>
+
       <p className="mb-4">
         In the competitive world of online shopping, product photos need to be
         clear, clean, and visually appealing. At Graphics Amazon, we provide
@@ -102,6 +104,7 @@ const Description = () => {
       <h2 className="text-2xl font-semibold mt-8 mb-3">
         Who Needs Clipping Path Services?
       </h2>
+
       <p className="mb-4">
         Clipping Path services are widely used across various industries. Some
         key sectors that rely on these services include:
@@ -145,6 +148,7 @@ const Description = () => {
       <h2 className="text-2xl font-semibold mt-8 mb-3">
         Why Choose Graphics Amazon for Your Clipping Path Needs?
       </h2>
+
       <ul className="list-disc list-inside mb-6 space-y-1">
         <li>
           <strong>Expert Designers:</strong> Our skilled design team focuses on

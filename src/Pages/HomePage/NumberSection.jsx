@@ -27,7 +27,7 @@ const NumberSection = () => {
             <FaPhoneAlt className="text-[#18c0e6] text-lg sm:text-xl md:text-2xl" />
           </div>
           <h3 className="text-white text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">
-            +880 1788110628
+            +8801317355318
           </h3>
         </div>
 

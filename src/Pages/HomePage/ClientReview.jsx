@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaStar } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import LazyImage from "../../Components/LazyImage"; // ⭐ Lazy load added
+import LazyImage from "../../Components/LazyImage";
 
 // Client Images
 import clientImage1 from "../../assets/Review/Clara Susan.jpg";
@@ -67,7 +67,7 @@ const ClientReview = () => {
   const cardsPerPage = 3;
   const totalPages = Math.ceil(reviews.length / cardsPerPage);
 
-  // ⭐ Auto-slide
+  // Auto Slide
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentPage((prev) => (prev + 1) % totalPages);
@@ -75,15 +75,13 @@ const ClientReview = () => {
     return () => clearInterval(interval);
   }, [totalPages]);
 
-  // ⭐ Preload next slide images
+  // Preload next images
   useEffect(() => {
     const nextPage = (currentPage + 1) % totalPages;
-
     const nextImages = reviews.slice(
       nextPage * cardsPerPage,
       nextPage * cardsPerPage + cardsPerPage
     );
-
     nextImages.forEach((item) => {
       const preload = new Image();
       preload.src = item.image;
@@ -98,9 +96,9 @@ const ClientReview = () => {
   return (
     <section className="bg-[#f9f9ff] py-12 sm:py-16 md:py-20 overflow-hidden">
       <div className="max-w-6xl mx-auto">
-        
+
         {/* Title */}
-        <div className="text-center mb-8 sm:mb-10 md:mb-12 px-6">
+        <div className="text-center mb-10 px-6">
           <h4 className="text-[#304ffe] font-semibold uppercase tracking-wide mb-2 text-sm sm:text-base">
             Clients Feedback
           </h4>
@@ -110,64 +108,76 @@ const ClientReview = () => {
         </div>
 
         {/* Slider */}
-        <div className="mx-auto flex flex-col sm:flex-row gap-6 px-4 sm:px-6 md:px-0 overflow-hidden relative">
-          <AnimatePresence initial={false}>
-            {currentReviews.map((item) => (
-              <motion.div
-                key={item.name}
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -50 }}
-                transition={{ duration: 0.8, ease: "easeInOut" }}
-                className="flex-shrink-0 w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.75rem)] bg-white rounded-2xl shadow-md flex flex-col justify-between overflow-hidden"
-              >
-                <div className="p-4 sm:p-6 text-left">
-                  <div className="flex text-[#FFC107] mb-2 sm:mb-3">
+        <div className="mx-auto flex flex-col sm:flex-row gap-6 px-4 sm:px-6 md:px-0">
+          {currentReviews.map((item) => (
+            <div
+              key={item.name}
+              className="
+                flex-shrink-0 
+                w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.75rem)]
+                bg-white rounded-2xl shadow-md
+                flex flex-col justify-between
+                overflow-hidden
+                min-h-[230px] sm:min-h-[260px] md:min-h-[290px]
+              "
+            >
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={item.name}
+                  initial={{ opacity: 0, x: 40 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -40 }}
+                  transition={{
+                    duration: 0.55,
+                    ease: "easeInOut"
+                  }}
+                  className="p-4 sm:p-6 text-left"
+                >
+                  {/* Stars */}
+                  <div className="flex text-[#FFC107] mb-3">
                     {[...Array(5)].map((_, i) => (
-                      <FaStar key={i} className="text-sm sm:text-base" />
+                      <FaStar key={i} className="text-base" />
                     ))}
                   </div>
-                  <p className="text-gray-700 text-xs sm:text-sm md:text-[15px] leading-relaxed">
+
+                  {/* Review */}
+                  <p className="text-gray-700 text-sm md:text-[15px] leading-relaxed">
                     {item.review}
                   </p>
-                </div>
+                </motion.div>
+              </AnimatePresence>
 
-                <div
-                  className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 bg-gradient-to-r ${item.gradient}`}
-                >
-                  {/* ⭐ FAST LOADING IMAGE */}
-                  <LazyImage
-                    src={item.image}
-                    alt={item.name}
-                    width="48"
-                    height="48"
-                    loading="lazy"
-                    decoding="async"
-                    fetchpriority="low"
-                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-white shadow-sm"
-                  />
+              {/* Bottom Section */}
+              <div
+                className={`flex items-center gap-3 px-4 sm:px-6 py-3 bg-gradient-to-r ${item.gradient}`}
+              >
+                <LazyImage
+                  src={item.image}
+                  alt={item.name}
+                  width="48"
+                  height="48"
+                  className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm"
+                />
 
-                  <div>
-                    <h5 className="font-bold text-[13px] sm:text-[15px] text-[#000]">
-                      {item.name}
-                    </h5>
-                    <p className="text-gray-500 text-[11px] sm:text-[13px]">
-                      {item.title}
-                    </p>
-                  </div>
+                <div>
+                  <h5 className="font-bold text-[15px] text-[#000]">
+                    {item.name}
+                  </h5>
+                  <p className="text-gray-500 text-[13px]">{item.title}</p>
                 </div>
-              </motion.div>
-            ))}
-          </AnimatePresence>
+              </div>
+
+            </div>
+          ))}
         </div>
 
         {/* Pagination */}
-        <div className="flex justify-center mt-4 sm:mt-6 md:mt-8 gap-2 px-6">
+        <div className="flex justify-center mt-8 gap-2 px-6">
           {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i}
               onClick={() => setCurrentPage(i)}
-              className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all ${
+              className={`w-3 h-3 rounded-full transition-all ${
                 currentPage === i
                   ? "bg-blue-600 scale-110"
                   : "bg-gray-400 hover:bg-gray-500"
@@ -175,6 +185,7 @@ const ClientReview = () => {
             />
           ))}
         </div>
+
       </div>
     </section>
   );

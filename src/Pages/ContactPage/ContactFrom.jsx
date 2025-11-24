@@ -100,11 +100,11 @@ const ContactForm = () => {
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-[#5D00FF]" />
-                <span>infocamazon2018@gmail.com</span>
+                <span>info@graphicsamazon.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <FaPhoneAlt className="text-[#5D00FF]" />
-                <span>+8801788110628</span>
+                <span>+88001317355318</span>
               </li>
             </ul>
           </div>

@@ -3,6 +3,7 @@ import React from "react";
 const MultipleClippingDescription = () => {
   return (
     <div className="px-4 sm:px-6 md:px-10 lg:px-0 py-8 md:py-12 max-w-6xl mx-auto">
+
       <h2 className="text-3xl font-semibold mb-4">
         Multiple Clipping Path Services at Graphics Amazon
       </h2>
@@ -30,6 +31,7 @@ const MultipleClippingDescription = () => {
       <h2 className="mt-6 text-2xl font-semibold mb-4">
         Types of Clipping Paths We Offer
       </h2>
+
       <p className="mb-4 text-base md:text-lg leading-relaxed">
         We provide three primary types of clipping paths, each tailored to
         different levels of complexity and need:
@@ -65,12 +67,13 @@ const MultipleClippingDescription = () => {
       <h2 className="mt-6 text-2xl font-semibold mb-4">
         In What Types of Photos, It Is Used
       </h2>
+
       <ul className="list-disc list-inside mb-6 text-base md:text-lg leading-relaxed">
         <li>Jewelry or ornament photos</li>
         <li>Table, chairs or other furniture images</li>
         <li>Fashion product images</li>
-        <li>Motorcycles, bicycles, and car photos</li>
-        <li>Liquids like water, juice or soft drink images</li>
+        <li>Motor Cycles, Bicycles, Cars photo</li>
+        <li>Liquids things like water, juice or soft drinks images</li>
         <li>Portraits with detailed hair editing</li>
         <li>Images with intricate edges or multiple colors</li>
         <li>Furry dolls or textured clothing</li>
@@ -82,6 +85,7 @@ const MultipleClippingDescription = () => {
       <h2 className="mt-6 text-2xl font-semibold mb-4">
         Clipping Path Services for Products – Highlights
       </h2>
+
       <p className="mb-4 text-base md:text-lg leading-relaxed">
         In the competitive world of online shopping, product photos need to be
         clear, clean, and visually appealing. At Graphics Amazon, we provide
@@ -93,14 +97,15 @@ const MultipleClippingDescription = () => {
 
       <p className="mb-4 text-base md:text-lg leading-relaxed">
         A professionally executed clipping path ensures that your product is the
-        focal point, drawing the attention of potential customers. Only a
-        skilled post-production team can provide the refined, polished look that
-        today’s product photography demands.
+        focal point, drawing the attention of potential customers. Only a skilled
+        post-production team can provide the refined, polished look that today’s
+        product photography demands.
       </p>
 
       <h2 className="mt-6 text-2xl font-semibold mb-4">
         Who Needs Clipping Path Services?
       </h2>
+
       <p className="mb-4 text-base md:text-lg leading-relaxed">
         Clipping Path services are widely used across various industries. Some
         key sectors that rely on these services include:
@@ -113,21 +118,25 @@ const MultipleClippingDescription = () => {
           paths help ensure your product images look professional, building
           customer trust and increasing sales.
         </li>
+
         <li>
           <strong>Photographers and Photography Agencies:</strong> For images
           with complex shapes or intricate details, clipping paths are
           indispensable in achieving professional-quality results.
         </li>
+
         <li>
           <strong>Apparel Industry:</strong> Clothing retailers often use
           clipping paths to remove mannequins or change backgrounds, making the
           product more prominent and visually clear.
         </li>
+
         <li>
-          <strong>Fashion and Modeling:</strong> Fashion photographers and models
-          rely on clipping paths to enhance portfolio images, retouching, and
-          promotional materials.
+          <strong>Fashion and Modeling:</strong> Fashion photographers and
+          models rely on clipping paths to enhance portfolio images, retouching,
+          and promotional materials.
         </li>
+
         <li>
           <strong>Jewelry Industry:</strong> High-quality, detailed images of
           jewelry are crucial for attracting customers, and clipping paths
@@ -138,19 +147,23 @@ const MultipleClippingDescription = () => {
       <h2 className="mt-6 text-2xl font-semibold mb-4">
         Why Choose Graphics Amazon for Your Clipping Path Needs?
       </h2>
+
       <ul className="list-disc list-inside mb-6 text-base md:text-lg leading-relaxed">
         <li>
           <strong>Expert Designers:</strong> Our skilled design team focuses on
           every detail to ensure precise, clean clipping paths.
         </li>
+
         <li>
           <strong>Fast Turnaround:</strong> We deliver your edited images
           promptly, meeting tight deadlines without compromising on quality.
         </li>
+
         <li>
           <strong>Affordable Pricing:</strong> We offer competitive pricing to
           ensure exceptional value for your investment.
         </li>
+
         <li>
           <strong>Client-Centric Approach:</strong> We offer unlimited revisions
           and prioritize client satisfaction to ensure your images meet your
@@ -163,6 +176,7 @@ const MultipleClippingDescription = () => {
         Graphics Amazon is your go-to partner for Clipping Path services.
         Contact us today, and let us take your images to new heights.
       </p>
+
     </div>
   );
 };

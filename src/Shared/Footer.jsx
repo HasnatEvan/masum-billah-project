@@ -30,6 +30,7 @@ const Footer = () => {
     { name: "Background Remove", link: "/services/background-remove" },
     { name: "Photo Retouching", link: "/services/photo-retouching" },
     { name: "Image Masking", link: "/services/image-masking" },
+
     { name: "Color Correction", link: "/services/color-correction" },
     { name: "Image Reflection", link: "/services/image-reflection" },
     { name: "Image Shadowing", link: "/services/image-shadowing" },
@@ -58,7 +59,6 @@ const Footer = () => {
             cost-effective photo editing solutions for your business, agency, or studio.
           </p>
 
-          {/* Contact Info */}
           <div className="flex items-center gap-2 mb-2 text-gray-600">
             <FiMail className="text-blue-600" />
             <span className="text-sm md:text-[15px]">info@graphicsamazon.com</span>
@@ -69,9 +69,8 @@ const Footer = () => {
             <span className="text-sm md:text-[15px]">+8801317355318</span>
           </div>
 
-          {/* Social Icons */}
           <div className="flex gap-3 text-white text-lg flex-wrap">
-            {[ 
+            {[
               { icon: <FaTwitter />, link: "https://x.com/graphicsamazon" },
               { icon: <FaLinkedin />, link: "https://www.linkedin.com/company/108690991/admin/dashboard/" },
               { icon: <FaFacebookF />, link: "https://www.facebook.com/graphicsamazonbd" },
@@ -90,7 +89,9 @@ const Footer = () => {
         </div>
 
         {/* ---------- Useful Links ---------- */}
-        <div className="text-left">
+        {/* ---------- Useful Links ---------- */}
+        {/* ---------- Useful Links ---------- */}
+        <div className="text-left justify-self-start sm:justify-self-center">
           <h3 className="font-semibold text-xl text-blue-600 mb-5">Useful Links</h3>
           <ul className="space-y-2 text-gray-700">
             {usefulLinks.map((link, i) => (
@@ -99,9 +100,10 @@ const Footer = () => {
                   to={link.path}
                   className={({ isActive }) =>
                     `transition-colors duration-300
-                    ${isActive
+            ${isActive
                       ? "text-blue-600 font-semibold underline"
-                      : "text-gray-700 hover:text-blue-600"}`
+                      : "text-gray-700 hover:text-blue-600"
+                    }`
                   }
                 >
                   {link.name}
@@ -111,26 +113,50 @@ const Footer = () => {
           </ul>
         </div>
 
+
         {/* ---------- Services ---------- */}
         <div className="text-left">
           <h3 className="font-semibold text-xl text-blue-600 mb-5">Our Services</h3>
-          <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-gray-700">
-            {services.map((service, i) => (
-              <li key={i}>
-                <NavLink
-                  to={service.link}
-                  className={({ isActive }) =>
-                    `transition-colors duration-300
-                    ${isActive
-                      ? "text-blue-600 font-semibold underline"
-                      : "text-gray-700 hover:text-blue-600"}`
-                  }
-                >
-                  {service.name}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
+
+          <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-gray-700">
+
+            {/* LEFT COLUMN – first 7 */}
+            <ul className="space-y-2">
+              {services.slice(0, 7).map((service, i) => (
+                <li key={i}>
+                  <NavLink
+                    to={service.link}
+                    className={({ isActive }) =>
+                      `transition-colors duration-300
+                      ${isActive
+                        ? "text-blue-600 font-semibold underline"
+                        : "text-gray-700 hover:text-blue-600"}`}
+                  >
+                    {service.name}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+
+            {/* RIGHT COLUMN – last 7 */}
+            <ul className="space-y-2">
+              {services.slice(7).map((service, i) => (
+                <li key={i}>
+                  <NavLink
+                    to={service.link}
+                    className={({ isActive }) =>
+                      `transition-colors duration-300
+                      ${isActive
+                        ? "text-blue-600 font-semibold underline"
+                        : "text-gray-700 hover:text-blue-600"}`}
+                  >
+                    {service.name}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+
+          </div>
         </div>
 
       </div>

@@ -16,6 +16,7 @@ const PricingSection = () => {
             color: "from-[#c53ff7] to-[#9d2df2]",
             light: "bg-[#f7e4ff]",
             button: "bg-[#c53ff7]",
+            hover: "hover:bg-[#a024d0]",
         },
         {
             title: "PLUS PLAN",
@@ -30,6 +31,7 @@ const PricingSection = () => {
             color: "from-[#7b39f8] to-[#4b11f7]",
             light: "bg-[#efe5ff]",
             button: "bg-[#7b39f8]",
+            hover: "hover:bg-[#5e21e4]",
         },
         {
             title: "ELITE PLAN",
@@ -44,11 +46,13 @@ const PricingSection = () => {
             color: "from-[#f13e75] to-[#ec3e5f]",
             light: "bg-[#ffe6ee]",
             button: "bg-[#f13e75]",
+            hover: "hover:bg-[#d92b62]",
         },
     ];
 
     return (
-        <section className="py-12 sm:py-16 lg:py-20 bg-white text-center max-w-6xl mx-auto px-4 ">
+        <section className="py-12 sm:py-16 lg:py-20 bg-white text-center max-w-6xl mx-auto px-4">
+            
             {/* Header */}
             <div className="mb-12">
                 <h4 className="text-[#4b11f7] font-bold text-sm sm:text-base">Pricing Table</h4>
@@ -62,7 +66,9 @@ const PricingSection = () => {
                 {plans.map((plan, index) => (
                     <div
                         key={index}
-                        className={`w-full sm:w-[350px] md:w-[400px] lg:w-[450px] xl:w-[500px] rounded-xl border-2 shadow-lg overflow-hidden flex flex-col transition-transform transform hover:scale-105 duration-300`}
+                        className={`w-full sm:w-[350px] md:w-[400px] lg:w-[450px] xl:w-[500px]
+                        rounded-xl border-2 shadow-lg overflow-hidden flex flex-col
+                        transition-transform transform hover:scale-103 duration-300`}
                         style={{
                             borderColor:
                                 index === 0
@@ -72,17 +78,18 @@ const PricingSection = () => {
                                         : "#f13e75",
                         }}
                     >
+                        
                         {/* Header */}
-                        <div
-                            className={`bg-gradient-to-r ${plan.color} text-white py-4 sm:py-5 font-bold text-base sm:text-lg`}
-                        >
+                        <div className={`bg-gradient-to-r ${plan.color} text-white py-4 sm:py-5 font-bold text-base sm:text-lg`}>
                             {plan.title}
                         </div>
 
                         {/* Price */}
                         <div className={`${plan.light} py-6 sm:py-8`}>
                             <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold">{plan.price}</h3>
-                            <p className="text-xs sm:text-sm md:text-base mt-1 sm:mt-2 text-gray-700">{plan.subtitle}</p>
+                            <p className="text-xs sm:text-sm md:text-base mt-1 sm:mt-2 text-gray-700">
+                                {plan.subtitle}
+                            </p>
                         </div>
 
                         {/* Features */}
@@ -97,22 +104,16 @@ const PricingSection = () => {
 
                         {/* Button */}
                         <div className="pb-6 sm:pb-8">
-                         <Link to={'/pricing'}>
-                            <button
-                                className={`${plan.button} text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-medium hover:opacity-90 transition duration-300`}
-                                style={{
-                                    borderColor:
-                                        index === 0
-                                            ? "#c53ff7"
-                                            : index === 1
-                                                ? "#7b39f8"
-                                                : "#f13e75",
-                                }}
-                            >
-                                Details Pricing
-                            </button>
-                         </Link>
+                            <Link to="/pricing">
+                                <button
+                                    className={`${plan.button} ${plan.hover} text-white px-6 sm:px-8 py-2 sm:py-3 
+                                    rounded-full font-medium transition duration-300`}
+                                >
+                                    Details Pricing
+                                </button>
+                            </Link>
                         </div>
+
                     </div>
                 ))}
             </div>

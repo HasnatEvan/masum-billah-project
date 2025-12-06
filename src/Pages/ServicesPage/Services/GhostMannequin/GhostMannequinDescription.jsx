@@ -79,17 +79,18 @@ const GhostMannequinDescription = () => {
       </h2>
 
       <p className="mb-4">
-        Open all the required images (front, back, inner). <br />
-        Use the Pen Tool to create a selection path. <br />
-        Remove the background and duplicate the layer (CTRL + J). <br />
-        Create a new layer and fill it (CTRL + DELETE). <br />
-        Return to the first layer, select the path, and apply the mask. <br />
-        The mannequin is now removed. <br />
-        Add neck, bottom, sleeve, and optional 3D effect in layers. <br />
-        It may seem easy and straightforward, but this process requires professional 
-        expertise, which is exactly what you get with Graphics Amazon. You need a 
-        professional Photoshop designer to complete the entire process perfectly.
-      </p>
+  • Open all the required images (front, back, and inner). <br />
+  • Use the Pen Tool to create an accurate selection path. <br />
+  • Remove the background and duplicate the selected layer (CTRL + J). <br />
+  • Create a new layer and fill it (CTRL + DELETE). <br />
+  • Go back to the first layer, select the path, and apply the mask. <br />
+  • The mannequin is now successfully removed. <br />
+  • Add the neck, bottom, sleeve, and any optional 3D effects in separate layers. <br />
+  • This might look simple, but achieving a clean and flawless ghost mannequin effect 
+    requires professional expertise — and that's exactly what Graphics Amazon delivers. <br />
+  • For a perfect, high-quality result, you need an experienced Photoshop designer.
+</p>
+
 
       <h2 className="text-2xl font-semibold mb-3">Who Needs This Service?</h2>
 

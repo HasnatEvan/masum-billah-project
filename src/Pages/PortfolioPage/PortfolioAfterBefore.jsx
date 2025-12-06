@@ -176,7 +176,7 @@ const PortfolioAfterBefore = () => {
       ],
     },
     {
-      name: "Image Cleaning Service",
+      name: "Image Cropping Service",
       images: [
         [ImageCleaningImage1, ImageCleaningImage2],
         [ImageCleaningImage3, ImageCleaningImage4],

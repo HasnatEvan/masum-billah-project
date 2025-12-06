@@ -96,7 +96,8 @@ const ContactForm = () => {
             <ul className="space-y-3 text-gray-700 text-sm">
               <li className="flex items-center gap-3">
                 <FaMapMarkerAlt className="text-[#5D00FF]" />
-                <span>I-H,2/7 Mirpur, Dhaka, Bangladesh.</span>
+                <span>
+42/K/1, West Tejturi Bazar, Farmgate, Dhaka-1215</span>
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-[#5D00FF]" />

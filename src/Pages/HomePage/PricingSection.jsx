@@ -103,16 +103,17 @@ const PricingSection = () => {
                         </ul>
 
                         {/* Button */}
-                        <div className="pb-6 sm:pb-8">
-                            <Link to="/pricing">
-                                <button
-                                    className={`${plan.button} ${plan.hover} text-white px-6 sm:px-8 py-2 sm:py-3 
-                                    rounded-full font-medium transition duration-300`}
-                                >
-                                    Details Pricing
-                                </button>
-                            </Link>
-                        </div>
+                    <div className="pb-6 sm:pb-8">
+    <Link to="/pricing">
+        <button
+            className={`${plan.button} ${plan.hover} text-white px-6 sm:px-8 py-2 sm:py-3 
+            rounded-full font-medium transition duration-300 cursor-pointer`}
+        >
+            Details Pricing
+        </button>
+    </Link>
+</div>
+
 
                     </div>
                 ))}

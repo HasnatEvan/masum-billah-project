@@ -98,28 +98,35 @@ const ImageMaskingDescription = () => {
         photo editing needs:
       </p>
 
-      <ul className="list-disc list-inside space-y-1 mb-6">
-        <li>
-          Precision and Professionalism: Our team of experienced photo editors employs the latest
-          tools and techniques to ensure the highest quality results.
-        </li>
-        <li>
-          Tailored to Your Needs: Whether you need background removal, fine-tuning, or complex masking,
-          we offer customized solutions to suit your specific requirements.
-        </li>
-        <li>
-          Enhanced Visual Appeal: Our image masking services ensure that every image is visually
-          compelling, perfect for increasing customer engagement and driving conversions.
-        </li>
-        <li>
-          Fast Turnaround: We understand the importance of deadlines and deliver high-quality results
-          quickly without compromising on detail.
-        </li>
-        <li>
-          Affordable Pricing: Our competitive pricing ensures that you get the best value for your
-          investment in high-quality photo editing.
-        </li>
-      </ul>
+   <ul className="list-disc list-inside space-y-1 mb-6">
+
+  <li>
+    <strong>Precision and Professionalism:</strong>
+    Our team of experienced photo editors employs the latest tools and techniques to ensure the highest quality results.
+  </li>
+
+  <li>
+    <strong>Tailored to Your Needs:</strong>
+    Whether you need background removal, fine-tuning, or complex masking, we offer customized solutions to suit your specific requirements.
+  </li>
+
+  <li>
+    <strong>Enhanced Visual Appeal:</strong>
+    Our image masking services ensure that every image is visually compelling, perfect for increasing customer engagement and driving conversions.
+  </li>
+
+  <li>
+    <strong>Fast Turnaround:</strong>
+    We understand the importance of deadlines and deliver high-quality results quickly without compromising on detail.
+  </li>
+
+  <li>
+    <strong>Affordable Pricing:</strong>
+    Our competitive pricing ensures that you get the best value for your investment in high-quality photo editing.
+  </li>
+
+</ul>
+
 
       <p>
         In today's visually-driven world, high-quality images are key to making your brand stand out.

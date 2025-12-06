@@ -110,40 +110,41 @@ const Description = () => {
         key sectors that rely on these services include:
       </p>
 
-      <h3 className="text-xl font-semibold mt-4">eCommerce</h3>
-      <p className="mb-4">
-        To stay ahead in the competitive online marketplace, displaying
-        high-quality images is essential. Clipping paths help ensure your
-        product images look professional, building customer trust and increasing
-        sales.
-      </p>
+    <ul className="list-inside space-y-3 mb-6">
 
-      <h3 className="text-xl font-semibold mt-4">
-        Photographers and Photography Agencies
-      </h3>
-      <p className="mb-4">
-        For images with complex shapes or intricate details, clipping paths are
-        indispensable in achieving professional-quality results.
-      </p>
+  <li>
+    <strong>eCommerce:</strong>
+    To stay ahead in the competitive online marketplace, displaying high-quality images is essential.
+    Clipping paths help ensure your product images look professional, building customer trust and
+    increasing sales.
+  </li>
 
-      <h3 className="text-xl font-semibold mt-4">Apparel Industry</h3>
-      <p className="mb-4">
-        Clothing retailers often use clipping paths to remove mannequins or
-        change backgrounds, making the product more prominent and visually
-        clear.
-      </p>
+  <li>
+    <strong>Photographers and Photography Agencies:</strong>
+    For images with complex shapes or intricate details, clipping paths are indispensable in achieving
+    professional-quality results.
+  </li>
 
-      <h3 className="text-xl font-semibold mt-4">Fashion and Modeling</h3>
-      <p className="mb-4">
-        Fashion photographers and models rely on clipping paths to enhance
-        portfolio images, retouching, and promotional materials.
-      </p>
+  <li>
+    <strong>Apparel Industry:</strong>
+    Clothing retailers often use clipping paths to remove mannequins or change backgrounds, making the
+    product more prominent and visually clear.
+  </li>
 
-      <h3 className="text-xl font-semibold mt-4">Jewelry Industry</h3>
-      <p className="mb-6">
-        High-quality, detailed images of jewelry are crucial for attracting
-        customers, and clipping paths maintain clarity and visual appeal.
-      </p>
+  <li>
+    <strong>Fashion and Modeling:</strong>
+    Fashion photographers and models rely on clipping paths to enhance portfolio images, retouching,
+    and promotional materials.
+  </li>
+
+  <li>
+    <strong>Jewelry Industry:</strong>
+    High-quality, detailed images of jewelry are crucial for attracting customers, and clipping paths
+    maintain clarity and visual appeal.
+  </li>
+
+</ul>
+
 
       <h2 className="text-2xl font-semibold mt-8 mb-3">
         Why Choose Graphics Amazon for Your Clipping Path Needs?

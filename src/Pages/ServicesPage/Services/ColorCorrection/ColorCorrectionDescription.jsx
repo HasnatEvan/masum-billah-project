@@ -114,14 +114,39 @@ const ColorCorrectionDescription = () => {
       </p>
 
       <h2 className="text-2xl font-semibold mb-3">Why Choose Graphics Amazon?</h2>
-      <ul className="list-disc list-inside space-y-1 mb-6">
-        <li>Skilled & Dedicated Designers: Our experienced team is passionate about perfecting every image.</li>
-        <li>On-Time Delivery: We value deadlines and deliver your projects promptly.</li>
-        <li>Secure File Sharing: We exchange files via FTP Server, WeTransfer, Google Drive, and Dropbox.</li>
-        <li>Client-Focused Approach: We maintain top-notch image quality while offering personalized support.</li>
-        <li>Free Trial Opportunity: Try our service with 3 free photo edits—decide only after you’re satisfied.</li>
-        <li>Affordable & Accessible: We keep our services cost-effective so clients of all levels can work with us.</li>
-      </ul>
+    <ul className="list-disc list-inside space-y-1 mb-6">
+
+  <li>
+    <strong>Skilled & Dedicated Designers:</strong>
+    Our experienced team is passionate about perfecting every image.
+  </li>
+
+  <li>
+    <strong>On-Time Delivery:</strong>
+    We value deadlines and deliver your projects promptly.
+  </li>
+
+  <li>
+    <strong>Secure File Sharing:</strong>
+    We exchange files via FTP Server, WeTransfer, Google Drive, and Dropbox.
+  </li>
+
+  <li>
+    <strong>Client-Focused Approach:</strong>
+    We maintain top-notch image quality while offering personalized support.
+  </li>
+
+  <li>
+    <strong>Free Trial Opportunity:</strong>
+    Try our service with 3 free photo edits—decide only after you’re satisfied.
+  </li>
+
+  <li>
+    <strong>Affordable & Accessible:</strong>
+    We keep our services cost-effective so clients of all levels can work with us.
+  </li>
+
+</ul>
 
       <p>
         After completing numerous successful projects, Graphics Amazon is proud to say that our 

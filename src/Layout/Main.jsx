@@ -1,16 +1,20 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Shared/Navbar";
 import Footer from "../Shared/Footer";
-import { Contact2Icon } from "lucide-react";
 import ContactIcon from "../Components/ContactIcon";
+import ScrollToTop from "../ScrollToTop/ScrollToTop.jsx";
 
 const Main = () => {
     return (
         <div>
-            <Navbar></Navbar>
-            <Outlet></Outlet>
-            <ContactIcon></ContactIcon>
-            <Footer></Footer>
+            <ScrollToTop />
+            <Navbar />
+
+            <Outlet />
+
+            <ContactIcon />
+
+            <Footer />
         </div>
     );
 };

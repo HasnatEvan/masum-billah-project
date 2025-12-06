@@ -7,12 +7,8 @@ const ImageShadowingDescription = () => {
       </h2>
 
       <p className="mb-4">
-        At Graphics Amazon, we understand that every visible object under sunlight or artificial 
-        light casts a shadow, which is an essential element in photography. Without shadows, 
-        products or models often appear unrealistic or "floating" in space. Shadows are crucial for 
-        adding depth and realism to images. Through expert Photoshop techniques, we create shadows 
-        that enhance the natural look of your photos. Our shadow creation service can significantly 
-        improve the quality of your images.
+     At Graphics Amazon, we understand that every visible object under sunlight or artificial light casts a shadow, which is an essential element in photography. Without shadows, products or models often appear unrealistic or "floating" in space. Shadows are crucial for adding depth and realism to images. Through expert Photoshop techniques, we create shadows that enhance the natural look of your photos. Our shadow creation service can significantly improve the quality of your images.
+
       </p>
 
       <h2 className="text-2xl font-semibold mb-3">
@@ -20,14 +16,8 @@ const ImageShadowingDescription = () => {
       </h2>
 
       <p className="mb-4">
-        In online shopping, customers cannot physically touch or examine the products before 
-        purchasing. They rely solely on the product images to make their buying decisions. Clear, 
-        lifelike product images are essential for driving sales. A shadow adds depth and realism to 
-        product photos, making them look more natural and appealing on online platforms.
-        <br /><br />
-        As an e-commerce business retailer, high-quality product images are essential for increasing 
-        sales. To achieve this, a professional photo editing company like Graphics Amazon can be of 
-        immense help.
+       In online shopping, customers cannot physically touch or examine the products before purchasing. They rely solely on the product images to make their buying decisions. Clear, lifelike product images are essential for driving sales. A shadow adds depth and realism to product photos, making them look more natural and appealing on online platforms. As an e-commerce business retailer, high-quality product images are essential for increasing sales. To achieve this, a professional photo editing company like Graphics Amazon can be of immense help.
+
       </p>
 
       <h2 className="text-2xl font-semibold mb-3">

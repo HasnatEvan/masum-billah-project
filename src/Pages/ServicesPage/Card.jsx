@@ -70,13 +70,15 @@ const Card = () => {
                 </p>
 
                 <Link to={service.link}>
-                  <button className="
+                <button className="
   text-blue-600 
   hover:text-blue-900 
   font-medium flex items-center gap-2 
   hover:gap-3 transition-all duration-300 
   text-sm sm:text-base md:text-lg
+  cursor-pointer
 ">
+
                     More Details <FaArrowRight />
                   </button>
 

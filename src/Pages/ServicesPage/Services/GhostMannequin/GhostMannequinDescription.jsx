@@ -78,28 +78,100 @@ const GhostMannequinDescription = () => {
         How Neck Joint Works at Graphics Amazon:
       </h2>
 
-      <p className="mb-4">
-  • Open all the required images (front, back, and inner). <br />
-  • Use the Pen Tool to create an accurate selection path. <br />
-  • Remove the background and duplicate the selected layer (CTRL + J). <br />
-  • Create a new layer and fill it (CTRL + DELETE). <br />
-  • Go back to the first layer, select the path, and apply the mask. <br />
-  • The mannequin is now successfully removed. <br />
-  • Add the neck, bottom, sleeve, and any optional 3D effects in separate layers. <br />
-  • This might look simple, but achieving a clean and flawless ghost mannequin effect 
-    requires professional expertise — and that's exactly what Graphics Amazon delivers. <br />
-  • For a perfect, high-quality result, you need an experienced Photoshop designer.
-</p>
+    <ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>Open all the required images (front, back, and inner).</span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>Use the Pen Tool to create an accurate selection path.</span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      Remove the background and duplicate the selected layer (CTRL + J).
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>Create a new layer and fill it (CTRL + DELETE).</span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      Go back to the first layer, select the path, and apply the mask.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>The mannequin is now successfully removed.</span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      Add the neck, bottom, sleeve, and any optional 3D effects in separate
+      layers.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      This might look simple, but achieving a clean and flawless ghost mannequin
+      effect requires professional expertise — and that's exactly what Graphics
+      Amazon delivers.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      For a perfect, high-quality result, you need an experienced Photoshop
+      designer.
+    </span>
+  </li>
+</ul>
+
 
 
       <h2 className="text-2xl font-semibold mb-3">Who Needs This Service?</h2>
 
-      <ul className="list-disc list-inside mb-6 space-y-1">
-        <li>E-commerce and online retailers who sell garments and jewelry.</li>
-        <li>Fashion brands and magazines that showcase clothing collections.</li>
-        <li>Commercial photographers and image studios requiring clean product displays.</li>
-        <li>Anyone looking to increase product appeal while reducing production costs.</li>
-      </ul>
+     <ul className="mb-6 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>E-commerce and online retailers who sell garments and jewelry.</span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      Fashion brands and magazines that showcase clothing collections.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      Commercial photographers and image studios requiring clean product
+      displays.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      Anyone looking to increase product appeal while reducing production
+      costs.
+    </span>
+  </li>
+</ul>
 
       <p>
         Using ghost mannequin or neck joint services at Graphics Amazon helps create 

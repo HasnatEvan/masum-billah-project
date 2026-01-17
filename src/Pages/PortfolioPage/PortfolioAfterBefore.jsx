@@ -1,6 +1,8 @@
 import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slider";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import LazyImage from "../../Components/LazyImage"; // path ঠিক করে নিও
+
 
 // ====== Import all images (unchanged) ======
 import ClippingPathImage1 from "../../../src/assets/Portfolio/Clipping Path/image (1).jpg";
@@ -257,49 +259,35 @@ const PortfolioAfterBefore = () => {
 
                   {/* 🔥 FAST LOAD COMPARE SLIDER */}
                  <div className="mt-10">
-  <ReactCompareSlider
-    itemOne={
-      <ReactCompareSliderImage
-        src={before}
-        alt="Before"
-        loading="lazy"
-        decoding="async"
-        fetchpriority="low"
-        referrerPolicy="no-referrer"
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "contain",   // ⭐ FULL IMAGE দেখা যাবে
-        }}
-      />
-    }
-    itemTwo={
-      <ReactCompareSliderImage
-        src={after}
-        alt="After"
-        loading="lazy"
-        decoding="async"
-        fetchpriority="low"
-        referrerPolicy="no-referrer"
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "contain",   // ⭐ FULL IMAGE দেখা যাবে
-        }}
-      />
-    }
-    position={50}
-    style={{
-      width: "100%",
-      height: "auto",
-    }}
-    className="w-full 
-               h-[220px]     /* ⭐ Mobile */
-               sm:h-[260px]  /* ⭐ Small */
-               md:h-[320px]  /* ⭐ Tablet */
-               lg:h-[360px]  /* ⭐ Laptop */
-               xl:h-[420px]  /* ⭐ Large Desktop */"
-  />
+<ReactCompareSlider
+  itemOne={
+    <LazyImage
+      src={before}
+      alt="Before"
+      className="w-full h-full object-contain"
+    />
+  }
+  itemTwo={
+    <LazyImage
+      src={after}
+      alt="After"
+      className="w-full h-full object-contain"
+    />
+  }
+  position={50}
+  style={{
+    width: "100%",
+    height: "auto",
+  }}
+  className="w-full 
+             h-[220px]
+             sm:h-[260px]
+             md:h-[320px]
+             lg:h-[360px]
+             xl:h-[420px]"
+/>
+
+
 </div>
 
                 </motion.div>

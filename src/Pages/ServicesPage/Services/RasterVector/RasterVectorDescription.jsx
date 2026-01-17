@@ -47,20 +47,39 @@ const RasterVectorDescription = () => {
         images are:
       </p>
 
-      <ul className="list-disc list-inside space-y-1 mb-4">
-        <li>
-          <strong>Appealing:</strong> Sleek and detailed, vector images attract customers by focusing on the product.
-        </li>
-        <li>
-          <strong>Affordable:</strong> Our vector conversion services are cost-effective, offering great value for high-quality images.
-        </li>
-        <li>
-          <strong>Fast-loading:</strong> Vector images load faster than raster images, improving SEO and bringing more traffic to your website.
-        </li>
-        <li>
-          <strong>Consistent Quality:</strong> Vector images don’t lose quality when resized, making them ideal for a wide range of uses.
-        </li>
-      </ul>
+   <ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Appealing:</strong> Sleek and detailed, vector images attract
+      customers by focusing on the product.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Affordable:</strong> Our vector conversion services are
+      cost-effective, offering great value for high-quality images.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Fast-loading:</strong> Vector images load faster than raster
+      images, improving SEO and bringing more traffic to your website.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Consistent Quality:</strong> Vector images don’t lose quality
+      when resized, making them ideal for a wide range of uses.
+    </span>
+  </li>
+</ul>
 
 
       <h2 className="text-2xl font-semibold mb-3">Types of Raster to Vector Services We Provide</h2>
@@ -69,66 +88,104 @@ const RasterVectorDescription = () => {
   We offer a variety of Raster to Vector services, tailored to suit different needs:
       </p>
 
-
-    <ul className="list-disc list-inside space-y-2 mb-4">
-
-  <li>
-    <strong>Product Design Vectorization:</strong>
-    When launching a new product, capturing attention is key. Our product photo vectorization
-    service ensures your product stands out with clean and professional imagery.
+<ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Product Design Vectorization:</strong> When launching a new
+      product, capturing attention is key. Our product photo vectorization
+      service ensures your product stands out with clean and professional
+      imagery.
+    </span>
   </li>
 
-  <li>
-    <strong>Character Vectorization:</strong>
-    Many iconic logos, like KFC, feature cartoon characters or human faces. We specialize in
-    transforming these into vector images, ensuring they’re ready for any campaign or marketing initiative.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Character Vectorization:</strong> Many iconic logos, like KFC,
+      feature cartoon characters or human faces. We specialize in transforming
+      these into vector images, ensuring they’re ready for any campaign or
+      marketing initiative.
+    </span>
   </li>
 
-  <li>
-    <strong>Logo Vectorization:</strong>
-    Logo vectorization is crucial for brand development, print materials, and magazines. This service ensures
-    your logo is clean, scalable, and ready for various uses, enhancing brand recognition.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Logo Vectorization:</strong> Logo vectorization is crucial for
+      brand development, print materials, and magazines. This service ensures
+      your logo is clean, scalable, and ready for various uses, enhancing brand
+      recognition.
+    </span>
   </li>
 
-  <li>
-    <strong>Line Drawing Vectorization:</strong>
-    This service is particularly sophisticated, requiring a high level of expertise. We specialize in line drawing
-    vector conversion, which is essential for detailed designs, particularly in fashion and cloth designing.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Line Drawing Vectorization:</strong> This service is particularly
+      sophisticated, requiring a high level of expertise. We specialize in line
+      drawing vector conversion, which is essential for detailed designs,
+      particularly in fashion and cloth designing.
+    </span>
   </li>
 
-  <li>
-    <strong>2D Vector Conversion:</strong>
-    A traditional method of converting raster images into vector format. 2D conversion ensures consistency,
-    making them ideal for manufacturing or product creation.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>2D Vector Conversion:</strong> A traditional method of converting
+      raster images into vector format. 2D conversion ensures consistency,
+      making them ideal for manufacturing or product creation.
+    </span>
   </li>
 
-  <li>
-    <strong>3D Vector Conversion:</strong>
-    For more advanced needs, 3D vector conversion transforms a photo into a 3D representation. This process
-    adds depth and transparency, making your images more engaging and dynamic.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>3D Vector Conversion:</strong> For more advanced needs, 3D vector
+      conversion transforms a photo into a 3D representation. This process adds
+      depth and transparency, making your images more engaging and dynamic.
+    </span>
   </li>
-
 </ul>
+
 
       <h2 className="text-2xl font-semibold mb-3">How Graphics Amazon Provides Vector Conversion</h2>
 
-    <ul className="list-disc list-inside space-y-1 mb-6">
-  <li>
-    <strong>Attention to Detail:</strong> Our team of expert designers ensures every detail of your image is meticulously handled.
+  <ul className="mb-6 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Attention to Detail:</strong> Our team of expert designers ensures
+      every detail of your image is meticulously handled.
+    </span>
   </li>
 
-  <li>
-    <strong>Quick Turnaround:</strong> We offer efficient services that deliver high-quality results within a short timeframe.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Quick Turnaround:</strong> We offer efficient services that
+      deliver high-quality results within a short timeframe.
+    </span>
   </li>
 
-  <li>
-    <strong>Expert Techniques:</strong> Using the latest version of Adobe Illustrator, we create high-quality vector artwork suitable for a variety of applications, including brochures, manuals, and advertising.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Expert Techniques:</strong> Using the latest version of Adobe
+      Illustrator, we create high-quality vector artwork suitable for a
+      variety of applications, including brochures, manuals, and advertising.
+    </span>
   </li>
 
-  <li>
-    <strong>Manual Drawing:</strong> We manually draw each vector to ensure that no details are missed, emphasizing quality and satisfaction.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Manual Drawing:</strong> We manually draw each vector to ensure
+      that no details are missed, emphasizing quality and satisfaction.
+    </span>
   </li>
 </ul>
+
 
 
       <h2 className="text-2xl font-semibold mb-3">Building Your Brand with Vector Images</h2>

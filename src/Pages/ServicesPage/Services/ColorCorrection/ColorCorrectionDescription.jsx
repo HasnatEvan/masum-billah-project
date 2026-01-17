@@ -114,39 +114,56 @@ const ColorCorrectionDescription = () => {
       </p>
 
       <h2 className="text-2xl font-semibold mb-3">Why Choose Graphics Amazon?</h2>
-    <ul className="list-disc list-inside space-y-1 mb-6">
-
-  <li>
-    <strong>Skilled & Dedicated Designers:</strong>
-    Our experienced team is passionate about perfecting every image.
+<ul className="mb-6 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Skilled & Dedicated Designers:</strong> Our experienced team is
+      passionate about perfecting every image.
+    </span>
   </li>
 
-  <li>
-    <strong>On-Time Delivery:</strong>
-    We value deadlines and deliver your projects promptly.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>On-Time Delivery:</strong> We value deadlines and deliver your
+      projects promptly.
+    </span>
   </li>
 
-  <li>
-    <strong>Secure File Sharing:</strong>
-    We exchange files via FTP Server, WeTransfer, Google Drive, and Dropbox.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Secure File Sharing:</strong> We exchange files via FTP Server,
+      WeTransfer, Google Drive, and Dropbox.
+    </span>
   </li>
 
-  <li>
-    <strong>Client-Focused Approach:</strong>
-    We maintain top-notch image quality while offering personalized support.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Client-Focused Approach:</strong> We maintain top-notch image
+      quality while offering personalized support.
+    </span>
   </li>
 
-  <li>
-    <strong>Free Trial Opportunity:</strong>
-    Try our service with 3 free photo edits—decide only after you’re satisfied.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Free Trial Opportunity:</strong> Try our service with 3 free
+      photo edits—decide only after you’re satisfied.
+    </span>
   </li>
 
-  <li>
-    <strong>Affordable & Accessible:</strong>
-    We keep our services cost-effective so clients of all levels can work with us.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Affordable & Accessible:</strong> We keep our services
+      cost-effective so clients of all levels can work with us.
+    </span>
   </li>
-
 </ul>
+
 
       <p>
         After completing numerous successful projects, Graphics Amazon is proud to say that our 

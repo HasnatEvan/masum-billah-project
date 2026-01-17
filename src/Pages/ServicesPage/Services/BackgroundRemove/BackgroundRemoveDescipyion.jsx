@@ -50,57 +50,81 @@ const BackgroundRemoveDescipyion = () => {
         e-commerce merchants and photographers. Some of the key services we offer include:
       </p>
 
-      <ul className="list-disc list-inside mb-6 space-y-1">
-       <ul className="list-disc list-inside space-y-1 mb-6">
-
-  <li>
-    <strong>Remove Background:</strong>
-    Eliminate unwanted backgrounds and replace them with a new, clean one.
+   <ul className="mb-6 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Remove Background:</strong> Eliminate unwanted backgrounds and
+      replace them with a new, clean one.
+    </span>
   </li>
 
-  <li>
-    <strong>Add White or Solid Background:</strong>
-    Create a simple, professional look by adding a white or solid color background.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Add White or Solid Background:</strong> Create a simple,
+      professional look by adding a white or solid color background.
+    </span>
   </li>
 
-  <li>
-    <strong>Remove Background Spots:</strong>
-    Clean up any distracting spots or blemishes in the background.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Remove Background Spots:</strong> Clean up any distracting spots
+      or blemishes in the background.
+    </span>
   </li>
 
-  <li>
-    <strong>Remove Unwanted Objects:</strong>
-    Take out any unnecessary elements that distract from the main product.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Remove Unwanted Objects:</strong> Take out any unnecessary
+      elements that distract from the main product.
+    </span>
   </li>
 
-  <li>
-    <strong>Replace Background:</strong>
-    Change the background to suit the style and purpose of the product.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Replace Background:</strong> Change the background to suit the
+      style and purpose of the product.
+    </span>
   </li>
 
-  <li>
-    <strong>Make Transparent Background:</strong>
-    Perfect for products to be placed on various backgrounds without any edges or borders.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Make Transparent Background:</strong> Perfect for products to be
+      placed on various backgrounds without any edges or borders.
+    </span>
   </li>
 
-  <li>
-    <strong>Remove Shadows:</strong>
-    Eliminate any harsh shadows that may make the product look unnatural.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Remove Shadows:</strong> Eliminate any harsh shadows that may
+      make the product look unnatural.
+    </span>
   </li>
 
-  <li>
-    <strong>Enhance the Beauty of the Main Object:</strong>
-    Focus on improving the appearance of the product itself.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Enhance the Beauty of the Main Object:</strong> Focus on
+      improving the appearance of the product itself.
+    </span>
   </li>
 
-  <li>
-    <strong>Professional Background Removal:</strong>
-    Ensures that all unwanted items are removed and the product image is given the best quality, clarity, and relevance.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Professional Background Removal:</strong> Ensures that all
+      unwanted items are removed and the product image is given the best
+      quality, clarity, and relevance.
+    </span>
   </li>
-
 </ul>
 
-      </ul>
 
       <p className="mb-4">
         These services are especially useful for e-commerce businesses, where the quality of 
@@ -122,16 +146,24 @@ const BackgroundRemoveDescipyion = () => {
         high-quality results. It involves outlining the subject of the image with a pen tool to 
         remove the background. This method is ideal for detailed images and is particularly 
         effective when the photo is zoomed in to highlight intricate details.
-       <ul className="list-disc list-inside space-y-1 mb-4">
-  <li>
-    This process works best for clean-cut, detailed images, where precise separation of the 
-    product from its background is required.
+     <ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      This process works best for clean-cut, detailed images, where precise
+      separation of the product from its background is required.
+    </span>
   </li>
-  <li>
-    It’s highly effective for product images such as jewelry, apparel, and objects with 
-    clear-cut edges.
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      It’s highly effective for product images such as jewelry, apparel, and
+      objects with clear-cut edges.
+    </span>
   </li>
 </ul>
+
 
       </p>
 
@@ -140,16 +172,25 @@ const BackgroundRemoveDescipyion = () => {
         Image masking is another technique we use, especially when the image has complex elements 
         like hair or fur. For this process, we use tools such as the background eraser tool, refine 
         edge tool, and magic eraser tools to create smooth edges and remove the background effectively.
-      <ul className="list-disc list-inside space-y-1 mb-4">
-  <li>
-    Image masking is particularly useful for images with fuzzy elements like hair, fabrics, or 
-    fur, which are difficult to handle with clipping paths alone.
+     <ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      Image masking is particularly useful for images with fuzzy elements like
+      hair, fabrics, or fur, which are difficult to handle with clipping paths
+      alone.
+    </span>
   </li>
-  <li>
-    This technique ensures that every detail, from delicate hair strands to soft fabric edges, 
-    is retained while the background is removed.
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      This technique ensures that every detail, from delicate hair strands to
+      soft fabric edges, is retained while the background is removed.
+    </span>
   </li>
 </ul>
+
 
       </p>
 
@@ -161,32 +202,43 @@ const BackgroundRemoveDescipyion = () => {
        The demand for background removal services is particularly high among e-commerce merchants who rely on high-quality product images to attract customers. Online retailers and businesses in various industries need clear, professional images that allow the product to shine. Here are some key industries that benefit from background removal services
       </p>
 
-      <ul className="list-disc list-inside space-y-1 mb-6">
-       <ul className="list-disc list-inside space-y-1 mb-6">
-
-  <li>
-    <strong>E-commerce Stores:</strong>
-    Retailers selling products online need professional images to display their products effectively and drive sales.
+    <ul className="mb-6 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>E-commerce Stores:</strong> Retailers selling products online need
+      professional images to display their products effectively and drive
+      sales.
+    </span>
   </li>
 
-  <li>
-    <strong>Fashion Industry:</strong>
-    Fashion photographers and designers use background removal to showcase clothing and accessories with clean, simple backgrounds.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Fashion Industry:</strong> Fashion photographers and designers use
+      background removal to showcase clothing and accessories with clean, simple
+      backgrounds.
+    </span>
   </li>
 
-  <li>
-    <strong>Garment Industry:</strong>
-    Businesses in the garment sector use background removal to highlight their products, making them more visually appealing to customers.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Garment Industry:</strong> Businesses in the garment sector use
+      background removal to highlight their products, making them more visually
+      appealing to customers.
+    </span>
   </li>
 
-  <li>
-    <strong>Photographers:</strong>
-    Professional photographers who need to deliver clean, high-quality images for commercial use also rely on background removal services.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Photographers:</strong> Professional photographers who need to
+      deliver clean, high-quality images for commercial use also rely on
+      background removal services.
+    </span>
   </li>
-
 </ul>
-
-      </ul>
 
       <p className="mb-4">
         In the world of online business, product imagery is the most powerful tool for making sales. 

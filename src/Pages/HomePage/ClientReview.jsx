@@ -67,26 +67,28 @@ const ClientReview = () => {
   const cardsPerPage = 3;
   const totalPages = Math.ceil(reviews.length / cardsPerPage);
 
-  // Auto Slide
+  // ✅ Auto Slide (3 cards at a time)
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentPage((prev) => (prev + 1) % totalPages);
     }, 5000);
+
     return () => clearInterval(interval);
   }, [totalPages]);
 
-  // Preload next images
+  // ✅ Preload next page images
   useEffect(() => {
     const nextPage = (currentPage + 1) % totalPages;
     const nextImages = reviews.slice(
       nextPage * cardsPerPage,
       nextPage * cardsPerPage + cardsPerPage
     );
+
     nextImages.forEach((item) => {
-      const preload = new Image();
-      preload.src = item.image;
+      const img = new Image();
+      img.src = item.image;
     });
-  }, [currentPage, reviews]);
+  }, [currentPage]);
 
   const currentReviews = reviews.slice(
     currentPage * cardsPerPage,
@@ -108,31 +110,29 @@ const ClientReview = () => {
         </div>
 
         {/* Slider */}
-        <div className="mx-auto flex flex-col sm:flex-row gap-6 px-4 sm:px-6 md:px-0">
-          {currentReviews.map((item) => (
-            <div
-              key={item.name}
-              className="
-                flex-shrink-0 
-                w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.75rem)]
-                bg-white rounded-2xl shadow-md
-                flex flex-col justify-between
-                overflow-hidden
-                min-h-[230px] sm:min-h-[260px] md:min-h-[290px]
-              "
-            >
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={item.name}
-                  initial={{ opacity: 0, x: 40 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -40 }}
-                  transition={{
-                    duration: 0.55,
-                    ease: "easeInOut"
-                  }}
-                  className="p-4 sm:p-6 text-left"
-                >
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentPage} // ⭐ important for 3-card slide
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -70 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+            className="mx-auto flex flex-col sm:flex-row gap-6 px-4 sm:px-6 md:px-0"
+          >
+            {currentReviews.map((item) => (
+              <div
+                key={item.name}
+                className="
+                  flex-shrink-0 
+                  w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.75rem)]
+                  bg-white rounded-2xl shadow-md
+                  flex flex-col justify-between
+                  overflow-hidden
+                  min-h-[230px] sm:min-h-[260px] md:min-h-[290px]
+                "
+              >
+                {/* Review Content */}
+                <div className="p-4 sm:p-6 text-left">
                   {/* Stars */}
                   <div className="flex text-[#FFC107] mb-3">
                     {[...Array(5)].map((_, i) => (
@@ -144,32 +144,31 @@ const ClientReview = () => {
                   <p className="text-gray-700 text-sm md:text-[15px] leading-relaxed">
                     {item.review}
                   </p>
-                </motion.div>
-              </AnimatePresence>
+                </div>
 
-              {/* Bottom Section */}
-              <div
-                className={`flex items-center gap-3 px-4 sm:px-6 py-3 bg-gradient-to-r ${item.gradient}`}
-              >
-                <LazyImage
-                  src={item.image}
-                  alt={item.name}
-                  width="48"
-                  height="48"
-                  className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm"
-                />
+                {/* Bottom Section */}
+                <div
+                  className={`flex items-center gap-3 px-4 sm:px-6 py-3 bg-gradient-to-r ${item.gradient}`}
+                >
+                  <LazyImage
+                    src={item.image}
+                    alt={item.name}
+                    className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm"
+                  />
 
-                <div>
-                  <h5 className="font-bold text-[15px] text-[#000]">
-                    {item.name}
-                  </h5>
-                  <p className="text-gray-500 text-[13px]">{item.title}</p>
+                  <div>
+                    <h5 className="font-bold text-[15px] text-[#000]">
+                      {item.name}
+                    </h5>
+                    <p className="text-gray-500 text-[13px]">
+                      {item.title}
+                    </p>
+                  </div>
                 </div>
               </div>
-
-            </div>
-          ))}
-        </div>
+            ))}
+          </motion.div>
+        </AnimatePresence>
 
         {/* Pagination */}
         <div className="flex justify-center mt-8 gap-2 px-6">

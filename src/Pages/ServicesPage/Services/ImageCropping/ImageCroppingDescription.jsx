@@ -36,25 +36,45 @@ const ImageCroppingDescription = () => {
   ensuring they meet your exact requirements. Here’s how we help:
 </p>
 
-<ul className="list-disc list-inside space-y-1 mb-4">
-  <li>
-    <strong>Change the Orientation:</strong> Adjust the photo’s angle to fit the desired composition.
+<ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Change the Orientation:</strong> Adjust the photo’s angle to fit
+      the desired composition.
+    </span>
   </li>
 
-  <li>
-    <strong>Aspect Ratio Adjustments:</strong> Alter the size of the image while maintaining the correct proportions for different platforms.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Aspect Ratio Adjustments:</strong> Alter the size of the image
+      while maintaining the correct proportions for different platforms.
+    </span>
   </li>
 
-  <li>
-    <strong>Reframing the Subject:</strong> Focus on specific parts of the image, drawing attention to the most important elements.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Reframing the Subject:</strong> Focus on specific parts of the
+      image, drawing attention to the most important elements.
+    </span>
   </li>
 
-  <li>
-    <strong>Removing Unwanted Information:</strong> Eliminate unnecessary background or distractions from the image.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Removing Unwanted Information:</strong> Eliminate unnecessary
+      background or distractions from the image.
+    </span>
   </li>
 
-  <li>
-    <strong>Improved Composition:</strong> Enhance the overall image layout, making it more aesthetically pleasing and balanced.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Improved Composition:</strong> Enhance the overall image layout,
+      making it more aesthetically pleasing and balanced.
+    </span>
   </li>
 </ul>
 
@@ -69,35 +89,48 @@ const ImageCroppingDescription = () => {
         <br /><br />
         Here’s why Graphics Amazon is your ideal partner for image cropping:
       </p>
-
-   <ul className="list-disc list-inside space-y-1 mb-6">
-
-  <li>
-    <strong>Optimized for Speed and Quality:</strong>
-    We ensure that your images are optimized for faster loading times without losing quality. This is 
-    critical for online sales, as slow-loading images can deter potential customers.
+<ul className="mb-6 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Optimized for Speed and Quality:</strong> We ensure that your
+      images are optimized for faster loading times without losing quality.
+      This is critical for online sales, as slow-loading images can deter
+      potential customers.
+    </span>
   </li>
 
-  <li>
-    <strong>Perfectly Sized for E-commerce Platforms:</strong>
-    We know the specific requirements for platforms like Amazon, eBay, and other marketplaces. Our 
-    cropping services ensure your images comply with their photo guidelines, making your listings stand out.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Perfectly Sized for E-commerce Platforms:</strong> We know the
+      specific requirements for platforms like Amazon, eBay, and other
+      marketplaces. Our cropping services ensure your images comply with their
+      photo guidelines, making your listings stand out.
+    </span>
   </li>
 
-  <li>
-    <strong>Highlight the Product's Features:</strong>
-    Whether it’s jewelry, clothing, or any other product, we crop images to focus on the most important 
-    elements, like gemstones or intricate details, helping drive customer interest.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Highlight the Product's Features:</strong> Whether it’s jewelry,
+      clothing, or any other product, we crop images to focus on the most
+      important elements, like gemstones or intricate details, helping drive
+      customer interest.
+    </span>
   </li>
 
-  <li>
-    <strong>For Personal Use:</strong>
-    Image cropping isn't just for commercial purposes. If you have cherished photos you want to share 
-    on social media or preserve, we provide high-quality cropping services to enhance those memories 
-    without losing their charm.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>For Personal Use:</strong> Image cropping isn't just for
+      commercial purposes. If you have cherished photos you want to share on
+      social media or preserve, we provide high-quality cropping services to
+      enhance those memories without losing their charm.
+    </span>
   </li>
-
 </ul>
+
 
 
  <h2 className="text-2xl font-semibold mb-3">
@@ -108,34 +141,50 @@ const ImageCroppingDescription = () => {
   Successful businesses know the importance of professional image cropping. Here's why clients trust Graphics Amazon:
 </p>
 
-<ul className="list-disc list-inside space-y-1 mb-4">
-
-  <li>
-    <strong>Maintains the Beauty of the Image:</strong>
-    We ensure the core appeal of the image remains intact while enhancing its overall composition.
+<ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Maintains the Beauty of the Image:</strong> We ensure the core
+      appeal of the image remains intact while enhancing its overall
+      composition.
+    </span>
   </li>
 
-  <li>
-    <strong>Perfectly Balanced Composition:</strong>
-    We create well-composed images that are visually pleasing and effective.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Perfectly Balanced Composition:</strong> We create well-composed
+      images that are visually pleasing and effective.
+    </span>
   </li>
 
-  <li>
-    <strong>Removes Unwanted Backgrounds:</strong>
-    We clean up your photos by removing distractions, ensuring the focus stays on the subject.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Removes Unwanted Backgrounds:</strong> We clean up your photos by
+      removing distractions, ensuring the focus stays on the subject.
+    </span>
   </li>
 
-  <li>
-    <strong>Consistent Aspect Ratio:</strong>
-    We make sure the image proportions are correct for your intended use—whether it's for a website, social media, or advertising.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Consistent Aspect Ratio:</strong> We make sure the image
+      proportions are correct for your intended use—whether it's for a
+      website, social media, or advertising.
+    </span>
   </li>
 
-  <li>
-    <strong>Preserves Image Shape:</strong>
-    We crop images carefully so the original shape remains intact without any distortion.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Preserves Image Shape:</strong> We crop images carefully so the
+      original shape remains intact without any distortion.
+    </span>
   </li>
-
 </ul>
+
 
   <h2 className="text-2xl font-semibold mb-3">Our Professional Image Cropping Process</h2>
 
@@ -143,44 +192,65 @@ const ImageCroppingDescription = () => {
   At Graphics Amazon, we prioritize quality and precision in every image we crop. Here’s what sets our service apart:
 </p>
 
-<ul className="list-disc list-inside space-y-1 mb-4">
-
-  <li>
-    <strong>Manual Cropping:</strong>
-    Every image is manually cropped to ensure no details are overlooked.
+<ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Manual Cropping:</strong> Every image is manually cropped to
+      ensure no details are overlooked.
+    </span>
   </li>
 
-  <li>
-    <strong>State-of-the-Art Tools:</strong>
-    We use the latest version of Adobe Photoshop for optimal results.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>State-of-the-Art Tools:</strong> We use the latest version of
+      Adobe Photoshop for optimal results.
+    </span>
   </li>
 
-  <li>
-    <strong>Affordable Pricing:</strong>
-    High-quality editing services at competitive rates.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Affordable Pricing:</strong> High-quality editing services at
+      competitive rates.
+    </span>
   </li>
 
-  <li>
-    <strong>Flexible File Types:</strong>
-    We accept a variety of file formats, including JPEG, PNG, TIFF, PSD, and more.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Flexible File Types:</strong> We accept a variety of file
+      formats, including JPEG, PNG, TIFF, PSD, and more.
+    </span>
   </li>
 
-  <li>
-    <strong>Fast Turnaround:</strong>
-    We process large volumes of files efficiently, ensuring timely delivery.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Fast Turnaround:</strong> We process large volumes of files
+      efficiently, ensuring timely delivery.
+    </span>
   </li>
 
-  <li>
-    <strong>Unlimited Revisions:</strong>
-    We offer unlimited revisions until you’re satisfied with the final result.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Unlimited Revisions:</strong> We offer unlimited revisions until
+      you’re satisfied with the final result.
+    </span>
   </li>
 
-  <li>
-    <strong>Client-Centered Approach:</strong>
-    Our team values open communication, offering direct consultations with our clients to ensure every project meets their expectations.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Client-Centered Approach:</strong> Our team values open
+      communication, offering direct consultations with our clients to ensure
+      every project meets their expectations.
+    </span>
   </li>
-
 </ul>
+
 
 
       <h2 className="text-2xl font-semibold mb-3">Why Graphics Amazon?</h2>

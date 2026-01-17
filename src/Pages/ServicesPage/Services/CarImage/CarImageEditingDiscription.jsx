@@ -49,12 +49,32 @@ const CarImageEditingDiscription = () => {
         your images shine.
       </p>
 
-      <ul className="list-disc list-inside mb-4 space-y-1">
-        <li><strong>Paint Enhancement:</strong> Improving the color and shine of the car’s paint.</li>
-        <li><strong>Surface Smoothing:</strong> Removing imperfections like scratches or dirt.</li>
-        <li><strong>Shadows & Highlights Adjustment:</strong> Enhancing the car’s contours to bring out its best angles.</li>
+     <ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Paint Enhancement:</strong> Improving the color and shine of the
+      car’s paint.
+    </span>
+  </li>
 
-      </ul>
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Surface Smoothing:</strong> Removing imperfections like scratches
+      or dirt.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Shadows & Highlights Adjustment:</strong> Enhancing the car’s
+      contours to bring out its best angles.
+    </span>
+  </li>
+</ul>
+
 
       <h3 className="text-xl font-semibold mb-2">Car Background Removal & Replacement</h3>
       <p className="mb-4">
@@ -64,11 +84,31 @@ const CarImageEditingDiscription = () => {
         e-commerce or a dynamic setting for promotional use, we have you covered.
       </p>
 
-      <ul className="list-disc list-inside mb-4 space-y-1">
-        <li><strong>Removing Distracting Backgrounds:</strong> Cleaning up your car’s image for a professional look.</li>
-        <li><strong>Adding Custom Backgrounds:</strong> Placing the car in any environment you want.</li>
-        <li><strong>Background Blurring:</strong> Creating a soft-focus effect to keep the focus on the car.</li>
-      </ul>
+      <ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Removing Distracting Backgrounds:</strong> Cleaning up your car’s
+      image for a professional look.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Adding Custom Backgrounds:</strong> Placing the car in any
+      environment you want.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Background Blurring:</strong> Creating a soft-focus effect to
+      keep the focus on the car.
+    </span>
+  </li>
+</ul>
 
 
       <h3 className="text-xl font-semibold mb-2">Color Correction & Enhancement</h3>
@@ -79,17 +119,32 @@ const CarImageEditingDiscription = () => {
         it pops in every shot.
       </p>
 
-      <ul className="list-disc list-inside mb-4 space-y-1">
-        <li>
-          <strong>Correcting Color Imbalances:</strong> Ensuring accurate color representation.
-        </li>
-        <li>
-          <strong>Adjusting Exposure & Contrast:</strong> Bringing out the car’s details through better lighting.
-        </li>
-        <li>
-          <strong>Enhancing Paint & Details:</strong> Adding depth and vibrancy to the car’s body.
-        </li>
-      </ul>
+    <ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Correcting Color Imbalances:</strong> Ensuring accurate color
+      representation.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Adjusting Exposure & Contrast:</strong> Bringing out the car’s
+      details through better lighting.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Enhancing Paint & Details:</strong> Adding depth and vibrancy to
+      the car’s body.
+    </span>
+  </li>
+</ul>
+
 
 
       <h3 className="text-xl font-semibold mb-2">Car Reflections & Glass Enhancement</h3>
@@ -97,17 +152,32 @@ const CarImageEditingDiscription = () => {
         Car reflections and glass can be tricky to manage in photos. Our experts focus on enhancing the reflections and glass surfaces to ensure that your car looks perfect from all angles. Whether you’re showcasing the reflective surfaces or simply need to clean up glass, our team can help achieve flawless results.
       </p>
 
-      <ul className="list-disc list-inside mb-4 space-y-1">
-        <li>
-          <strong>Removing Reflections:</strong> Erasing unwanted reflections for clearer images.
-        </li>
-        <li>
-          <strong>Cleaning & Polishing Glass:</strong> Enhancing the car's windows and mirrors for a crisp, shiny finish.
-        </li>
-        <li>
-          <strong>Adjusting Gloss & Shine:</strong> Ensuring that the car’s reflective surfaces look pristine.
-        </li>
-      </ul>
+     <ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Removing Reflections:</strong> Erasing unwanted reflections for
+      clearer images.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Cleaning & Polishing Glass:</strong> Enhancing the car's windows
+      and mirrors for a crisp, shiny finish.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Adjusting Gloss & Shine:</strong> Ensuring that the car’s
+      reflective surfaces look pristine.
+    </span>
+  </li>
+</ul>
+
 
 
       <h3 className="text-xl font-semibold mb-2">Car Shadow Creation</h3>
@@ -116,17 +186,33 @@ const CarImageEditingDiscription = () => {
 
       </p>
 
-      <ul className="list-disc list-inside mb-4 space-y-1">
-        <li>
-          <strong>Drop Shadow:</strong> A deep and alluring shadow beneath the car that gives it a more realistic appearance.
-        </li>
-        <li>
-          <strong>Natural Shadow:</strong> A shadow that looks organic and true to life, creating a realistic environment for the car.
-        </li>
-        <li>
-          <strong>Reflection Shadow:</strong> A mirror-like shadow effect that enhances the vehicle’s appearance, giving it a polished and professional look.
-        </li>
-      </ul>
+   <ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Drop Shadow:</strong> A deep and alluring shadow beneath the car
+      that gives it a more realistic appearance.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Natural Shadow:</strong> A shadow that looks organic and true to
+      life, creating a realistic environment for the car.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Reflection Shadow:</strong> A mirror-like shadow effect that
+      enhances the vehicle’s appearance, giving it a polished and professional
+      look.
+    </span>
+  </li>
+</ul>
+
 
 
       <h3 className="text-xl font-semibold mb-2">Car Photo Resizing & Cropping</h3>
@@ -135,17 +221,32 @@ const CarImageEditingDiscription = () => {
         your car photos are resized and cropped perfectly for websites, social media, and print ads.
       </p>
 
-      <ul className="list-disc list-inside mb-4 space-y-1">
-        <li>
-          <strong>Resizing for Various Platforms:</strong> Adapting your images for websites, social media, or digital ads.
-        </li>
-        <li>
-          <strong>Cropping for Optimal Composition:</strong> Ensuring the car is framed perfectly within the image.
-        </li>
-        <li>
-          <strong>Maintaining High Resolution:</strong> Keeping the image quality intact during resizing.
-        </li>
-      </ul>
+    <ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Resizing for Various Platforms:</strong> Adapting your images for
+      websites, social media, or digital ads.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Cropping for Optimal Composition:</strong> Ensuring the car is
+      framed perfectly within the image.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Maintaining High Resolution:</strong> Keeping the image quality
+      intact during resizing.
+    </span>
+  </li>
+</ul>
+
 
 
       <h3 className="text-xl font-semibold mb-2">Custom Car Image Compositing</h3>
@@ -154,40 +255,77 @@ const CarImageEditingDiscription = () => {
 
       </p>
 
-      <ul className="list-disc list-inside mb-4 space-y-1">
-        <li>
-          <strong>Combining Multiple Shots:</strong> Merging photos to create the ideal car image.
-        </li>
-        <li>
-          <strong>Adding New Elements:</strong> Placing cars in creative or promotional settings.
-        </li>
-        <li>
-          <strong>Seamless Image Transitions:</strong> Ensuring the final image looks natural and well-composed.
-        </li>
-      </ul>
+     <ul className="mb-4 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Combining Multiple Shots:</strong> Merging photos to create the
+      ideal car image.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Adding New Elements:</strong> Placing cars in creative or
+      promotional settings.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Seamless Image Transitions:</strong> Ensuring the final image
+      looks natural and well-composed.
+    </span>
+  </li>
+</ul>
+
 
       <h2 className="text-2xl font-semibold mb-3">Why Choose Graphics Amazon for Car Image Editing Services?</h2>
 
-      <ul className="list-disc list-inside mb-6 space-y-1">
-        <ul className="list-disc list-inside mb-4 space-y-1">
-          <li>
-            <strong>Expert Editing Team:</strong> Our experienced team ensures that your car photos are enhanced with the highest standards of quality.
-          </li>
-          <li>
-            <strong>Tailored Services:</strong> We customize our services to meet the specific needs of each client and vehicle.
-          </li>
-          <li>
-            <strong>Fast Turnaround:</strong> We respect deadlines and deliver high-quality results within your time frame.
-          </li>
-          <li>
-            <strong>Affordable Pricing:</strong> Our car image editing services are priced competitively, ensuring exceptional value for money.
-          </li>
-          <li>
-            <strong>Free Trial:</strong> Get a taste of our expertise with a free trial of your car images, so you can see the quality before committing.
-          </li>
-        </ul>
+     <ul className="mb-6 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Expert Editing Team:</strong> Our experienced team ensures that
+      your car photos are enhanced with the highest standards of quality.
+    </span>
+  </li>
 
-      </ul>
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Tailored Services:</strong> We customize our services to meet the
+      specific needs of each client and vehicle.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Fast Turnaround:</strong> We respect deadlines and deliver
+      high-quality results within your time frame.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Affordable Pricing:</strong> Our car image editing services are
+      priced competitively, ensuring exceptional value for money.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Free Trial:</strong> Get a taste of our expertise with a free
+      trial of your car images, so you can see the quality before committing.
+    </span>
+  </li>
+</ul>
+
 
       <p>
       At Graphics Amazon, we help you turn your car photos into eye-catching images that attract attention, drive sales, and elevate your brand. Whether you are a car dealership, photographer, or online retailer, our car image editing services are designed to enhance your visuals and make your products stand out.

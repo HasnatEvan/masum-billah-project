@@ -110,65 +110,81 @@ const Description = () => {
         key sectors that rely on these services include:
       </p>
 
-    <ul className="list-inside space-y-3 mb-6">
+      <ul className="list-inside space-y-3 mb-6">
 
-  <li>
-    <strong>eCommerce:</strong>
-    To stay ahead in the competitive online marketplace, displaying high-quality images is essential.
-    Clipping paths help ensure your product images look professional, building customer trust and
-    increasing sales.
-  </li>
+        <li>
+          <strong>eCommerce:</strong>
+          To stay ahead in the competitive online marketplace, displaying high-quality images is essential.
+          Clipping paths help ensure your product images look professional, building customer trust and
+          increasing sales.
+        </li>
 
-  <li>
-    <strong>Photographers and Photography Agencies:</strong>
-    For images with complex shapes or intricate details, clipping paths are indispensable in achieving
-    professional-quality results.
-  </li>
+        <li>
+          <strong>Photographers and Photography Agencies:</strong>
+          For images with complex shapes or intricate details, clipping paths are indispensable in achieving
+          professional-quality results.
+        </li>
 
-  <li>
-    <strong>Apparel Industry:</strong>
-    Clothing retailers often use clipping paths to remove mannequins or change backgrounds, making the
-    product more prominent and visually clear.
-  </li>
+        <li>
+          <strong>Apparel Industry:</strong>
+          Clothing retailers often use clipping paths to remove mannequins or change backgrounds, making the
+          product more prominent and visually clear.
+        </li>
 
-  <li>
-    <strong>Fashion and Modeling:</strong>
-    Fashion photographers and models rely on clipping paths to enhance portfolio images, retouching,
-    and promotional materials.
-  </li>
+        <li>
+          <strong>Fashion and Modeling:</strong>
+          Fashion photographers and models rely on clipping paths to enhance portfolio images, retouching,
+          and promotional materials.
+        </li>
 
-  <li>
-    <strong>Jewelry Industry:</strong>
-    High-quality, detailed images of jewelry are crucial for attracting customers, and clipping paths
-    maintain clarity and visual appeal.
-  </li>
+        <li>
+          <strong>Jewelry Industry:</strong>
+          High-quality, detailed images of jewelry are crucial for attracting customers, and clipping paths
+          maintain clarity and visual appeal.
+        </li>
 
-</ul>
+      </ul>
 
 
       <h2 className="text-2xl font-semibold mt-8 mb-3">
         Why Choose Graphics Amazon for Your Clipping Path Needs?
       </h2>
 
-      <ul className="list-disc list-inside mb-6 space-y-1">
-        <li>
-          <strong>Expert Designers:</strong> Our skilled design team focuses on
-          every detail to ensure precise, clean clipping paths.
-        </li>
-        <li>
-          <strong>Fast Turnaround:</strong> We deliver your edited images
-          promptly, meeting tight deadlines without compromising on quality.
-        </li>
-        <li>
-          <strong>Affordable Pricing:</strong> We offer competitive pricing to
-          ensure exceptional value for your investment.
-        </li>
-        <li>
-          <strong>Client-Centric Approach:</strong> We offer unlimited revisions
-          and prioritize client satisfaction to ensure your images meet your
-          exact specifications.
-        </li>
-      </ul>
+     <ul className="mb-6 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Expert Designers:</strong> Our skilled design team focuses on
+      every detail to ensure precise, clean clipping paths.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Fast Turnaround:</strong> We deliver your edited images
+      promptly, meeting tight deadlines without compromising on quality.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Affordable Pricing:</strong> We offer competitive pricing to
+      ensure exceptional value for your investment.
+    </span>
+  </li>
+
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Client-Centric Approach:</strong> We offer unlimited revisions
+      and prioritize client satisfaction to ensure your images meet your
+      exact specifications.
+    </span>
+  </li>
+</ul>
+
 
       <p className="mt-4 font-medium">
         If you want your product photos to look polished and professional,{" "}

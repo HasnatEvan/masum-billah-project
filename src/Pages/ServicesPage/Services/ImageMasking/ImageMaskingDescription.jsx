@@ -98,33 +98,51 @@ const ImageMaskingDescription = () => {
         photo editing needs:
       </p>
 
-   <ul className="list-disc list-inside space-y-1 mb-6">
-
-  <li>
-    <strong>Precision and Professionalism:</strong>
-    Our team of experienced photo editors employs the latest tools and techniques to ensure the highest quality results.
+<ul className="mb-6 space-y-2 text-base md:text-lg leading-relaxed">
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Precision and Professionalism:</strong> Our team of experienced
+      photo editors employs the latest tools and techniques to ensure the
+      highest quality results.
+    </span>
   </li>
 
-  <li>
-    <strong>Tailored to Your Needs:</strong>
-    Whether you need background removal, fine-tuning, or complex masking, we offer customized solutions to suit your specific requirements.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Tailored to Your Needs:</strong> Whether you need background
+      removal, fine-tuning, or complex masking, we offer customized solutions
+      to suit your specific requirements.
+    </span>
   </li>
 
-  <li>
-    <strong>Enhanced Visual Appeal:</strong>
-    Our image masking services ensure that every image is visually compelling, perfect for increasing customer engagement and driving conversions.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Enhanced Visual Appeal:</strong> Our image masking services
+      ensure that every image is visually compelling, perfect for increasing
+      customer engagement and driving conversions.
+    </span>
   </li>
 
-  <li>
-    <strong>Fast Turnaround:</strong>
-    We understand the importance of deadlines and deliver high-quality results quickly without compromising on detail.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Fast Turnaround:</strong> We understand the importance of
+      deadlines and deliver high-quality results quickly without compromising
+      on detail.
+    </span>
   </li>
 
-  <li>
-    <strong>Affordable Pricing:</strong>
-    Our competitive pricing ensures that you get the best value for your investment in high-quality photo editing.
+  <li className="flex items-start gap-3">
+    <span className="mt-2 h-2 w-2 rounded-full bg-black flex-shrink-0"></span>
+    <span>
+      <strong>Affordable Pricing:</strong> Our competitive pricing ensures
+      that you get the best value for your investment in high-quality photo
+      editing.
+    </span>
   </li>
-
 </ul>
 
 
